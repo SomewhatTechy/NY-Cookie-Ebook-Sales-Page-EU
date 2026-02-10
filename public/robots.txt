@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ny-cookie-ebook-sales-page-eu.pages.dev/sitemap.xml
