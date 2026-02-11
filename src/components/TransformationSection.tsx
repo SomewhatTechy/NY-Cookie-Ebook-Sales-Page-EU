@@ -1,5 +1,4 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { motion } from "framer-motion";
 import { X, Check, Lightbulb } from "lucide-react";
 
 const TransformationSection = () => {
@@ -23,13 +22,7 @@ const TransformationSection = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-10"
-        >
+        <div className="text-center mb-10 animate-fade-in">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-pink/10 border border-pink/30">
             <Lightbulb className="w-4 h-4 text-pink" />
             <span className="text-pink font-semibold text-sm">{t("transformEyebrow")}</span>
@@ -40,17 +33,13 @@ const TransformationSection = () => {
           <p className="text-muted-foreground max-w-2xl mx-auto">
             {t("transformSubtitle")}
           </p>
-        </motion.div>
+        </div>
 
         <div className="max-w-4xl mx-auto space-y-6">
           {transformations.map((item, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="grid md:grid-cols-2 gap-4"
+              className="grid md:grid-cols-2 gap-4 animate-fade-in"
             >
               {/* Old Way */}
               <div className="premium-card p-5 border-red-200/50 bg-red-50/30">
@@ -81,22 +70,16 @@ const TransformationSection = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Pattern Interrupt */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="max-w-2xl mx-auto mt-10 p-6 rounded-2xl bg-gold/10 border border-gold/30 text-center"
-        >
+        <div className="max-w-2xl mx-auto mt-10 p-6 rounded-2xl bg-gold/10 border border-gold/30 text-center animate-scale-in">
           <p className="text-lg font-semibold text-chocolate">
             {t("transformCta")}
           </p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,4 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { motion } from 'framer-motion';
 import { HelpCircle, ChevronDown } from 'lucide-react';
 
 const FAQSection = () => {
@@ -23,23 +22,11 @@ const FAQSection = () => {
   return (
     <section className="py-24 bg-transparent fade-in-section" id="faq" style={{ background: "var(--gradient-section)" }}>
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="section-title">{t('faqTitle')}</h2>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="max-w-3xl mx-auto space-y-4"
-        >
+        <div className="max-w-3xl mx-auto space-y-4 animate-fade-in">
           {faqs.map((faq, index) => (
             <details
               key={index}
@@ -52,7 +39,7 @@ const FAQSection = () => {
               <p className="text-muted-foreground mt-4 leading-relaxed text-sm">{faq.answer}</p>
             </details>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
 type Testimonial = {
@@ -13,9 +12,6 @@ type Testimonial = {
 const TestimonialsSection = () => {
   const { t } = useLanguage();
 
-  // PT readiness:
-  // - No flags (they can feel “off” when language switches, and they're not localized).
-  // - Safe fallback if a PT key is missing so you don’t render raw keys on-screen.
   const safe = (key: string, fallback: string) => {
     const v = t(key);
     return !v || v === key ? fallback : v;
@@ -45,16 +41,10 @@ const TestimonialsSection = () => {
   return (
     <section className="py-20 bg-card fade-in-section" id="testimonials">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="section-title">{title}</h2>
           <p className="section-subtitle">{subtitle}</p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {testimonials.map((item, index) => {
@@ -62,13 +52,9 @@ const TestimonialsSection = () => {
             const text = safe(item.textKey, "");
 
             return (
-              <motion.div
+              <div
                 key={`${item.name}-${index}`}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.06 }}
-                className="premium-card p-6 hover:border-gold/30 transition-all duration-300"
+                className="premium-card p-6 hover:border-gold/30 transition-all duration-300 animate-fade-in"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink/20 to-gold/20 overflow-hidden flex items-center justify-center">
@@ -103,7 +89,7 @@ const TestimonialsSection = () => {
                 {text ? (
                   <p className="text-foreground/80 italic text-sm">"{text}"</p>
                 ) : null}
-              </motion.div>
+              </div>
             );
           })}
         </div>

@@ -1,5 +1,4 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { motion } from 'framer-motion';
 import { ArrowRight, Download, Sparkles, ShieldCheck, Cookie, DollarSign, Clock, Zap, Play } from 'lucide-react';
 import { useState } from 'react';
 
@@ -64,43 +63,23 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="flex items-center justify-center gap-2 mb-6"
-          >
+          <div className="flex items-center justify-center gap-2 mb-6 animate-fade-in">
             <div className="flex items-center px-4 py-2 rounded-full bg-gold/10 border border-gold/30">
               <Cookie className="w-5 h-5 text-gold" aria-label="Cookie" />
             </div>
-          </motion.div>
+          </div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight text-foreground"
-          >
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight text-foreground animate-fade-in">
             {t('heroTitle')}
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto"
-          >
+          <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto animate-fade-in">
             {t('heroSubtitle')}
-          </motion.p>
+          </p>
 
           {/* Effort Minimizers - Hormozi Framework */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.15 }}
-            className="flex flex-wrap justify-center gap-3 mb-6"
-          >
-            {effortMinimizers.map((item, index) => {
+          <div className="flex flex-wrap justify-center gap-3 mb-6 animate-fade-in">
+            {effortMinimizers.map((item) => {
               const Icon = item.icon;
               return (
                 <span
@@ -112,18 +91,13 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
                 </span>
               );
             })}
-          </motion.div>
+          </div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-gold font-semibold mb-3 flex items-center justify-center gap-2"
-          >
+          <p className="text-gold font-semibold mb-3 flex items-center justify-center gap-2 animate-fade-in">
             <span aria-hidden>👇</span>
             {t('watchVideoPrompt')}
             <span aria-hidden>👇</span>
-          </motion.p>
+          </p>
 
           <div className="mb-8">
             <div className="relative max-w-2xl mx-auto rounded-2xl overflow-hidden elevated-shadow gold-frame">
@@ -150,6 +124,7 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
                       alt={videoTitle}
                       className="w-full h-full object-cover"
                       loading="eager"
+                      fetchPriority="high"
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
                       <div className="w-16 h-16 rounded-full bg-gold/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
@@ -162,27 +137,17 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
             </div>
           </div>
 
-          <motion.a
+          <a
             href={checkoutUrl}
             onClick={goCheckout}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="cta-button text-base md:text-lg animate-pulse-glow"
+            className="cta-button text-base md:text-lg animate-pulse-glow hover:scale-105 active:scale-95 transition-transform"
             aria-label={t('heroCta')}
           >
             {t('heroCta')}
             <ArrowRight className="w-5 h-5" />
-          </motion.a>
+          </a>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            className="flex flex-wrap justify-center gap-6 mt-6 text-sm text-muted-foreground"
-          >
+          <div className="flex flex-wrap justify-center gap-6 mt-6 text-sm text-muted-foreground animate-fade-in">
             <span className="flex items-center gap-2">
               <Download className="w-5 h-5 text-gold" />
               {t('instantDownload')}
@@ -191,19 +156,14 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
               <Sparkles className="w-5 h-5 text-gold" />
               {t('beginnerFriendly')}
             </span>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
-            className="mt-6"
-          >
+          <div className="mt-6 animate-fade-in">
             <span className="inline-flex items-center gap-2 text-sm text-muted-foreground bg-card px-4 py-2 rounded-full border border-border">
               <ShieldCheck className="w-5 h-5 text-gold" />
               {t('secureCheckoutHotmart')}
             </span>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

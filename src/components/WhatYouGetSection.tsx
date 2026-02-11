@@ -1,5 +1,4 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { motion } from "framer-motion";
 
 type WhatYouGetFeature = {
   title: string;
@@ -41,32 +40,20 @@ const WhatYouGetSection = () => {
   return (
     <section className="py-20 bg-card fade-in-section" id="what-you-get">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
+        <div className="text-center mb-12 animate-fade-in">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-gold/10 border border-gold/30">
             <span className="text-gold font-semibold">{safe("wygTag", "🎁 EVERYTHING INCLUDED")}</span>
           </div>
-          <h2 className="section-title">{safe("wygTitle", "What You’ll Get")}</h2>
+          <h2 className="section-title">{safe("wygTitle", "What You'll Get")}</h2>
           <p className="section-subtitle">{safe("wygSubtitle", "")}</p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 18 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.05 }}
-          className="max-w-4xl mx-auto mb-12"
-        >
+        <div className="max-w-4xl mx-auto mb-12 animate-fade-in">
           <div className="premium-card overflow-hidden">
             <img
               src={mainMockupSrc}
               srcSet={mainMockupSrcSet}
-              sizes="(max-width: 768px) 100vw, 896px"
+              sizes="(max-width: 640px) 512px, (max-width: 1024px) 768px, 896px"
               alt={String(safe("heroTitle", "Ebook mockup"))}
               width={1024}
               height={1024}
@@ -79,17 +66,13 @@ const WhatYouGetSection = () => {
               }}
             />
           </div>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {features.map((feature, index) => (
-            <motion.div
+            <div
               key={`${feature.title}-${index}`}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="premium-card p-6 transition-all duration-300 hover:border-gold/30"
+              className="premium-card p-6 transition-all duration-300 hover:border-gold/30 animate-fade-in"
             >
               <div className="flex justify-center mb-4">
                 <img
@@ -110,7 +93,7 @@ const WhatYouGetSection = () => {
                 {feature.title}
               </h3>
               <p className="text-sm text-muted-foreground text-center">{feature.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

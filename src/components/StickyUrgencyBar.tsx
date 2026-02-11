@@ -2,7 +2,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { useOfferCountdown } from "@/hooks/useOfferCountdown";
 import { useMemo, useState, useEffect } from "react";
 import { Clock, ArrowRight, Cookie } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 
 interface StickyUrgencyBarProps {
   checkoutUrl: string;
@@ -74,14 +73,10 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
   };
 
   return (
-    <AnimatePresence>
+    <>
       {isVisible && (
-        <motion.header
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -100, opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          className="fixed top-0 left-0 w-full z-50 border-b border-white/10 shadow-lg"
+        <header
+          className="fixed top-0 left-0 w-full z-50 border-b border-white/10 shadow-lg animate-fade-in"
           style={{ background: "rgba(59, 36, 29, 0.92)", backdropFilter: "blur(12px)" }}
           aria-label="Sticky urgency bar"
         >
@@ -113,9 +108,9 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
               </a>
             </div>
           </div>
-        </motion.header>
+        </header>
       )}
-    </AnimatePresence>
+    </>
   );
 };
 

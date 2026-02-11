@@ -1,5 +1,4 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { motion } from 'framer-motion';
 import { ArrowRight, Clock, AlertTriangle } from 'lucide-react';
 import { useOfferCountdown } from '@/hooks/useOfferCountdown';
 
@@ -35,18 +34,12 @@ const PriceDropSection = ({ checkoutUrl }: PriceDropSectionProps) => {
     <section className="py-14 bg-chocolate text-white relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-bold mb-4"
-          >
-            {isExpired 
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in">
+            {isExpired
               ? safe('priceDropTitleExpired', 'Launch Offer Has Ended')
               : safe('priceDropTitle', 'Limited-Time Special Offer')
             }
-          </motion.h2>
+          </h2>
 
           <p className="text-white/80 mb-6">
             {isExpired
@@ -88,17 +81,15 @@ const PriceDropSection = ({ checkoutUrl }: PriceDropSectionProps) => {
             </span>
           </div>
 
-          <motion.a
+          <a
             href={checkoutUrl}
             onClick={goCheckout}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="cta-button text-base md:text-lg inline-flex justify-center"
+            className="cta-button text-base md:text-lg inline-flex justify-center hover:scale-105 active:scale-95 transition-transform"
             aria-label={safe('priceDropCta', 'Get my copy now')}
           >
             {safe('priceDropCta', 'Get my copy now')}
             <ArrowRight className="w-5 h-5" />
-          </motion.a>
+          </a>
 
           {/* Price note */}
           <p className="text-white/60 text-sm mt-4">

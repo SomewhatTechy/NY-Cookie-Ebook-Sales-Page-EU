@@ -1,5 +1,4 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { motion } from 'framer-motion';
 import { ArrowRight, Lock } from 'lucide-react';
 
 interface FinalCTASectionProps {
@@ -21,17 +20,15 @@ const FinalCTASection = ({ checkoutUrl }: FinalCTASectionProps) => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('finalCtaTitle')}</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">{t('finalCtaSubtitle')}</p>
 
-          <motion.a
+          <a
             href={checkoutUrl}
             onClick={goCheckout}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="cta-button text-base md:text-lg inline-flex justify-center"
+            className="cta-button text-base md:text-lg inline-flex justify-center hover:scale-105 active:scale-95 transition-transform"
             aria-label={t('finalCtaButton')}
           >
             {t('finalCtaButton')}
             <ArrowRight className="w-5 h-5" />
-          </motion.a>
+          </a>
 
           <div className="flex items-center justify-center gap-2 mt-6 text-sm text-muted-foreground">
             <Lock className="w-4 h-4 text-gold" />
