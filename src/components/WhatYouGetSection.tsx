@@ -12,7 +12,7 @@ const WhatYouGetSection = () => {
   // Main mockup (use WebP only)
   const langSuffix = ["fr", "de", "it", "nl", "pl"].includes(language) ? language : "fr";
   const mainMockupSrc = `/what-you-get/main-mockup-${langSuffix}.webp`;
-  const mainMockupSrcSet = `/what-you-get/main-mockup-${langSuffix}-sm.webp 512w, /what-you-get/main-mockup-${langSuffix}-md.webp 768w, /what-you-get/main-mockup-${langSuffix}.webp 1024w`;
+  const mainMockupSrcSet = `/what-you-get/main-mockup-${langSuffix}-xs.webp 384w, /what-you-get/main-mockup-${langSuffix}-sm.webp 512w, /what-you-get/main-mockup-${langSuffix}-md.webp 768w, /what-you-get/main-mockup-${langSuffix}.webp 1024w`;
 
   // Small safety: avoid rendering raw keys if a string is missing.
   const safe = (key: string, fallback = "") => {
@@ -53,7 +53,7 @@ const WhatYouGetSection = () => {
             <img
               src={mainMockupSrc}
               srcSet={mainMockupSrcSet}
-              sizes="(max-width: 640px) 512px, (max-width: 1024px) 768px, 896px"
+              sizes="(max-width: 420px) 384px, (max-width: 640px) 512px, (max-width: 1024px) 768px, 896px"
               alt={String(safe("heroTitle", "Ebook mockup"))}
               width={1024}
               height={1024}

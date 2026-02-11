@@ -62,6 +62,8 @@ const TestimonialsSection = () => {
                       <img
                         src={item.image}
                         alt={item.name}
+                        width={96}
+                        height={96}
                         loading="lazy"
                         decoding="async"
                         className="h-full w-full object-cover"
