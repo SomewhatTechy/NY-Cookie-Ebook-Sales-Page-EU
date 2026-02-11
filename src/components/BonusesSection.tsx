@@ -62,7 +62,7 @@ const BonusesSection = () => {
         {/* Total Value Banner */}
         <div className="max-w-2xl mx-auto p-6 rounded-2xl premium-card bg-gold/10 border border-gold/25 text-center animate-scale-in">
           <p className="text-xl md:text-2xl font-semibold text-foreground">
-            {t('totalBonusValue')}: <span className="text-gold font-bold">{t('bonusesTotalAmount')}</span> — {t('freeToday')}
+            {t('totalBonusValue')}: <span className="text-gold-dark font-bold">{t('bonusesTotalAmount')}</span> — {t('freeToday')}
           </p>
         </div>
       </div>

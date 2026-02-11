@@ -14,6 +14,7 @@
     --chocolate-medium: 15 30% 25%;
     --gold: 38 65% 56%;            /* #D9A441 */
     --gold-light: 38 70% 68%;
+    --gold-dark: 38 65% 38%;         /* #9F7520 – WCAG AA on light bg */
     --rose: 10 70% 92%;
 
     /* Semantic tokens */
@@ -160,6 +161,10 @@
 
   .text-gold {
     color: hsl(var(--gold));
+  }
+
+  .text-gold-dark {
+    color: hsl(var(--gold-dark));
   }
 
   .text-pink {

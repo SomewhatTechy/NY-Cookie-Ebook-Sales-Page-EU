@@ -42,7 +42,7 @@ const WhatYouGetSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-gold/10 border border-gold/30">
-            <span className="text-gold font-semibold">{safe("wygTag", "🎁 EVERYTHING INCLUDED")}</span>
+            <span className="text-gold-dark font-semibold">{safe("wygTag", "🎁 EVERYTHING INCLUDED")}</span>
           </div>
           <h2 className="section-title">{safe("wygTitle", "What You'll Get")}</h2>
           <p className="section-subtitle">{safe("wygSubtitle", "")}</p>

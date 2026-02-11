@@ -82,6 +82,7 @@ const BonusStackGallery: React.FC = () => {
     <div className="mt-8 pb-16 sm:pb-20">
       <div
         className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4"
+        role="group"
         aria-label={galleryAriaLabel || 'Bonus Stack Gallery'}
       >
         {items.map((item) => {
@@ -97,7 +98,7 @@ const BonusStackGallery: React.FC = () => {
               <div className="aspect-square w-full bg-muted/20">
                 <img
                   src={item.imageSrc}
-                  alt={item.alt}
+                  alt=""
                   loading="lazy"
                   onError={(e) => handleImgError(e, filename)}
                   className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"

@@ -29,7 +29,7 @@ const GuaranteeSection = ({ checkoutUrl }: GuaranteeSectionProps) => {
                 <h2 className="text-2xl md:text-3xl font-bold mb-2 text-chocolate">
                   {t('guaranteeTitle')}
                 </h2>
-                <p className="text-gold font-semibold mb-4">
+                <p className="text-gold-dark font-semibold mb-4">
                   {t('guaranteeSubtitle')}
                 </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
