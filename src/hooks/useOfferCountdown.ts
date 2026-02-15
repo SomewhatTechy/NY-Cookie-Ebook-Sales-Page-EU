@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const STORAGE_KEY = "offer_end_at_ms";
 // Keep this aligned with the primary offer timer across the page.
-const DEFAULT_DURATION_SEC = 30 * 60; // 00:30:00
+const DEFAULT_DURATION_SEC = 12 * 60 * 60; // 12:00:00
 
 type Countdown = { 
   hours: number; 
