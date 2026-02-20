@@ -21,13 +21,21 @@ const FloatingCTA = ({ checkoutUrl }: FloatingCTAProps) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const goCheckout = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (typeof (window as any).trackInitiateCheckout === 'function') {
+      (window as any).trackInitiateCheckout(checkoutUrl);
+    } else {
+      window.location.assign(checkoutUrl);
+    }
+  };
+
   if (!isVisible) return null;
 
   return (
     <a
       href={checkoutUrl}
-      target="_blank"
-      rel="noopener noreferrer"
+      onClick={goCheckout}
       className="fixed bottom-5 right-5 z-50 flex items-center gap-2 px-5 py-3 rounded-full font-semibold premium-pill animate-fade-in hover:scale-105 active:scale-95 transition-transform"
       style={{
         background: 'var(--gradient-cta)',

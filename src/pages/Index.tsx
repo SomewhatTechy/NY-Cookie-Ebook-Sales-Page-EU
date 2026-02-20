@@ -1,6 +1,5 @@
 import { lazy, Suspense } from 'react';
 import { LanguageProvider, useLanguage } from '@/contexts/LanguageContext';
-import { useOfferCountdown } from '@/hooks/useOfferCountdown';
 import LanguageToggle from '@/components/LanguageToggle';
 import StickyUrgencyBar from '@/components/StickyUrgencyBar';
 import FloatingCTA from '@/components/FloatingCTA';
@@ -22,22 +21,13 @@ const Footer = lazy(() => import('@/components/Footer'));
 
 type LangKey = 'fr' | 'de' | 'it' | 'nl' | 'pl';
 
-// Checkout URLs: Launch price ($6.97) - active during countdown
-const CHECKOUT_URLS_LAUNCH: Record<LangKey, string> = {
+// Checkout URLs: Single price ($6.97) for all visitors
+const CHECKOUT_URLS: Record<LangKey, string> = {
   fr: 'https://pay.hotmart.com/L104188666N?off=pfucgmvq&checkoutMode=10',
   de: 'https://pay.hotmart.com/I104188883L?off=7x40hb7m&checkoutMode=10',
   it: 'https://pay.hotmart.com/I104189077B?off=15ln9ygm&checkoutMode=10',
   nl: 'https://pay.hotmart.com/H104188739T?off=hu2ofnyo&checkoutMode=10',
   pl: 'https://pay.hotmart.com/V104189240T?off=7ku8bias&checkoutMode=10',
-};
-
-// Checkout URLs: Regular price ($27.00) - after timer expires
-const CHECKOUT_URLS_REGULAR: Record<LangKey, string> = {
-  fr: 'https://pay.hotmart.com/L104188666N?off=ga1zs0r5&checkoutMode=10',
-  de: 'https://pay.hotmart.com/I104188883L?off=uqrlokpw&checkoutMode=10',
-  it: 'https://pay.hotmart.com/I104189077B?off=3uo1siei&checkoutMode=10',
-  nl: 'https://pay.hotmart.com/H104188739T?off=1vmllrcy&checkoutMode=10',
-  pl: 'https://pay.hotmart.com/V104189240T?off=iqxp0sbx&checkoutMode=10',
 };
 
 function normalizeLanguageToKey(language: unknown): LangKey {
@@ -51,19 +41,13 @@ function normalizeLanguageToKey(language: unknown): LangKey {
 
 const PageContent = () => {
   const { language } = useLanguage();
-  const { isExpired } = useOfferCountdown();
 
   const langKey = normalizeLanguageToKey(language);
-  
-  // Switch checkout URL based on timer state
-  const checkoutUrl = isExpired 
-    ? CHECKOUT_URLS_REGULAR[langKey] 
-    : CHECKOUT_URLS_LAUNCH[langKey];
+  const checkoutUrl = CHECKOUT_URLS[langKey];
 
   return (
     <div className="min-h-screen premium-page text-foreground">
-      {/* Hide sticky urgency bar when offer expired */}
-      {!isExpired && <StickyUrgencyBar checkoutUrl={checkoutUrl} />}
+      <StickyUrgencyBar checkoutUrl={checkoutUrl} />
       <LanguageToggle />
       <FloatingCTA checkoutUrl={checkoutUrl} />
 

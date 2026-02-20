@@ -10,8 +10,7 @@ interface StickyUrgencyBarProps {
 const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
   const { t } = useLanguage();
 
-  const durationSec = 30 * 60;
-  const timeLeft = useOfferCountdown(durationSec);
+  const timeLeft = useOfferCountdown();
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -24,17 +23,11 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
     return {
       stickyCtaText: get("stickyCtaText", "Get my copy"),
       offerEndsIn: get("offerEndsIn", "Offer ends in"),
-      priceIncreasesTo: get("priceIncreasesTo", "Price goes to $27 in"),
+      priceIncreasesTo: get("priceIncreasesTo", "Special offer ends in"),
     };
   }, [t]);
 
   useEffect(() => {
-    // Don't show scroll behavior if offer is expired
-    if (timeLeft.isExpired) {
-      setIsVisible(false);
-      return;
-    }
-
     let lastScrollY = window.scrollY;
     const heroHeight = window.innerHeight * 0.8;
 
@@ -56,12 +49,7 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [timeLeft.isExpired]);
-
-  // Don't render at all if expired
-  if (timeLeft.isExpired) {
-    return null;
-  }
+  }, []);
 
   const hh = String(timeLeft.hours).padStart(2, "0");
   const mm = String(timeLeft.minutes).padStart(2, "0");
@@ -69,7 +57,11 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
 
   const goCheckout = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    window.location.assign(checkoutUrl);
+    if (typeof (window as any).trackInitiateCheckout === 'function') {
+      (window as any).trackInitiateCheckout(checkoutUrl);
+    } else {
+      window.location.assign(checkoutUrl);
+    }
   };
 
   return (

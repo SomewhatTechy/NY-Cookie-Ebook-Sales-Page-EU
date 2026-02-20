@@ -15,11 +15,11 @@ const translations = {
     
     // Sticky Bar
     stickyCtaText: "Je veux ma copie",
-    priceIncreasesTo: "Le prix passe à $27 dans",
+    priceIncreasesTo: "L'offre spéciale se termine dans",
     
     // Hero
     heroTitle: "Faites des Cookies NY et Lancez Votre Business Maison en 7 Jours",
-    heroSubtitle: "Lancez un business qui peut générer $200-$500/semaine avec 27 recettes virales, un plan de vente prouvé et seulement $30 d'ingrédients pour commencer",
+    heroSubtitle: "Commencez à vendre des cookies style New York premium depuis chez vous avec 27 recettes testées, un plan de vente et seulement $30 d'ingrédients",
     
     // Effort Minimizers (Hormozi)
     effortMinimizer1: "Seulement $30 pour commencer",
@@ -39,7 +39,7 @@ const translations = {
     painQ2: "Vous perdez du temps et des ingrédients avec des recettes internet qui ne marchent jamais?",
     painQ3: "Vendre vous fait peur parce que vous avez l'impression de devoir insister pour que les gens achètent?",
     painQ4: "Vous voulez des recettes qui marchent À CHAQUE FOIS et que les gens veulent vraiment acheter?",
-    painQ5: "Vous sentez que vous pourriez gagner de l'argent de chez vous, mais vous ne savez pas par où commencer?",
+    painQ5: "Vous sentez que vous pourriez lancer quelque chose depuis chez vous, mais vous ne savez pas par où commencer?",
     painQ6: "Vous aimeriez pâtisser et vendre un produit original avec un look premium?",
     painBridge: "Alors cet EBook est fait pour vous.",
 
@@ -60,7 +60,7 @@ const translations = {
     // What You Get
     wygTag: "TOUT CE QUI EST INCLUS",
     wygTitle: "Ce Que Vous Recevrez Aujourd'hui (Et Pourrez Utiliser Immédiatement)",
-    wygSubtitle: "Recettes + méthode + vente maison: un système complet pour pâtisser et commencer à gagner de l'argent.",
+    wygSubtitle: "Recettes + méthode + vente maison: un système complet pour pâtisser et commencer à vendre depuis chez vous.",
     wyg1Title: "27 Recettes NY (Testées et Vendables)",
     wyg1Desc: "Cookies épais, moelleux à l'intérieur avec des garnitures irrésistibles - ceux que les gens achètent sans réfléchir.",
     wyg2Title: "La Méthode NY Pas à Pas",
@@ -130,13 +130,13 @@ const translations = {
     priceNote: "Paiement unique - Accès instantané",
     priceDropReason: "Prix de lancement actif aujourd'hui: se termine après 7 achats.",
     priceDropTitle: "Offre Spéciale Limitée",
-    priceDropSubtitle: "Prix de lancement actif - quand le compteur atteint zéro, le prix passe à $27",
+    priceDropSubtitle: "Prix de lancement actif - obtenez votre copie avant la fin du temps",
     priceDropCta: "Je veux ma copie maintenant",
-    
-    // Price Drop - Expired State
-    priceDropTitleExpired: "L'Offre de Lancement Est Terminée",
-    priceDropSubtitleExpired: "Le prix de lancement n'est plus disponible, mais vous pouvez toujours obtenir le système complet.",
-    offerExpiredMessage: "Le prix de lancement est terminé",
+
+    // Price Drop - Expired State (kept for compatibility)
+    priceDropTitleExpired: "Offre Spéciale Limitée",
+    priceDropSubtitleExpired: "Obtenez votre copie au prix de lancement avant qu'il ne soit trop tard.",
+    offerExpiredMessage: "Offre limitée dans le temps",
     
     // Pricing (legacy keys)
     pricingTitle: "Offre Spéciale Limitée",
@@ -162,16 +162,16 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: "Avis d'Élèves de Plusieurs Pays (traduites)",
-    testimonialsSubtitle: "Des femmes comme vous qui pâtissent et gagnent de l'argent - peu importe le pays",
-    testimonial1: "J'ai fait ma première vente de $45 en seulement 3 jours! Les recettes sont claires et le plan de vente m'a donné la confiance dont j'avais besoin. J'ai fait $380 le premier mois.",
-    testimonial2: "Je n'aurais jamais pensé pouvoir vendre mes cookies. Maintenant je gagne $200-$300 chaque week-end et mes enfants sont fiers de leur maman entrepreneuse.",
-    testimonial3: "J'ai récupéré les $6.97 de l'ebook sur ma première vente de 6 cookies. Ce mois-ci j'ai facturé $520. La méthode de cuisson est de l'or pur.",
-    testimonial4: "J'ai commencé avec $25 d'ingrédients et zéro expérience. Maintenant mes cookies sont les plus demandés de ma zone et je facture $800+ par mois.",
+    testimonialsSubtitle: "Des femmes comme vous qui ont commencé à pâtisser et ne se sont jamais arrêtées",
+    testimonial1: "J'ai fait ma première vente en seulement 3 jours! Les recettes sont claires et le plan de vente m'a donné la confiance dont j'avais besoin. J'ai déjà des clientes qui repassent commande.",
+    testimonial2: "Je n'aurais jamais pensé pouvoir vendre mes cookies. Maintenant je reçois des commandes chaque week-end et mes enfants sont fiers de leur maman entrepreneuse.",
+    testimonial3: "J'ai récupéré le coût de l'ebook dès mon premier lot. La méthode de cuisson est de l'or pur.",
+    testimonial4: "J'ai commencé avec $25 d'ingrédients et zéro expérience. Maintenant mes cookies sont les plus demandés de ma zone.",
     testimonial5: "Ces recettes sont incroyables! La texture style NYC était exactement ce que je cherchais. J'ai déjà 12 clients qui commandent chaque semaine.",
-    testimonial6: "J'ai commencé comme hobby en vendant aux voisins. 4 mois plus tard c'est mon revenu principal: $1200/mois en travaillant seulement les week-ends.",
-    testimonial7: "Guide brillant! Le pas à pas a rendu tout facile. Ma première semaine j'ai vendu $180 sans expérience préalable.",
-    testimonial8: "Recettes incroyables et un plan business super clair! Je vends déjà $150-$200 par semaine et j'ai commencé il y a seulement 3 semaines.",
-    testimonial9: "Je me sens enfin confiante pour vendre mes cookies. Le guide des prix m'a aidé à facturer $8 par cookie au lieu de $3. J'ai triplé mes profits!",
+    testimonial6: "J'ai commencé comme hobby en vendant aux voisins. 4 mois plus tard c'est devenu mon activité régulière du week-end.",
+    testimonial7: "Guide brillant! Le pas à pas a rendu tout facile. Dès la première semaine j'avais des commandes sans expérience préalable.",
+    testimonial8: "Recettes incroyables et un plan business super clair! Je reçois déjà des commandes régulières et j'ai commencé il y a seulement 3 semaines.",
+    testimonial9: "Je me sens enfin confiante pour vendre mes cookies. Le guide des prix m'a aidée à facturer leur vraie valeur au lieu de brader mon travail.",
 
     // Country names
     countryFrance: "France",
@@ -250,7 +250,7 @@ const translations = {
     // Final CTA
     finalCtaTitle: "Votre Business de Cookies Commence MAINTENANT",
     finalCtaSubtitle: "Ne ratez pas cette chance de transformer votre passion en revenus réels",
-    finalBenefit1: "27 recettes testées et rentables",
+    finalBenefit1: "27 recettes testées et vendables",
     finalBenefit2: "Plan business complet pas à pas",
     finalBenefit3: "8 bonus exclusifs",
     finalBenefit4: "Accès instantané pour toujours",
@@ -273,11 +273,11 @@ const translations = {
     
     // Sticky Bar
     stickyCtaText: "Ich will mein Exemplar",
-    priceIncreasesTo: "Der Preis steigt auf $27 in",
+    priceIncreasesTo: "Sonderangebot endet in",
     
     // Hero
     heroTitle: "Backe NY-Style Cookies und Starte Dein Home Business in 7 Tagen",
-    heroSubtitle: "Starte ein Business, das $200-$500/Woche generieren kann, mit 27 viralen Rezepten, einem bewährten Verkaufsplan und nur $30 an Zutaten zum Starten",
+    heroSubtitle: "Fang an, Premium New York-Style Cookies von zu Hause zu verkaufen mit 27 getesteten Rezepten, einem bewährten Verkaufsplan und nur $30 an Zutaten",
     
     // Effort Minimizers (Hormozi)
     effortMinimizer1: "Nur $30 zum Starten",
@@ -297,7 +297,7 @@ const translations = {
     painQ2: "Du verschwendest Zeit und Zutaten mit Internet-Rezepten, die nie funktionieren?",
     painQ3: "Hast du Angst vor dem Verkaufen, weil es sich anfühlt, als müsstest du die Leute zum Kaufen drängen?",
     painQ4: "Du willst Rezepte, die JEDES MAL funktionieren und die die Leute wirklich kaufen wollen?",
-    painQ5: "Du fühlst, dass du von zu Hause aus Geld verdienen könntest, weißt aber nicht wo du anfangen sollst?",
+    painQ5: "Du fühlst, dass du von zu Hause aus etwas starten könntest, weißt aber nicht wo du anfangen sollst?",
     painQ6: "Du würdest gerne etwas Originelles backen und verkaufen, das Premium aussieht?",
     painBridge: "Dann ist dieses EBook für dich gemacht.",
 
@@ -318,7 +318,7 @@ const translations = {
     // What You Get
     wygTag: "ALLES WAS ENTHALTEN IST",
     wygTitle: "Was Du Heute Bekommst (Und Sofort Nutzen Kannst)",
-    wygSubtitle: "Rezepte + Methode + Verkauf von zu Hause: ein komplettes System zum Backen und Geld verdienen.",
+    wygSubtitle: "Rezepte + Methode + Verkauf von zu Hause: ein komplettes System zum Backen und Verkaufen von zu Hause.",
     wyg1Title: "27 NY-Style Rezepte (Getestet und Verkaufbar)",
     wyg1Desc: "Dicke Cookies, weich innen mit unwiderstehlichen Füllungen - die Art, die Leute ohne Nachdenken kaufen.",
     wyg2Title: "Die NY-Methode Schritt für Schritt",
@@ -388,13 +388,13 @@ const translations = {
     priceNote: "Einmalige Zahlung - Sofortiger Zugang",
     priceDropReason: "Launch-Preis heute aktiv: endet nach 7 Käufen.",
     priceDropTitle: "Zeitlich Begrenztes Sonderangebot",
-    priceDropSubtitle: "Launch-Preis aktiv - wenn der Timer Null erreicht, steigt der Preis auf $27",
+    priceDropSubtitle: "Launch-Preis aktiv - sichere dir dein Exemplar bevor die Zeit abläuft",
     priceDropCta: "Ich will mein Exemplar jetzt",
-    
-    // Price Drop - Expired State
-    priceDropTitleExpired: "Das Launch-Angebot Ist Beendet",
-    priceDropSubtitleExpired: "Der Launch-Rabatt ist nicht mehr verfügbar, aber du kannst immer noch das komplette System bekommen.",
-    offerExpiredMessage: "Der Launch-Preis ist beendet",
+
+    // Price Drop - Expired State (kept for compatibility)
+    priceDropTitleExpired: "Zeitlich Begrenztes Sonderangebot",
+    priceDropSubtitleExpired: "Sichere dir dein Exemplar zum Launch-Preis bevor es zu spät ist.",
+    offerExpiredMessage: "Zeitlich begrenztes Angebot",
     
     // Pricing (legacy keys)
     pricingTitle: "Zeitlich Begrenztes Sonderangebot",
@@ -420,16 +420,16 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: "Schüler-Bewertungen aus Mehreren Ländern (übersetzt)",
-    testimonialsSubtitle: "Frauen wie du, die bereits backen und Geld verdienen - egal in welchem Land",
-    testimonial1: "Ich habe meinen ersten $45-Verkauf in nur 3 Tagen gemacht! Die Rezepte sind klar und der Verkaufsplan gab mir das Vertrauen, das ich brauchte. Ich habe $380 im ersten Monat gemacht.",
-    testimonial2: "Ich hätte nie gedacht, dass ich meine Cookies verkaufen könnte. Jetzt verdiene ich $200-$300 jedes Wochenende und meine Kinder sind stolz auf ihre Unternehmerin-Mama.",
-    testimonial3: "Ich habe die $6.97 für das Ebook bei meinem ersten Verkauf von 6 Cookies wieder reingeholt. Diesen Monat habe ich $520 eingenommen. Die Backmethode ist reines Gold.",
-    testimonial4: "Ich habe mit $25 an Zutaten und null Erfahrung angefangen. Jetzt sind meine Cookies die meistgefragten in meiner Gegend und ich mache $800+ monatlich.",
+    testimonialsSubtitle: "Frauen wie du, die angefangen haben zu backen und nicht mehr aufgehört haben",
+    testimonial1: "Ich habe meinen ersten Verkauf in nur 3 Tagen gemacht! Die Rezepte sind klar und der Verkaufsplan gab mir das Vertrauen, das ich brauchte. Ich habe schon Stammkundinnen.",
+    testimonial2: "Ich hätte nie gedacht, dass ich meine Cookies verkaufen könnte. Jetzt bekomme ich jedes Wochenende Bestellungen und meine Kinder sind stolz auf ihre Unternehmerin-Mama.",
+    testimonial3: "Ich habe die Kosten für das Ebook schon mit meiner ersten Charge wieder reingeholt. Die Backmethode ist reines Gold.",
+    testimonial4: "Ich habe mit $25 an Zutaten und null Erfahrung angefangen. Jetzt sind meine Cookies die meistgefragten in meiner Gegend.",
     testimonial5: "Diese Rezepte sind unglaublich! Die NYC-Textur war genau das, was ich gesucht habe. Ich habe bereits 12 Kunden, die jede Woche bestellen.",
-    testimonial6: "Ich habe als Hobby angefangen und an Nachbarn verkauft. 4 Monate später ist es mein Haupteinkommen: $1200/Monat nur an Wochenenden.",
-    testimonial7: "Brillanter Guide! Die Schritt-für-Schritt-Anleitung machte alles so einfach. In der ersten Woche habe ich $180 verkauft ohne vorherige Erfahrung.",
-    testimonial8: "Unglaubliche Rezepte und ein super klarer Business-Plan! Ich verkaufe bereits $150-$200 wöchentlich und habe erst vor 3 Wochen angefangen.",
-    testimonial9: "Endlich fühle ich mich sicher beim Verkaufen meiner Cookies. Der Preisguide hat mir geholfen, $8 pro Cookie zu berechnen statt $3. Ich habe meine Gewinne verdreifacht!",
+    testimonial6: "Ich habe als Hobby angefangen und an Nachbarn verkauft. 4 Monate später ist es meine feste Wochenend-Beschäftigung geworden.",
+    testimonial7: "Brillanter Guide! Die Schritt-für-Schritt-Anleitung machte alles so einfach. In der ersten Woche hatte ich schon Bestellungen ohne vorherige Erfahrung.",
+    testimonial8: "Unglaubliche Rezepte und ein super klarer Business-Plan! Ich bekomme schon regelmäßige Bestellungen und habe erst vor 3 Wochen angefangen.",
+    testimonial9: "Endlich fühle ich mich sicher beim Verkaufen meiner Cookies. Der Preisguide hat mir geholfen, den richtigen Preis zu verlangen statt meine Arbeit zu verschenken.",
 
     // Country names
     countryFrance: "Frankreich",
@@ -508,7 +508,7 @@ const translations = {
     // Final CTA
     finalCtaTitle: "Dein Cookie-Business Startet JETZT",
     finalCtaSubtitle: "Verpasse nicht diese Chance, deine Leidenschaft in echtes Einkommen zu verwandeln",
-    finalBenefit1: "27 getestete, profitable Rezepte",
+    finalBenefit1: "27 getestete, verkaufbare Rezepte",
     finalBenefit2: "Kompletter Schritt-für-Schritt Businessplan",
     finalBenefit3: "8 exklusive Bonus-Geschenke",
     finalBenefit4: "Sofortiger Zugang für immer",
@@ -531,11 +531,11 @@ const translations = {
     
     // Sticky Bar
     stickyCtaText: "Voglio la mia copia",
-    priceIncreasesTo: "Il prezzo sale a $27 tra",
+    priceIncreasesTo: "L'offerta speciale termina tra",
     
     // Hero
     heroTitle: "Prepara Cookies NY e Avvia un Business da Casa in 7 Giorni",
-    heroSubtitle: "Avvia un business che può generare $200-$500/settimana con 27 ricette virali, un piano vendite provato e solo $30 di ingredienti per iniziare",
+    heroSubtitle: "Inizia a vendere cookies premium stile New York da casa con 27 ricette testate, un piano vendite e solo $30 di ingredienti",
     
     // Effort Minimizers (Hormozi)
     effortMinimizer1: "Solo $30 per iniziare",
@@ -555,7 +555,7 @@ const translations = {
     painQ2: "Perdi tempo e ingredienti con ricette da internet che non funzionano mai?",
     painQ3: "Vendere ti spaventa perché sembra di dover insistere perché la gente compri?",
     painQ4: "Vuoi ricette che funzionano SEMPRE e che la gente vuole davvero comprare?",
-    painQ5: "Senti che potresti guadagnare da casa ma non sai da dove iniziare?",
+    painQ5: "Senti che potresti avviare qualcosa da casa ma non sai da dove iniziare?",
     painQ6: "Ti piacerebbe cucinare e vendere qualcosa di originale con un look premium?",
     painBridge: "Allora questo EBook è fatto per te.",
 
@@ -576,7 +576,7 @@ const translations = {
     // What You Get
     wygTag: "TUTTO CIÒ CHE È INCLUSO",
     wygTitle: "Cosa Riceverai Oggi (E Potrai Usare Subito)",
-    wygSubtitle: "Ricette + metodo + vendita da casa: un sistema completo per cucinare e iniziare a guadagnare.",
+    wygSubtitle: "Ricette + metodo + vendita da casa: un sistema completo per cucinare e iniziare a vendere da casa.",
     wyg1Title: "27 Ricette Stile NY (Testate e Vendibili)",
     wyg1Desc: "Cookies spessi, morbidi dentro con ripieni irresistibili - quelli che la gente compra senza pensarci.",
     wyg2Title: "Il Metodo NY Passo Dopo Passo",
@@ -646,13 +646,13 @@ const translations = {
     priceNote: "Pagamento unico - Accesso istantaneo",
     priceDropReason: "Prezzo di lancio attivo oggi: si chiude dopo 7 acquisti.",
     priceDropTitle: "Offerta Speciale a Tempo Limitato",
-    priceDropSubtitle: "Prezzo di lancio attivo - quando il timer arriva a zero, il prezzo sale a $27",
+    priceDropSubtitle: "Prezzo di lancio attivo - ottieni la tua copia prima che il tempo scada",
     priceDropCta: "Voglio la mia copia adesso",
-    
-    // Price Drop - Expired State
-    priceDropTitleExpired: "L'Offerta di Lancio È Terminata",
-    priceDropSubtitleExpired: "Lo sconto di lancio non è più disponibile, ma puoi ancora ottenere il sistema completo.",
-    offerExpiredMessage: "Il prezzo di lancio è terminato",
+
+    // Price Drop - Expired State (kept for compatibility)
+    priceDropTitleExpired: "Offerta Speciale a Tempo Limitato",
+    priceDropSubtitleExpired: "Ottieni la tua copia al prezzo di lancio prima che sia troppo tardi.",
+    offerExpiredMessage: "Offerta a tempo limitato",
     
     // Pricing (legacy keys)
     pricingTitle: "Offerta Speciale a Tempo Limitato",
@@ -678,16 +678,16 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: "Recensioni di Studentesse da Diversi Paesi (tradotte)",
-    testimonialsSubtitle: "Donne come te che già cucinano e guadagnano - indipendentemente dal paese",
-    testimonial1: "Ho fatto la mia prima vendita da $45 in soli 3 giorni! Le ricette sono chiare e il piano vendite mi ha dato la fiducia di cui avevo bisogno. Ho fatto $380 nel primo mese.",
-    testimonial2: "Non avrei mai pensato di poter vendere i miei cookies. Ora guadagno $200-$300 ogni fine settimana e i miei figli sono orgogliosi della loro mamma imprenditrice.",
-    testimonial3: "Ho recuperato i $6.97 dell'ebook alla prima vendita di 6 cookies. Questo mese ho fatturato $520. Il metodo di cottura è oro puro.",
-    testimonial4: "Ho iniziato con $25 di ingredienti e zero esperienza. Ora i miei cookies sono i più richiesti della mia zona e fatturo $800+ mensili.",
+    testimonialsSubtitle: "Donne come te che hanno iniziato a cucinare e non si sono più fermate",
+    testimonial1: "Ho fatto la mia prima vendita in soli 3 giorni! Le ricette sono chiare e il piano vendite mi ha dato la fiducia di cui avevo bisogno. Ho già clienti che riordinano.",
+    testimonial2: "Non avrei mai pensato di poter vendere i miei cookies. Ora ricevo ordini ogni fine settimana e i miei figli sono orgogliosi della loro mamma imprenditrice.",
+    testimonial3: "Ho recuperato il costo dell'ebook con il mio primo lotto. Il metodo di cottura è oro puro.",
+    testimonial4: "Ho iniziato con $25 di ingredienti e zero esperienza. Ora i miei cookies sono i più richiesti della mia zona.",
     testimonial5: "Queste ricette sono incredibili! La consistenza stile NYC era esattamente quello che cercavo. Ho già 12 clienti che ordinano ogni settimana.",
-    testimonial6: "Ho iniziato come hobby vendendo ai vicini. 4 mesi dopo è il mio reddito principale: $1.200/mese lavorando solo nei fine settimana.",
-    testimonial7: "Guida brillante! Il passo dopo passo ha reso tutto facile. La prima settimana ho venduto $180 senza esperienza precedente.",
-    testimonial8: "Ricette incredibili e un piano business super chiaro! Sto già vendendo $150-$200 a settimana e ho iniziato solo 3 settimane fa.",
-    testimonial9: "Finalmente mi sento sicura di vendere i miei cookies. La guida ai prezzi mi ha aiutato a chiedere $8 per cookie invece di $3. Ho triplicato i miei profitti!",
+    testimonial6: "Ho iniziato come hobby vendendo ai vicini. 4 mesi dopo è diventata la mia attività fissa del fine settimana.",
+    testimonial7: "Guida brillante! Il passo dopo passo ha reso tutto facile. La prima settimana avevo già ordini senza esperienza precedente.",
+    testimonial8: "Ricette incredibili e un piano business super chiaro! Ricevo già ordini regolari e ho iniziato solo 3 settimane fa.",
+    testimonial9: "Finalmente mi sento sicura di vendere i miei cookies. La guida ai prezzi mi ha aiutato a farmi pagare il giusto invece di svalutare il mio lavoro.",
 
     // Country names
     countryFrance: "Francia",
@@ -766,7 +766,7 @@ const translations = {
     // Final CTA
     finalCtaTitle: "Il Tuo Business di Cookies Inizia ORA",
     finalCtaSubtitle: "Non perdere questa occasione di trasformare la tua passione in reddito reale",
-    finalBenefit1: "27 ricette testate e profittevoli",
+    finalBenefit1: "27 ricette testate e vendibili",
     finalBenefit2: "Piano business completo passo dopo passo",
     finalBenefit3: "8 bonus esclusivi",
     finalBenefit4: "Accesso istantaneo per sempre",
@@ -789,11 +789,11 @@ const translations = {
     
     // Sticky Bar
     stickyCtaText: "Ik wil mijn exemplaar",
-    priceIncreasesTo: "De prijs stijgt naar $27 over",
+    priceIncreasesTo: "Speciale aanbieding eindigt over",
     
     // Hero
     heroTitle: "Bak NY-Style Cookies en Start een Thuisbusiness in 7 Dagen",
-    heroSubtitle: "Start een business die $200-$500/week kan genereren met 27 virale recepten, een bewezen verkoopplan en slechts $30 aan ingrediënten om te beginnen",
+    heroSubtitle: "Begin met het verkopen van premium New York-style cookies vanuit huis met 27 geteste recepten, een bewezen verkoopplan en slechts $30 aan ingrediënten",
     
     // Effort Minimizers (Hormozi)
     effortMinimizer1: "Slechts $30 om te starten",
@@ -813,7 +813,7 @@ const translations = {
     painQ2: "Verspil je tijd en ingrediënten aan internetrecepten die nooit werken?",
     painQ3: "Ben je bang om te verkopen omdat het voelt alsof je mensen moet pushen om te kopen?",
     painQ4: "Wil je recepten die ELKE KEER werken en die mensen echt willen kopen?",
-    painQ5: "Voel je dat je geld zou kunnen verdienen vanuit huis, maar weet je niet waar te beginnen?",
+    painQ5: "Voel je dat je iets zou kunnen starten vanuit huis, maar weet je niet waar te beginnen?",
     painQ6: "Zou je graag iets origineels willen bakken en verkopen dat er premium uitziet?",
     painBridge: "Dan is dit EBook voor jou gemaakt.",
 
@@ -834,7 +834,7 @@ const translations = {
     // What You Get
     wygTag: "ALLES WAT INBEGREPEN IS",
     wygTitle: "Wat Je Vandaag Krijgt (En Direct Kunt Gebruiken)",
-    wygSubtitle: "Recepten + methode + thuisverkoop: een compleet systeem om te bakken en geld te verdienen.",
+    wygSubtitle: "Recepten + methode + thuisverkoop: een compleet systeem om te bakken en te verkopen vanuit huis.",
     wyg1Title: "27 NY-Style Recepten (Getest en Verkoopbaar)",
     wyg1Desc: "Dikke cookies, zacht van binnen met onweerstaanbare vullingen - het soort dat mensen kopen zonder na te denken.",
     wyg2Title: "De NY-Methode Stap voor Stap",
@@ -904,13 +904,13 @@ const translations = {
     priceNote: "Eenmalige betaling - Directe toegang",
     priceDropReason: "Lanceerprijs vandaag actief: sluit na 7 aankopen.",
     priceDropTitle: "Tijdelijke Speciale Aanbieding",
-    priceDropSubtitle: "Lanceerprijs actief - wanneer de timer op nul staat, stijgt de prijs naar $27",
+    priceDropSubtitle: "Lanceerprijs actief - pak je exemplaar voordat de tijd op is",
     priceDropCta: "Ik wil mijn exemplaar nu",
-    
-    // Price Drop - Expired State
-    priceDropTitleExpired: "De Lanceeraanbieding Is Afgelopen",
-    priceDropSubtitleExpired: "De lanceerkorting is niet meer beschikbaar, maar je kunt nog steeds het complete systeem krijgen.",
-    offerExpiredMessage: "De lanceerprijs is afgelopen",
+
+    // Price Drop - Expired State (kept for compatibility)
+    priceDropTitleExpired: "Tijdelijke Speciale Aanbieding",
+    priceDropSubtitleExpired: "Pak je exemplaar tegen de lanceerprijs voordat het te laat is.",
+    offerExpiredMessage: "Tijdelijke aanbieding",
     
     // Pricing (legacy keys)
     pricingTitle: "Tijdelijke Speciale Aanbieding",
@@ -936,16 +936,16 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: "Reviews van Studenten uit Meerdere Landen (vertaald)",
-    testimonialsSubtitle: "Vrouwen zoals jij die al bakken en geld verdienen - ongeacht het land",
-    testimonial1: "Ik maakte mijn eerste $45 sale in slechts 3 dagen! De recepten zijn duidelijk en het verkoopplan gaf me het vertrouwen dat ik nodig had. Ik heb $380 gemaakt in mijn eerste maand.",
-    testimonial2: "Ik had nooit gedacht dat ik mijn cookies kon verkopen. Nu verdien ik $200-$300 elk weekend en mijn kinderen zijn trots op hun ondernemer-mama.",
-    testimonial3: "Ik verdiende de $6.97 van het ebook terug bij mijn eerste sale van 6 cookies. Deze maand heb ik $520 gefactureerd. De bakmethode is puur goud.",
-    testimonial4: "Ik begon met $25 aan ingrediënten en nul ervaring. Nu zijn mijn cookies de meest gevraagde in mijn gebied en ik maak $800+ per maand.",
+    testimonialsSubtitle: "Vrouwen zoals jij die begonnen met bakken en nooit meer zijn gestopt",
+    testimonial1: "Ik maakte mijn eerste sale in slechts 3 dagen! De recepten zijn duidelijk en het verkoopplan gaf me het vertrouwen dat ik nodig had. Ik heb al vaste klanten.",
+    testimonial2: "Ik had nooit gedacht dat ik mijn cookies kon verkopen. Nu krijg ik elk weekend bestellingen en mijn kinderen zijn trots op hun ondernemer-mama.",
+    testimonial3: "Ik verdiende de kosten van het ebook terug met mijn eerste batch. De bakmethode is puur goud.",
+    testimonial4: "Ik begon met $25 aan ingrediënten en nul ervaring. Nu zijn mijn cookies de meest gevraagde in mijn gebied.",
     testimonial5: "Deze recepten zijn ongelooflijk! De NYC textuur was precies wat ik zocht. Ik heb al 12 klanten die elke week bestellen.",
-    testimonial6: "Ik begon als hobby met verkopen aan buren. 4 maanden later is het mijn hoofdinkomen: $1.200/maand alleen in weekenden werkend.",
-    testimonial7: "Briljante gids! De stap-voor-stap maakte het zo makkelijk. Mijn eerste week verkocht ik $180 zonder eerdere ervaring.",
-    testimonial8: "Ongelooflijke recepten en een super duidelijk businessplan! Ik verkoop al $150-$200 per week en ik ben pas 3 weken geleden begonnen.",
-    testimonial9: "Eindelijk voel ik me zelfverzekerd om mijn cookies te verkopen. De prijsgids hielp me $8 per cookie te vragen in plaats van $3. Ik heb mijn winsten verdrievoudigd!",
+    testimonial6: "Ik begon als hobby met verkopen aan buren. 4 maanden later is het mijn vaste weekendactiviteit geworden.",
+    testimonial7: "Briljante gids! De stap-voor-stap maakte het zo makkelijk. In de eerste week had ik al bestellingen zonder eerdere ervaring.",
+    testimonial8: "Ongelooflijke recepten en een super duidelijk businessplan! Ik krijg al regelmatige bestellingen en ik ben pas 3 weken geleden begonnen.",
+    testimonial9: "Eindelijk voel ik me zelfverzekerd om mijn cookies te verkopen. De prijsgids hielp me de juiste prijs te vragen in plaats van mijn werk te onderwaarderen.",
 
     // Country names
     countryFrance: "Frankrijk",
@@ -1024,7 +1024,7 @@ const translations = {
     // Final CTA
     finalCtaTitle: "Je Cookie-Business Start NU",
     finalCtaSubtitle: "Mis deze kans niet om je passie om te zetten in echt inkomen",
-    finalBenefit1: "27 geteste, winstgevende recepten",
+    finalBenefit1: "27 geteste, verkoopbare recepten",
     finalBenefit2: "Compleet stap-voor-stap businessplan",
     finalBenefit3: "8 exclusieve bonuscadeaus",
     finalBenefit4: "Directe toegang voor altijd",
@@ -1047,11 +1047,11 @@ const translations = {
     
     // Sticky Bar
     stickyCtaText: "Chcę moją kopię",
-    priceIncreasesTo: "Cena wzrasta do $27 za",
+    priceIncreasesTo: "Oferta specjalna kończy się za",
     
     // Hero
     heroTitle: "Piecz Ciasteczka w Stylu NY i Rozpocznij Biznes z Domu w 7 Dni",
-    heroSubtitle: "Uruchom biznes, który może generować $200-$500/tydzień z 27 wiralnymi przepisami, sprawdzonym planem sprzedaży i tylko $30 na składniki na start",
+    heroSubtitle: "Zacznij sprzedawać premium ciasteczka w stylu New York z domu z 27 przetestowanymi przepisami, sprawdzonym planem sprzedaży i tylko $30 na składniki",
     
     // Effort Minimizers (Hormozi)
     effortMinimizer1: "Tylko $30 na start",
@@ -1071,7 +1071,7 @@ const translations = {
     painQ2: "Tracisz czas i składniki na internetowe przepisy, które nigdy nie działają?",
     painQ3: "Boisz się sprzedawać, bo wydaje ci się, że musisz naciskać na ludzi, żeby kupili?",
     painQ4: "Chcesz przepisy, które działają ZA KAŻDYM RAZEM i które ludzie naprawdę chcą kupić?",
-    painQ5: "Czujesz, że mogłabyś zarabiać z domu, ale nie wiesz od czego zacząć?",
+    painQ5: "Czujesz, że mogłabyś coś rozpocząć z domu, ale nie wiesz od czego zacząć?",
     painQ6: "Chciałabyś piec i sprzedawać coś oryginalnego, co wygląda premium?",
     painBridge: "Więc ten EBook jest dla Ciebie.",
 
@@ -1092,7 +1092,7 @@ const translations = {
     // What You Get
     wygTag: "WSZYSTKO CO ZAWIERA",
     wygTitle: "Co Otrzymasz Dzisiaj (I Możesz Użyć Od Razu)",
-    wygSubtitle: "Przepisy + metoda + sprzedaż z domu: kompletny system do pieczenia i zarabiania.",
+    wygSubtitle: "Przepisy + metoda + sprzedaż z domu: kompletny system do pieczenia i sprzedawania z domu.",
     wyg1Title: "27 Przepisów w Stylu NY (Przetestowane i Sprzedawalne)",
     wyg1Desc: "Grube ciasteczka, miękkie w środku z nieodpartymi nadzieniami - takie, które ludzie kupują bez namysłu.",
     wyg2Title: "Metoda NY Krok po Kroku",
@@ -1162,13 +1162,13 @@ const translations = {
     priceNote: "Jednorazowa płatność - Natychmiastowy dostęp",
     priceDropReason: "Cena startowa aktywna dzisiaj: zamyka się po 7 zakupach.",
     priceDropTitle: "Specjalna Oferta Czasowa",
-    priceDropSubtitle: "Cena startowa aktywna - gdy timer dojdzie do zera, cena wzrasta do $27",
+    priceDropSubtitle: "Cena startowa aktywna - złap swoją kopię zanim skończy się czas",
     priceDropCta: "Chcę moją kopię teraz",
-    
-    // Price Drop - Expired State
-    priceDropTitleExpired: "Oferta Startowa Się Zakończyła",
-    priceDropSubtitleExpired: "Rabat startowy nie jest już dostępny, ale nadal możesz uzyskać kompletny system.",
-    offerExpiredMessage: "Cena startowa się zakończyła",
+
+    // Price Drop - Expired State (kept for compatibility)
+    priceDropTitleExpired: "Specjalna Oferta Czasowa",
+    priceDropSubtitleExpired: "Złap swoją kopię w cenie startowej zanim będzie za późno.",
+    offerExpiredMessage: "Oferta czasowa",
     
     // Pricing (legacy keys)
     pricingTitle: "Specjalna Oferta Czasowa",
@@ -1194,16 +1194,16 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: "Opinie Studentek z Różnych Krajów (przetłumaczone)",
-    testimonialsSubtitle: "Kobiety takie jak Ty, które już pieką i zarabiają - bez względu na kraj",
-    testimonial1: "Zrobiłam pierwszą sprzedaż za $45 w zaledwie 3 dni! Przepisy są jasne, a plan sprzedaży dał mi pewność, której potrzebowałam. Zrobiłam $380 w pierwszym miesiącu.",
-    testimonial2: "Nigdy nie myślałam, że mogłabym sprzedawać moje ciasteczka. Teraz zarabiam $200-$300 każdy weekend, a moje dzieci są dumne z mamy-przedsiębiorcy.",
-    testimonial3: "Odzyskałam $6.97 za ebook przy pierwszej sprzedaży 6 ciasteczek. W tym miesiącu wystawiłam faktury na $520. Metoda pieczenia to czyste złoto.",
-    testimonial4: "Zaczęłam z $25 na składniki i zerowym doświadczeniem. Teraz moje ciasteczka są najbardziej poszukiwane w mojej okolicy i zarabiam $800+ miesięcznie.",
+    testimonialsSubtitle: "Kobiety takie jak Ty, które zaczęły piec i już nie przestały",
+    testimonial1: "Zrobiłam pierwszą sprzedaż w zaledwie 3 dni! Przepisy są jasne, a plan sprzedaży dał mi pewność, której potrzebowałam. Mam już stałe klientki.",
+    testimonial2: "Nigdy nie myślałam, że mogłabym sprzedawać moje ciasteczka. Teraz dostaję zamówienia w każdy weekend, a moje dzieci są dumne z mamy-przedsiębiorcy.",
+    testimonial3: "Odzyskałam koszt ebooka z pierwszej partii. Metoda pieczenia to czyste złoto.",
+    testimonial4: "Zaczęłam z $25 na składniki i zerowym doświadczeniem. Teraz moje ciasteczka są najbardziej poszukiwane w mojej okolicy.",
     testimonial5: "Te przepisy są niesamowite! Tekstura w stylu NYC to dokładnie to, czego szukałam. Mam już 12 klientów, którzy zamawiają co tydzień.",
-    testimonial6: "Zaczęłam jako hobby sprzedając sąsiadom. 4 miesiące później to mój główny dochód: $1200/miesiąc pracując tylko w weekendy.",
-    testimonial7: "Genialny przewodnik! Krok po kroku sprawił, że wszystko było łatwe. W pierwszym tygodniu sprzedałam za $180 bez wcześniejszego doświadczenia.",
-    testimonial8: "Niesamowite przepisy i super jasny plan biznesowy! Już sprzedaję za $150-$200 tygodniowo, a zaczęłam tylko 3 tygodnie temu.",
-    testimonial9: "W końcu czuję się pewnie sprzedając moje ciasteczka. Przewodnik cenowy pomógł mi naliczać $8 za ciasteczko zamiast $3. Potroiłam swoje zyski!",
+    testimonial6: "Zaczęłam jako hobby sprzedając sąsiadom. 4 miesiące później to moja stała weekendowa działalność.",
+    testimonial7: "Genialny przewodnik! Krok po kroku sprawił, że wszystko było łatwe. W pierwszym tygodniu miałam już zamówienia bez wcześniejszego doświadczenia.",
+    testimonial8: "Niesamowite przepisy i super jasny plan biznesowy! Już dostaję regularne zamówienia, a zaczęłam tylko 3 tygodnie temu.",
+    testimonial9: "W końcu czuję się pewnie sprzedając moje ciasteczka. Przewodnik cenowy pomógł mi naliczać odpowiednią cenę zamiast zaniżać wartość mojej pracy.",
 
     // Country names
     countryFrance: "Francja",
@@ -1282,7 +1282,7 @@ const translations = {
     // Final CTA
     finalCtaTitle: "Twój Biznes z Ciasteczkami Zaczyna Się TERAZ",
     finalCtaSubtitle: "Nie przegap tej szansy, żeby zamienić swoją pasję w prawdziwy dochód",
-    finalBenefit1: "27 przetestowanych, dochodowych przepisów",
+    finalBenefit1: "27 przetestowanych, sprzedawalnych przepisów",
     finalBenefit2: "Kompletny plan biznesowy krok po kroku",
     finalBenefit3: "8 ekskluzywnych prezentów bonusowych",
     finalBenefit4: "Natychmiastowy dostęp na zawsze",

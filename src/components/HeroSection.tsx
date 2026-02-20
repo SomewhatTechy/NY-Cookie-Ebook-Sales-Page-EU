@@ -11,36 +11,39 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   const videoIds: Record<string, string> = {
-    fr: '1160031930',
-    de: '1160035263',
-    it: '1160035539',
-    nl: '1160035991',
-    pl: '1160036542',
+    fr: 'WDSINN3-BtM',
+    de: 'BD_CC_sVREg',
+    it: 'nPV9NbsJijc',
+    nl: 'JzX-J1JMNGc',
+    pl: 'aKSmd_7uAOw',
   };
 
   const currentVideoId = videoIds[language] ?? videoIds.fr;
 
   const videoTitleByLang: Record<string, string> = {
-    fr: 'Vidéo',
-    de: 'Video',
-    it: 'Video',
-    nl: 'Video',
-    pl: 'Wideo',
+    fr: 'Comment Commencer à Vendre des Cookies Style New York Depuis Chez Soi',
+    de: 'New York Style Cookies von Zuhause Verkaufen – So Startest Du Richtig',
+    it: 'Come Iniziare a Vendere Cookie Stile New York da Casa',
+    nl: 'New York-Style Koekjes Verkopen Vanuit Huis – Zo Begin Je',
+    pl: 'Jak Zacząć Sprzedawać Ciasteczka w Stylu Nowojorskim z Domu',
   };
   const videoTitle = videoTitleByLang[language] ?? videoTitleByLang.fr;
 
-  // Build Vimeo URL - use ? or & depending on whether videoId already has query params
-  const separator = currentVideoId.includes('?') ? '&' : '?';
-  const vimeoSrc =
-    `https://player.vimeo.com/video/${currentVideoId}` +
-    `${separator}autoplay=1&muted=1&loop=1&autopause=0&playsinline=1` +
-    `&title=0&byline=0&portrait=0&dnt=1`;
+  // YouTube embed URL — no autoplay (manual play converts better on cold traffic)
+  const youtubeSrc =
+    `https://www.youtube.com/embed/${currentVideoId}` +
+    `?rel=0&modestbranding=1&playsinline=1`;
 
-  const vimeoThumb = `https://vumbnail.com/${currentVideoId}.jpg`;
+  // YouTube thumbnail (maxresdefault for high quality)
+  const youtubeThumb = `https://img.youtube.com/vi/${currentVideoId}/maxresdefault.jpg`;
 
   const goCheckout = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    window.location.assign(checkoutUrl);
+    if (typeof (window as any).trackInitiateCheckout === 'function') {
+      (window as any).trackInitiateCheckout(checkoutUrl);
+    } else {
+      window.location.assign(checkoutUrl);
+    }
   };
 
   // Effort minimizers data with icons
@@ -106,10 +109,10 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
                   <iframe
                     key={currentVideoId}
                     className="w-full h-full"
-                    src={vimeoSrc}
+                    src={youtubeSrc}
                     title={videoTitle}
                     referrerPolicy="strict-origin-when-cross-origin"
-                    allow="autoplay; fullscreen; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
                 ) : (
@@ -120,7 +123,7 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
                     aria-label={`${t('watchVideoPrompt')} - ${videoTitle}`}
                   >
                     <img
-                      src={vimeoThumb}
+                      src={youtubeThumb}
                       alt={videoTitle}
                       className="w-full h-full object-cover"
                       loading="eager"

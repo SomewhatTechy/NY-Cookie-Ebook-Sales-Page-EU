@@ -1,18 +1,19 @@
 <!doctype html>
-<html lang="es">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aprende a Crear Postres Caseros y Emprende | Ebook Digital</title>
+    <title>Cookies Style NY - Lancez Votre Business Maison | Ebook Digital</title>
 
     <!-- CRITICAL: preconnects first so browser opens connections ASAP -->
-    <link rel="preconnect" href="https://vumbnail.com" crossorigin />
+    <link rel="preconnect" href="https://img.youtube.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
     <link rel="dns-prefetch" href="https://connect.facebook.net" />
 
-    <!-- Preload LCP image (Vimeo thumbnail) to eliminate render delay -->
-    <link rel="preload" as="image" href="https://vumbnail.com/1160031930.jpg" fetchpriority="high" />
+    <!-- Preload LCP image (YouTube thumbnail) to eliminate render delay -->
+    <link rel="preload" as="image" href="https://img.youtube.com/vi/WDSINN3-BtM/maxresdefault.jpg" fetchpriority="high" />
 
     <!-- Preload hero mockup – responsive: 384/512/768/1024 -->
     <link
@@ -45,30 +46,33 @@
     <!-- SEO -->
     <meta
       name="description"
-      content="Descarga el ebook con 50+ recetas exclusivas de postres caseros. Aprende paso a paso y comienza tu negocio rentable desde casa. Acceso instantáneo."
+      content="Ebook avec 27 recettes virales de cookies style NY. Apprenez pas a pas et lancez votre business patisserie maison. Acces instantane."
     />
-    <meta name="author" content="Aprende en Casa" />
+    <meta name="author" content="NY Cookie Guide" />
     <meta
       name="keywords"
-      content="ebook postres, recetas caseras, negocio de postres, emprendimiento, brownies, postres sin horno"
+      content="ebook cookies, cookies NY, business patisserie maison, recettes cookies, lancer business patisserie"
     />
     <link rel="canonical" href="https://ny-cookie-ebook-sales-page-eu.pages.dev/" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Ebook de Postres Caseros - Emprende Desde Casa" />
+    <meta property="og:title" content="Ebook Cookies NY - Lancez Votre Business Patisserie Maison" />
     <meta
       property="og:description"
-      content="50+ recetas exclusivas con paso a paso. Comienza tu negocio rentable hoy. 70% de descuento por tiempo limitado."
+      content="27 recettes virales de cookies avec instructions pas a pas. Lancez votre business patisserie maison aujourd'hui."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/og-image.webp" />
-    <meta property="og:locale" content="es_ES" />
-    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:locale:alternate" content="nl_NL" />
+    <meta property="og:locale:alternate" content="pl_PL" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Ebook de Postres Caseros - Emprende Desde Casa" />
-    <meta name="twitter:description" content="50+ recetas exclusivas. Comienza tu negocio rentable hoy." />
+    <meta name="twitter:title" content="Ebook Cookies NY - Lancez Votre Business Patisserie Maison" />
+    <meta name="twitter:description" content="27 recettes virales de cookies. Lancez votre business maison." />
     <meta name="twitter:image" content="/og-image.webp" />
 
     <!-- Structured data -->
@@ -76,11 +80,11 @@
       {
         "@context": "https://schema.org",
         "@type": "Product",
-        "name": "Ebook de Postres Caseros",
-        "description": "Guía completa con 50+ recetas exclusivas de postres caseros para emprender desde casa",
+        "name": "Ebook Cookies Style NY",
+        "description": "Guide complet avec 27 recettes virales de cookies style NY pour lancer un business patisserie maison",
         "offers": {
           "@type": "Offer",
-          "price": "27",
+          "price": "6.97",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock"
         }
@@ -100,7 +104,28 @@
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1842006253129669');
         fbq('track', 'PageView');
+
+        // ViewContent: fire once when user scrolls past the hero section
+        var vcFired = false;
+        function onScroll() {
+          if (vcFired) return;
+          if (window.scrollY > window.innerHeight * 0.5) {
+            vcFired = true;
+            fbq('track', 'ViewContent', { content_name: 'sales_page_engaged' });
+            window.removeEventListener('scroll', onScroll);
+          }
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
       });
+
+      // InitiateCheckout: called from React CTA buttons before navigating to Hotmart
+      window.trackInitiateCheckout = function(url) {
+        if (typeof fbq === 'function') {
+          fbq('track', 'InitiateCheckout', { content_name: 'checkout_click' });
+        }
+        // Small delay to let pixel fire before navigation
+        setTimeout(function() { window.location.assign(url); }, 150);
+      };
     </script>
     <!-- End Meta Pixel Code -->
 
@@ -120,7 +145,7 @@
     <div id="root">
       <!-- Static LCP placeholder: paints before React hydrates, removed on mount -->
       <div style="max-width:672px;margin:0 auto;padding:2rem 1rem 0;text-align:center">
-        <img src="https://vumbnail.com/1160031930.jpg" alt="Vidéo" width="672" height="378"
+        <img src="https://img.youtube.com/vi/WDSINN3-BtM/maxresdefault.jpg" alt="Vidéo" width="672" height="378"
           fetchpriority="high" decoding="async"
           style="width:100%;height:auto;border-radius:1rem;aspect-ratio:16/9;object-fit:cover" />
       </div>
