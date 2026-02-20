@@ -34,8 +34,10 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
     `https://www.youtube.com/embed/${currentVideoId}` +
     `?rel=0&modestbranding=1&playsinline=1`;
 
-  // YouTube thumbnail (maxresdefault for high quality)
-  const youtubeThumb = `https://img.youtube.com/vi/${currentVideoId}/maxresdefault.jpg`;
+  // YouTube thumbnails — responsive: small for mobile, large for desktop
+  const thumbHq = `https://img.youtube.com/vi/${currentVideoId}/hqdefault.jpg`;       // 480×360
+  const thumbSd = `https://img.youtube.com/vi/${currentVideoId}/sddefault.jpg`;       // 640×480
+  const thumbMax = `https://img.youtube.com/vi/${currentVideoId}/maxresdefault.jpg`;  // 1280×720
 
   const goCheckout = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -123,9 +125,13 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
                     aria-label={`${t('watchVideoPrompt')} - ${videoTitle}`}
                   >
                     <img
-                      src={youtubeThumb}
+                      src={thumbHq}
+                      srcSet={`${thumbHq} 480w, ${thumbSd} 640w, ${thumbMax} 1280w`}
+                      sizes="(max-width: 640px) 480px, (max-width: 1024px) 640px, 1280px"
                       alt={videoTitle}
                       className="w-full h-full object-cover"
+                      width={640}
+                      height={480}
                       loading="eager"
                       fetchPriority="high"
                     />

@@ -12,8 +12,14 @@
     <link rel="dns-prefetch" href="https://www.youtube.com" />
     <link rel="dns-prefetch" href="https://connect.facebook.net" />
 
-    <!-- Preload LCP image (YouTube thumbnail) to eliminate render delay -->
-    <link rel="preload" as="image" href="https://img.youtube.com/vi/WDSINN3-BtM/maxresdefault.jpg" fetchpriority="high" />
+    <!-- Preload LCP image (YouTube thumbnail) — responsive: hq for mobile, max for desktop -->
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="https://img.youtube.com/vi/WDSINN3-BtM/hqdefault.jpg 480w, https://img.youtube.com/vi/WDSINN3-BtM/sddefault.jpg 640w, https://img.youtube.com/vi/WDSINN3-BtM/maxresdefault.jpg 1280w"
+      imagesizes="(max-width: 640px) 480px, (max-width: 1024px) 640px, 1280px"
+      fetchpriority="high"
+    />
 
     <!-- Preload hero mockup – responsive: 384/512/768/1024 -->
     <link
