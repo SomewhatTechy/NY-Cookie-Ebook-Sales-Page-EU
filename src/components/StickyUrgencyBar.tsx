@@ -1,20 +1,28 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useOfferCountdown } from "@/hooks/useOfferCountdown";
-import { useMemo, useState, useEffect, useRef } from "react";
+import { useMemo, useState, useEffect, useRef, useCallback } from "react";
 import { Clock, ArrowRight } from "lucide-react";
 
 /* ── scarcity config ── */
-const SOLD = 43;
 const TOTAL = 50;
-const REMAINING = TOTAL - SOLD;
-const PCT = Math.round((SOLD / TOTAL) * 100);
+const BASE_SOLD = 13;          // 25% — starting point at midnight
+const MAX_SOLD = 47;           // 94% cap — never hits 100%
+const INTERVAL_MIN = 30;       // one "sale" every 30 minutes
 
-const SCARCITY: Record<string, { sold: string; remaining: string }> = {
-  fr: { sold: "Exemplaires vendus", remaining: `Plus que ${REMAINING} à ce prix` },
-  de: { sold: "Verkaufte Exemplare", remaining: `Nur noch ${REMAINING} zu diesem Preis` },
-  it: { sold: "Copie vendute", remaining: `Solo ${REMAINING} rimaste a questo prezzo` },
-  nl: { sold: "Verkochte exemplaren", remaining: `Nog maar ${REMAINING} voor deze prijs` },
-  pl: { sold: "Sprzedanych egzemplarzy", remaining: `Tylko ${REMAINING} pozostało w tej cenie` },
+/** Calculate sold count based on time of day (resets at midnight) */
+const getSoldNow = () => {
+  const now = new Date();
+  const minutesSinceMidnight = now.getHours() * 60 + now.getMinutes();
+  const intervals = Math.floor(minutesSinceMidnight / INTERVAL_MIN);
+  return Math.min(BASE_SOLD + intervals, MAX_SOLD);
+};
+
+const SCARCITY_LABELS: Record<string, { sold: string; remaining: (n: number) => string }> = {
+  fr: { sold: "Exemplaires vendus", remaining: (n) => `Plus que ${n} à ce prix` },
+  de: { sold: "Verkaufte Exemplare", remaining: (n) => `Nur noch ${n} zu diesem Preis` },
+  it: { sold: "Copie vendute", remaining: (n) => `Solo ${n} rimaste a questo prezzo` },
+  nl: { sold: "Verkochte exemplaren", remaining: (n) => `Nog maar ${n} voor deze prijs` },
+  pl: { sold: "Sprzedanych egzemplarzy", remaining: (n) => `Tylko ${n} pozostało w tej cenie` },
 };
 
 interface StickyUrgencyBarProps {
@@ -23,10 +31,10 @@ interface StickyUrgencyBarProps {
 
 const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
   const { t } = useLanguage();
-
   const timeLeft = useOfferCountdown();
 
   const [isVisible, setIsVisible] = useState(false);
+  const [currentSold, setCurrentSold] = useState(getSoldNow);
   const [animatedSold, setAnimatedSold] = useState(0);
   const [barWidth, setBarWidth] = useState(0);
   const hasAnimated = useRef(false);
@@ -36,10 +44,8 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
       const v = t(key);
       return !v || v === key ? fallback : v;
     };
-
     return {
       stickyCtaText: get("stickyCtaText", "Get my copy"),
-      offerEndsIn: get("offerEndsIn", "Offer ends in"),
       currentPrice: get("currentPrice", "€6.97"),
     };
   }, [t]);
@@ -59,38 +65,59 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
     return "fr";
   }, []);
 
-  const scarcity = SCARCITY[lang] || SCARCITY.fr;
+  const labels = SCARCITY_LABELS[lang] || SCARCITY_LABELS.fr;
+  const remaining = TOTAL - currentSold;
+  const pct = Math.round((currentSold / TOTAL) * 100);
 
-  /* Show once visitor scrolls past the hero — stays visible from then on */
+  /* Show once visitor scrolls past the hero */
   useEffect(() => {
     const heroHeight = window.innerHeight * 0.8;
-
-    const handleScroll = () => {
-      setIsVisible(window.scrollY > heroHeight);
-    };
-
+    const handleScroll = () => setIsVisible(window.scrollY > heroHeight);
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  /* Animate count-up + progress bar when first visible */
+  /* Live ticker: check every 60s if a new 30-min interval was crossed */
   useEffect(() => {
-    if (!isVisible || hasAnimated.current) return;
-    hasAnimated.current = true;
+    const id = setInterval(() => {
+      const fresh = getSoldNow();
+      if (fresh > currentSold) setCurrentSold(fresh);
+    }, 60_000);
+    return () => clearInterval(id);
+  }, [currentSold]);
 
-    const duration = 1200;
-    const start = performance.now();
+  /* Animate the bar + count */
+  const animateTo = useCallback((targetSold: number) => {
+    const targetPct = Math.round((targetSold / TOTAL) * 100);
+    const startSold = animatedSold;
+    const startPct = barWidth;
+    const duration = hasAnimated.current ? 800 : 1200;
+    const startTime = performance.now();
+
     const tick = (now: number) => {
-      const elapsed = now - start;
+      const elapsed = now - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-      setAnimatedSold(Math.round(eased * SOLD));
-      setBarWidth(Math.round(eased * PCT));
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setAnimatedSold(Math.round(startSold + (targetSold - startSold) * eased));
+      setBarWidth(Math.round(startPct + (targetPct - startPct) * eased));
       if (progress < 1) requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);
-  }, [isVisible]);
+  }, [animatedSold, barWidth]);
+
+  /* First appearance: animate from 0 → current */
+  useEffect(() => {
+    if (!isVisible || hasAnimated.current) return;
+    hasAnimated.current = true;
+    animateTo(currentSold);
+  }, [isVisible, currentSold, animateTo]);
+
+  /* Live bump: animate from old → new when a sale is added */
+  useEffect(() => {
+    if (!hasAnimated.current) return;
+    animateTo(currentSold);
+  }, [currentSold, animateTo]);
 
   const hh = String(timeLeft.hours).padStart(2, "0");
   const mm = String(timeLeft.minutes).padStart(2, "0");
@@ -98,7 +125,7 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
 
   const goCheckout = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    if (typeof (window as any).trackInitiateCheckout === 'function') {
+    if (typeof (window as any).trackInitiateCheckout === "function") {
       (window as any).trackInitiateCheckout(checkoutUrl);
     } else {
       window.location.assign(checkoutUrl);
@@ -143,9 +170,12 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
         <div className="container mx-auto px-3 sm:px-4 py-1">
           <div className="flex items-center justify-between gap-2 text-[11px] sm:text-xs">
             <span className="text-white/80 font-medium">
-              {scarcity.sold}: <span className="text-white font-bold tabular-nums">{animatedSold}</span>
+              {labels.sold}:{" "}
+              <span className="text-white font-bold tabular-nums">{animatedSold}</span>
               <span className="text-white/50 mx-1.5">–</span>
-              <span className="text-red-400 font-semibold animate-pulse">{scarcity.remaining}</span>
+              <span className="text-red-400 font-semibold animate-pulse">
+                {labels.remaining(remaining)}
+              </span>
             </span>
             <span className="text-white/60 font-bold tabular-nums">{barWidth}%</span>
           </div>
@@ -161,7 +191,8 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
               <div
                 className="absolute inset-0 rounded-full"
                 style={{
-                  background: "linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%)",
+                  background:
+                    "linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%)",
                   animation: "shimmer 2s ease-in-out infinite",
                 }}
               />
