@@ -66,7 +66,7 @@ const TestimonialsSection = () => {
               className="flex-shrink-0 w-[220px] sm:w-[260px] md:w-[300px]"
             >
               <img
-                src={`/testimonials/${language}/${item.file}`}
+                src={`/testimonials/${language}/${item.file}?v=2`}
                 alt={item.name}
                 width={1024}
                 height={1024}
