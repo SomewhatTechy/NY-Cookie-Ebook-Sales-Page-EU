@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
   const doubled = [...testimonials, ...testimonials];
 
   return (
-    <section className="py-28 bg-card fade-in-section" id="testimonials">
+    <section className="py-36 bg-card fade-in-section" id="testimonials">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="section-title">{title}</h2>
