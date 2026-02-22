@@ -63,7 +63,8 @@ const TestimonialsSection = () => {
           {doubled.map((item, index) => (
             <div
               key={`${item.name}-${index}`}
-              className="flex-shrink-0 w-[220px] sm:w-[260px] md:w-[300px]"
+              className="flex-shrink-0 w-[220px] sm:w-[260px] md:w-[300px] overflow-hidden rounded-2xl drop-shadow-md transition-transform duration-300 hover:scale-[1.03]"
+              style={{ aspectRatio: "4 / 3" }}
             >
               <img
                 src={`/testimonials/${language}/${item.file}?v=2`}
@@ -72,7 +73,7 @@ const TestimonialsSection = () => {
                 height={1024}
                 loading={index < 9 ? "eager" : "lazy"}
                 decoding="async"
-                className="w-full h-auto rounded-2xl drop-shadow-md transition-transform duration-300 hover:scale-[1.03]"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           ))}
