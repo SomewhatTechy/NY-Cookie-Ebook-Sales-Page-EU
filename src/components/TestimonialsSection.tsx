@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
       </div>
 
       {/* Full-width carousel overflow container */}
-      <div className="relative overflow-hidden pt-4 pb-10">
+      <div className="relative [overflow-x:clip] overflow-y-visible py-6">
         {/* Fade edges */}
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-card to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-card to-transparent" />
@@ -72,7 +72,7 @@ const TestimonialsSection = () => {
                 height={1024}
                 loading={index < 9 ? "eager" : "lazy"}
                 decoding="async"
-                className="w-full h-auto rounded-2xl drop-shadow-md"
+                className="w-full h-auto"
               />
             </div>
           ))}
