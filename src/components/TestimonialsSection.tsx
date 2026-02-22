@@ -29,11 +29,14 @@ const TestimonialsSection = () => {
     []
   );
 
-  const title = safe("testimonialsTitle", "Reviews (translated)");
+  const title = safe("testimonialsTitle", "Look What Other Cookie Business Owners are Saying");
   const subtitle = safe(
     "testimonialsSubtitle",
-    "Real buyers sharing their results—translated for clarity"
+    "Women like you who started baking and never looked back"
   );
+
+  // Duplicate array for seamless infinite loop
+  const doubled = [...testimonials, ...testimonials];
 
   return (
     <section className="py-20 bg-card fade-in-section" id="testimonials">
@@ -42,21 +45,34 @@ const TestimonialsSection = () => {
           <h2 className="section-title">{title}</h2>
           <p className="section-subtitle">{subtitle}</p>
         </div>
+      </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {testimonials.map((item, index) => (
+      {/* Full-width carousel overflow container */}
+      <div className="relative overflow-hidden">
+        {/* Fade edges */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-card to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-card to-transparent" />
+
+        {/* Scrolling track */}
+        <div
+          className="flex gap-6 animate-marquee hover:[animation-play-state:paused]"
+          style={{
+            width: "max-content",
+          }}
+        >
+          {doubled.map((item, index) => (
             <div
               key={`${item.name}-${index}`}
-              className="animate-fade-in group"
+              className="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px]"
             >
               <img
                 src={`/testimonials/${language}/${item.file}`}
                 alt={item.name}
                 width={1024}
                 height={1024}
-                loading="lazy"
+                loading={index < 9 ? "eager" : "lazy"}
                 decoding="async"
-                className="w-full h-auto rounded-2xl drop-shadow-md transition-transform duration-300 group-hover:scale-[1.02]"
+                className="w-full h-auto rounded-2xl drop-shadow-md transition-transform duration-300 hover:scale-[1.03]"
               />
             </div>
           ))}

@@ -161,7 +161,7 @@ const translations = {
     deviceCompatibility: "Compatible mobile, tablette et PC",
     
     // Testimonials
-    testimonialsTitle: "Avis d'Élèves de Plusieurs Pays (traduites)",
+    testimonialsTitle: "Regardez Ce Que D'autres Entrepreneuses de Cookies Disent",
     testimonialsSubtitle: "Des femmes comme vous qui ont commencé à pâtisser et ne se sont jamais arrêtées",
     testimonial1: "J'ai fait ma première vente en seulement 3 jours! Les recettes sont claires et le plan de vente m'a donné la confiance dont j'avais besoin. J'ai déjà des clientes qui repassent commande.",
     testimonial2: "Je n'aurais jamais pensé pouvoir vendre mes cookies. Maintenant je reçois des commandes chaque week-end et mes enfants sont fiers de leur maman entrepreneuse.",
@@ -419,7 +419,7 @@ const translations = {
     deviceCompatibility: "Funktioniert auf Handy, Tablet und PC",
     
     // Testimonials
-    testimonialsTitle: "Schüler-Bewertungen aus Mehreren Ländern (übersetzt)",
+    testimonialsTitle: "Schau, Was Andere Keks-Unternehmerinnen Sagen",
     testimonialsSubtitle: "Frauen wie du, die angefangen haben zu backen und nicht mehr aufgehört haben",
     testimonial1: "Ich habe meinen ersten Verkauf in nur 3 Tagen gemacht! Die Rezepte sind klar und der Verkaufsplan gab mir das Vertrauen, das ich brauchte. Ich habe schon Stammkundinnen.",
     testimonial2: "Ich hätte nie gedacht, dass ich meine Cookies verkaufen könnte. Jetzt bekomme ich jedes Wochenende Bestellungen und meine Kinder sind stolz auf ihre Unternehmerin-Mama.",
@@ -677,7 +677,7 @@ const translations = {
     deviceCompatibility: "Funziona su telefono, tablet e PC",
     
     // Testimonials
-    testimonialsTitle: "Recensioni di Studentesse da Diversi Paesi (tradotte)",
+    testimonialsTitle: "Guarda Cosa Dicono Altre Imprenditrici di Biscotti",
     testimonialsSubtitle: "Donne come te che hanno iniziato a cucinare e non si sono più fermate",
     testimonial1: "Ho fatto la mia prima vendita in soli 3 giorni! Le ricette sono chiare e il piano vendite mi ha dato la fiducia di cui avevo bisogno. Ho già clienti che riordinano.",
     testimonial2: "Non avrei mai pensato di poter vendere i miei cookies. Ora ricevo ordini ogni fine settimana e i miei figli sono orgogliosi della loro mamma imprenditrice.",
@@ -935,7 +935,7 @@ const translations = {
     deviceCompatibility: "Werkt op telefoon, tablet en PC",
     
     // Testimonials
-    testimonialsTitle: "Reviews van Studenten uit Meerdere Landen (vertaald)",
+    testimonialsTitle: "Kijk Wat Andere Koekjes-Ondernemers Zeggen",
     testimonialsSubtitle: "Vrouwen zoals jij die begonnen met bakken en nooit meer zijn gestopt",
     testimonial1: "Ik maakte mijn eerste sale in slechts 3 dagen! De recepten zijn duidelijk en het verkoopplan gaf me het vertrouwen dat ik nodig had. Ik heb al vaste klanten.",
     testimonial2: "Ik had nooit gedacht dat ik mijn cookies kon verkopen. Nu krijg ik elk weekend bestellingen en mijn kinderen zijn trots op hun ondernemer-mama.",
@@ -1193,7 +1193,7 @@ const translations = {
     deviceCompatibility: "Działa na telefonie, tablecie i PC",
     
     // Testimonials
-    testimonialsTitle: "Opinie Studentek z Różnych Krajów (przetłumaczone)",
+    testimonialsTitle: "Zobacz Co Mówią Inne Właścicielki Biznesu Ciasteczkowego",
     testimonialsSubtitle: "Kobiety takie jak Ty, które zaczęły piec i już nie przestały",
     testimonial1: "Zrobiłam pierwszą sprzedaż w zaledwie 3 dni! Przepisy są jasne, a plan sprzedaży dał mi pewność, której potrzebowałam. Mam już stałe klientki.",
     testimonial2: "Nigdy nie myślałam, że mogłabym sprzedawać moje ciasteczka. Teraz dostaję zamówienia w każdy weekend, a moje dzieci są dumne z mamy-przedsiębiorcy.",
