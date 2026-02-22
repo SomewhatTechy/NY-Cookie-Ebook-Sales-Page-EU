@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
       </div>
 
       {/* Full-width carousel overflow container */}
-      <div className="relative overflow-hidden py-4">
+      <div className="relative overflow-hidden pt-4 pb-10">
         {/* Fade edges */}
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-card to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-card to-transparent" />
