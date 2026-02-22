@@ -1,11 +1,9 @@
 import { useMemo } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Star } from "lucide-react";
 
 type Testimonial = {
   name: string;
-  image: string;
-  countryKey: string;
+  fbCard: string;
   textKey: string;
 };
 
@@ -19,15 +17,15 @@ const TestimonialsSection = () => {
 
   const testimonials: Testimonial[] = useMemo(
     () => [
-      { name: "María González", image: "/testimonials/maria.webp", countryKey: "countryMexico", textKey: "testimonial1" },
-      { name: "Carmen Silva", image: "/testimonials/carmen.webp", countryKey: "countryColombia", textKey: "testimonial2" },
-      { name: "Laura Mendoza", image: "/testimonials/laura.webp", countryKey: "countryPeru", textKey: "testimonial3" },
-      { name: "Sofia Martinez", image: "/testimonials/sofia.webp", countryKey: "countryChile", textKey: "testimonial4" },
-      { name: "Jessica Thompson", image: "/testimonials/jessica.webp", countryKey: "countryUSA", textKey: "testimonial5" },
-      { name: "Emily Brown", image: "/testimonials/emily.webp", countryKey: "countryCanada", textKey: "testimonial6" },
-      { name: "Sarah Mitchell", image: "/testimonials/sarah.webp", countryKey: "countryUK", textKey: "testimonial7" },
-      { name: "Ana Santos", image: "/testimonials/ana.webp", countryKey: "countryBrazil", textKey: "testimonial8" },
-      { name: "Olivia Harper", image: "/testimonials/olivia.webp", countryKey: "countryAustralia", textKey: "testimonial9" },
+      { name: "María González", fbCard: "/testimonials/fb-maria.webp", textKey: "testimonial1" },
+      { name: "Carmen Silva", fbCard: "/testimonials/fb-carmen.webp", textKey: "testimonial2" },
+      { name: "Laura Mendoza", fbCard: "/testimonials/fb-laura.webp", textKey: "testimonial3" },
+      { name: "Sofia Martinez", fbCard: "/testimonials/fb-sofia.webp", textKey: "testimonial4" },
+      { name: "Jessica Thompson", fbCard: "/testimonials/fb-jessica.webp", textKey: "testimonial5" },
+      { name: "Emily Brown", fbCard: "/testimonials/fb-emily.webp", textKey: "testimonial6" },
+      { name: "Sarah Mitchell", fbCard: "/testimonials/fb-sarah.webp", textKey: "testimonial7" },
+      { name: "Ana Santos", fbCard: "/testimonials/fb-ana.webp", textKey: "testimonial8" },
+      { name: "Olivia Harper", fbCard: "/testimonials/fb-olivia.webp", textKey: "testimonial9" },
     ],
     []
   );
@@ -48,48 +46,39 @@ const TestimonialsSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {testimonials.map((item, index) => {
-            const country = safe(item.countryKey, "");
             const text = safe(item.textKey, "");
 
             return (
               <div
                 key={`${item.name}-${index}`}
-                className="premium-card p-6 hover:border-gold/30 transition-all duration-300 animate-fade-in"
+                className="relative animate-fade-in group"
               >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink/20 to-gold/20 overflow-hidden flex items-center justify-center">
-                    {item.image ? (
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        width={96}
-                        height={96}
-                        loading="lazy"
-                        decoding="async"
-                        className="h-full w-full object-cover"
-                      />
-                    ) : (
-                      <span className="text-white font-bold text-xl">
-                        {item.name.charAt(0)}
-                      </span>
-                    )}
-                  </div>
-                  <div>
-                    <div className="font-bold text-foreground">{item.name}</div>
-                    {country ? (
-                      <div className="text-sm text-muted-foreground">{country}</div>
-                    ) : null}
-                  </div>
-                </div>
+                {/* FB comment card image */}
+                <img
+                  src={item.fbCard}
+                  alt={item.name}
+                  width={1024}
+                  height={1024}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto rounded-2xl drop-shadow-md transition-transform duration-300 group-hover:scale-[1.02]"
+                />
 
-                <div className="flex gap-1 mb-3" role="img" aria-label="5-star rating">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-gold text-gold" />
-                  ))}
-                </div>
-
+                {/* Text overlay positioned over the blank area of the FB card */}
                 {text ? (
-                  <p className="text-foreground/80 italic text-sm">"{text}"</p>
+                  <div
+                    className="absolute flex items-start px-1"
+                    style={{
+                      top: "33%",
+                      left: "14%",
+                      right: "8%",
+                      bottom: "18%",
+                    }}
+                  >
+                    <p className="text-gray-700 text-[11px] sm:text-xs md:text-[11px] lg:text-xs leading-relaxed">
+                      {text}
+                    </p>
+                  </div>
                 ) : null}
               </div>
             );
