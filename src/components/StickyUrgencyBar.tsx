@@ -1,7 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useOfferCountdown } from "@/hooks/useOfferCountdown";
 import { useMemo, useState, useEffect } from "react";
-import { Clock, ArrowRight, Cookie } from "lucide-react";
+import { Clock, ArrowRight } from "lucide-react";
 
 interface StickyUrgencyBarProps {
   checkoutUrl: string;
@@ -23,31 +23,20 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
     return {
       stickyCtaText: get("stickyCtaText", "Get my copy"),
       offerEndsIn: get("offerEndsIn", "Offer ends in"),
-      priceIncreasesTo: get("priceIncreasesTo", "Special offer ends in"),
+      currentPrice: get("currentPrice", "€6.97"),
     };
   }, [t]);
 
+  /* Show once visitor scrolls past the hero — stays visible from then on */
   useEffect(() => {
-    let lastScrollY = window.scrollY;
     const heroHeight = window.innerHeight * 0.8;
 
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const scrollingUp = currentScrollY < lastScrollY;
-      const pastHero = currentScrollY > heroHeight;
-
-      if (currentScrollY < 100) {
-        setIsVisible(false);
-      } else if (pastHero && scrollingUp) {
-        setIsVisible(true);
-      } else if (!scrollingUp && currentScrollY - lastScrollY > 50) {
-        setIsVisible(false);
-      }
-
-      lastScrollY = currentScrollY;
+      setIsVisible(window.scrollY > heroHeight);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // check initial position
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -65,44 +54,38 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
   };
 
   return (
-    <>
-      {isVisible && (
-        <header
-          className="fixed top-0 left-0 w-full z-50 border-b border-white/10 shadow-lg animate-fade-in"
-          style={{ background: "rgba(59, 36, 29, 0.92)", backdropFilter: "blur(12px)" }}
-          aria-label="Sticky urgency bar"
-        >
-          <div className="container mx-auto py-2 px-4">
-            <div className="flex items-center justify-between gap-2 text-white">
-              <div className="flex items-center gap-2" aria-live="polite">
-                <Clock className="w-4 h-4 text-gold animate-pulse hidden sm:block" />
-                <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2">
-                  <span className="text-xs text-white/70 hidden sm:inline">
-                    {safe.priceIncreasesTo}
-                  </span>
-                  <span className="sr-only">{safe.offerEndsIn}</span>
-                  <div className="flex items-center gap-1 text-gold font-bold tabular-nums">
-                    <span>{hh}</span>:<span>{mm}</span>:<span>{ss}</span>
-                  </div>
-                </div>
-              </div>
-
-              <a
-                href={checkoutUrl}
-                onClick={goCheckout}
-                className="flex items-center gap-1 px-4 py-1.5 rounded-full text-sm font-semibold transition-all hover:scale-105"
-                style={{ background: "var(--gradient-cta)", color: "hsl(var(--chocolate))" }}
-                aria-label={safe.stickyCtaText}
-              >
-                <span className="hidden sm:inline">{safe.stickyCtaText}</span>
-                <Cookie className="h-5 w-5 sm:hidden text-gold-light" />
-                <ArrowRight className="w-3 h-3" />
-              </a>
+    <header
+      className={`fixed top-0 left-0 w-full z-50 border-b border-white/10 shadow-lg transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+      style={{ background: "rgba(59, 36, 29, 0.95)", backdropFilter: "blur(12px)" }}
+      aria-label="Sticky urgency bar"
+    >
+      <div className="container mx-auto py-2 px-3 sm:px-4">
+        <div className="flex items-center justify-between gap-2 text-white">
+          {/* Left: timer + price */}
+          <div className="flex items-center gap-2 min-w-0" aria-live="polite">
+            <Clock className="w-4 h-4 text-gold animate-pulse flex-shrink-0" />
+            <div className="flex items-center gap-1.5 sm:gap-2 text-gold font-bold tabular-nums text-sm">
+              <span>{hh}</span>:<span>{mm}</span>:<span>{ss}</span>
             </div>
+            <span className="text-gold font-extrabold text-base sm:text-lg flex-shrink-0">
+              {safe.currentPrice}
+            </span>
           </div>
-        </header>
-      )}
-    </>
+
+          {/* Right: CTA button */}
+          <a
+            href={checkoutUrl}
+            onClick={goCheckout}
+            className="flex items-center gap-1.5 px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold transition-all hover:scale-105 flex-shrink-0 whitespace-nowrap"
+            style={{ background: "var(--gradient-cta)", color: "hsl(var(--chocolate))" }}
+            aria-label={safe.stickyCtaText}
+          >
+            <span>{safe.stickyCtaText}</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </a>
+        </div>
+      </div>
+    </header>
   );
 };
 
