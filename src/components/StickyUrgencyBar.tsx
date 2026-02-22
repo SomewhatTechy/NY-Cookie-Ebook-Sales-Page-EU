@@ -167,8 +167,8 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
 
       {/* Row 2: Scarcity progress bar */}
       <div className="relative" style={{ background: "#1a1a1a" }}>
-        <div className="container mx-auto px-3 sm:px-4 py-1">
-          <div className="flex items-center justify-between gap-2 text-[11px] sm:text-xs">
+        <div className="container mx-auto px-3 sm:px-4 py-1.5">
+          <div className="flex items-center justify-between gap-2 text-xs sm:text-sm">
             <span className="text-white/80 font-medium">
               {labels.sold}:{" "}
               <span className="text-white font-bold tabular-nums">{animatedSold}</span>
@@ -179,7 +179,7 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
             </span>
             <span className="text-white/60 font-bold tabular-nums">{barWidth}%</span>
           </div>
-          <div className="w-full h-1.5 rounded-full mt-0.5 overflow-hidden" style={{ background: "#333" }}>
+          <div className="w-full h-2.5 rounded-full mt-1 overflow-hidden" style={{ background: "#333" }}>
             <div
               className="h-full rounded-full relative"
               style={{
