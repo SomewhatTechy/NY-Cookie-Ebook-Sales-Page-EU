@@ -63,7 +63,7 @@ const TestimonialsSection = () => {
           {doubled.map((item, index) => (
             <div
               key={`${item.name}-${index}`}
-              className="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px]"
+              className="flex-shrink-0 w-[220px] sm:w-[260px] md:w-[300px]"
             >
               <img
                 src={`/testimonials/${language}/${item.file}`}
