@@ -12,7 +12,7 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
 
   const videoIds: Record<string, string> = {
     fr: 'WDSINN3-BtM',
-    de: 'BD_CC_sVREg',
+    de: 'Bu24UDDqAtE',
     it: 'nPV9NbsJijc',
     nl: 'JzX-J1JMNGc',
     pl: 'aKSmd_7uAOw',
