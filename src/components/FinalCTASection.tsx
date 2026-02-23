@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { ArrowRight, Lock, Check } from 'lucide-react';
+import { ArrowRight, Lock, Check, X, CheckCircle } from 'lucide-react';
 
 interface FinalCTASectionProps {
   checkoutUrl: string;
@@ -37,11 +37,11 @@ const FinalCTASection = ({ checkoutUrl }: FinalCTASectionProps) => {
             <p className="text-lg font-bold mb-4">{t('choiceTitle')}</p>
             <div className="grid sm:grid-cols-2 gap-4 text-left text-sm">
               <div className="rounded-xl border border-muted/30 bg-card/40 p-4">
-                <p className="font-semibold text-muted-foreground mb-2">A</p>
+                <X className="w-6 h-6 text-red-500 mb-2" />
                 <p className="text-muted-foreground">{t('choiceA')}</p>
               </div>
               <div className="rounded-xl border-2 border-gold/40 bg-card/60 p-4">
-                <p className="font-semibold text-gold mb-2">B</p>
+                <CheckCircle className="w-6 h-6 text-green-500 mb-2" />
                 <p className="text-foreground">{t('choiceB')}</p>
               </div>
             </div>
