@@ -66,10 +66,10 @@ const TestimonialsSection = () => {
               className="flex-shrink-0 w-[220px] sm:w-[260px] md:w-[300px] transition-transform duration-300 hover:scale-[1.03]"
             >
               <img
-                src={`/testimonials/${language}/${item.file}?v=2`}
+                src={`/testimonials/${language}/${item.file}?v=3`}
                 alt={item.name}
-                width={1024}
-                height={1024}
+                width={600}
+                height={600}
                 loading={index < 9 ? "eager" : "lazy"}
                 decoding="async"
                 className="w-full h-auto"
