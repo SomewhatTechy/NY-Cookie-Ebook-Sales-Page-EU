@@ -249,7 +249,8 @@ const translations = {
 
     // Final CTA
     finalCtaTitle: "Votre Business de Cookies Commence MAINTENANT",
-    finalCtaSubtitle: "Ne ratez pas cette chance de transformer votre passion en revenus réels",
+    finalCtaSubtitle: "Dans 2 heures, votre premier lot de cookies de qualité professionnelle refroidira sur le comptoir",
+    finalCtaRecap: "Tout ce dont vous avez besoin pour seulement $6.97 :",
     finalBenefit1: "27 recettes testées et vendables",
     finalBenefit2: "Plan business complet pas à pas",
     finalBenefit3: "8 bonus exclusifs",
@@ -262,7 +263,7 @@ const translations = {
     // Footer
     footerDisclaimer: "Ce site ne fait pas partie de Facebook ou Meta. Les résultats individuels peuvent varier. Cet ebook est éducatif et ne garantit pas de revenus spécifiques.",
     footerContact: "Contact",
-    footerCopyright: "2024 ECommerce Shop Cart. Tous droits réservés.",
+    footerCopyright: "2026 ECommerce Shop Cart. Tous droits réservés.",
 
     // Floating CTA
     floatingCta: "Je veux ma copie",
@@ -507,7 +508,8 @@ const translations = {
 
     // Final CTA
     finalCtaTitle: "Dein Cookie-Business Startet JETZT",
-    finalCtaSubtitle: "Verpasse nicht diese Chance, deine Leidenschaft in echtes Einkommen zu verwandeln",
+    finalCtaSubtitle: "In 2 Stunden kühlt deine erste Ladung Cookies in Profi-Qualität auf der Theke ab",
+    finalCtaRecap: "Alles was du brauchst für nur $6.97:",
     finalBenefit1: "27 getestete, verkaufbare Rezepte",
     finalBenefit2: "Kompletter Schritt-für-Schritt Businessplan",
     finalBenefit3: "8 exklusive Bonus-Geschenke",
@@ -520,7 +522,7 @@ const translations = {
     // Footer
     footerDisclaimer: "Diese Seite ist nicht Teil von Facebook oder Meta. Individuelle Ergebnisse können variieren. Dieses Ebook ist lehrreich und garantiert keine bestimmten Einnahmen.",
     footerContact: "Kontakt",
-    footerCopyright: "2024 ECommerce Shop Cart. Alle Rechte vorbehalten.",
+    footerCopyright: "2026 ECommerce Shop Cart. Alle Rechte vorbehalten.",
 
     // Floating CTA
     floatingCta: "Ich will mein Exemplar",
@@ -765,7 +767,8 @@ const translations = {
 
     // Final CTA
     finalCtaTitle: "Il Tuo Business di Cookies Inizia ORA",
-    finalCtaSubtitle: "Non perdere questa occasione di trasformare la tua passione in reddito reale",
+    finalCtaSubtitle: "Tra 2 ore, il tuo primo lotto di cookies di qualità professionale si raffredderà sul bancone",
+    finalCtaRecap: "Tutto ciò di cui hai bisogno per soli $6.97:",
     finalBenefit1: "27 ricette testate e vendibili",
     finalBenefit2: "Piano business completo passo dopo passo",
     finalBenefit3: "8 bonus esclusivi",
@@ -778,7 +781,7 @@ const translations = {
     // Footer
     footerDisclaimer: "Questo sito non fa parte di Facebook o Meta. I risultati individuali possono variare. Questo ebook è educativo e non garantisce guadagni specifici.",
     footerContact: "Contatto",
-    footerCopyright: "2024 ECommerce Shop Cart. Tutti i diritti riservati.",
+    footerCopyright: "2026 ECommerce Shop Cart. Tutti i diritti riservati.",
 
     // Floating CTA
     floatingCta: "Voglio la mia copia",
@@ -1023,7 +1026,8 @@ const translations = {
 
     // Final CTA
     finalCtaTitle: "Je Cookie-Business Start NU",
-    finalCtaSubtitle: "Mis deze kans niet om je passie om te zetten in echt inkomen",
+    finalCtaSubtitle: "Over 2 uur koelt je eerste batch professionele cookies af op het aanrecht",
+    finalCtaRecap: "Alles wat je nodig hebt voor slechts $6.97:",
     finalBenefit1: "27 geteste, verkoopbare recepten",
     finalBenefit2: "Compleet stap-voor-stap businessplan",
     finalBenefit3: "8 exclusieve bonuscadeaus",
@@ -1036,7 +1040,7 @@ const translations = {
     // Footer
     footerDisclaimer: "Deze site maakt geen deel uit van Facebook of Meta. Individuele resultaten kunnen variëren. Dit ebook is educatief en garandeert geen specifiek inkomen.",
     footerContact: "Contact",
-    footerCopyright: "2024 ECommerce Shop Cart. Alle rechten voorbehouden.",
+    footerCopyright: "2026 ECommerce Shop Cart. Alle rechten voorbehouden.",
 
     // Floating CTA
     floatingCta: "Ik wil mijn exemplaar",
@@ -1281,7 +1285,8 @@ const translations = {
 
     // Final CTA
     finalCtaTitle: "Twój Biznes z Ciasteczkami Zaczyna Się TERAZ",
-    finalCtaSubtitle: "Nie przegap tej szansy, żeby zamienić swoją pasję w prawdziwy dochód",
+    finalCtaSubtitle: "Za 2 godziny Twoja pierwsza partia profesjonalnych ciasteczek będzie stygnąć na blacie",
+    finalCtaRecap: "Wszystko czego potrzebujesz za jedyne $6.97:",
     finalBenefit1: "27 przetestowanych, sprzedawalnych przepisów",
     finalBenefit2: "Kompletny plan biznesowy krok po kroku",
     finalBenefit3: "8 ekskluzywnych prezentów bonusowych",
@@ -1294,7 +1299,7 @@ const translations = {
     // Footer
     footerDisclaimer: "Ta strona nie jest częścią Facebooka ani Meta. Indywidualne wyniki mogą się różnić. Ten ebook jest edukacyjny i nie gwarantuje konkretnych zarobków.",
     footerContact: "Kontakt",
-    footerCopyright: "2024 ECommerce Shop Cart. Wszelkie prawa zastrzeżone.",
+    footerCopyright: "2026 ECommerce Shop Cart. Wszelkie prawa zastrzeżone.",
 
     // Floating CTA
     floatingCta: "Chcę moją kopię",
