@@ -13,6 +13,7 @@ const BonusesSection = lazy(() => import('@/components/BonusesSection'));
 const PriceDropSection = lazy(() => import('@/components/PriceDropSection'));
 const DeliverySection = lazy(() => import('@/components/DeliverySection'));
 const TestimonialsSection = lazy(() => import('@/components/TestimonialsSection'));
+const FuturePacingSection = lazy(() => import('@/components/FuturePacingSection'));
 const GuaranteeSection = lazy(() => import('@/components/GuaranteeSection'));
 const FAQSection = lazy(() => import('@/components/FAQSection'));
 const ObjectionsSection = lazy(() => import('@/components/ObjectionsSection'));
@@ -61,6 +62,7 @@ const PageContent = () => {
           <PriceDropSection checkoutUrl={checkoutUrl} />
           <DeliverySection />
           <TestimonialsSection />
+          <FuturePacingSection />
           <GuaranteeSection checkoutUrl={checkoutUrl} />
           <FAQSection />
           <ObjectionsSection />

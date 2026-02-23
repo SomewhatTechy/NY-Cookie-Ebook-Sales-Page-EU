@@ -32,6 +32,22 @@ const FinalCTASection = ({ checkoutUrl }: FinalCTASectionProps) => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('finalCtaTitle')}</h2>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">{t('finalCtaSubtitle')}</p>
 
+          {/* Two-Choice Close */}
+          <div className="max-w-2xl mx-auto mb-8">
+            <p className="text-lg font-bold mb-4">{t('choiceTitle')}</p>
+            <div className="grid sm:grid-cols-2 gap-4 text-left text-sm">
+              <div className="rounded-xl border border-muted/30 bg-card/40 p-4">
+                <p className="font-semibold text-muted-foreground mb-2">A</p>
+                <p className="text-muted-foreground">{t('choiceA')}</p>
+              </div>
+              <div className="rounded-xl border-2 border-gold/40 bg-card/60 p-4">
+                <p className="font-semibold text-gold mb-2">B</p>
+                <p className="text-foreground">{t('choiceB')}</p>
+              </div>
+            </div>
+            <p className="text-sm italic text-muted-foreground mt-3">{t('choiceQuestion')}</p>
+          </div>
+
           {/* Offer recap */}
           <p className="text-sm font-semibold text-gold mb-3">{t('finalCtaRecap')}</p>
           <ul className="inline-flex flex-col items-start gap-1.5 mb-8 text-sm text-left">
@@ -59,6 +75,9 @@ const FinalCTASection = ({ checkoutUrl }: FinalCTASectionProps) => {
             <Lock className="w-4 h-4 text-gold" />
             <span>{t('secureCheckoutHotmart')}</span>
           </div>
+
+          {/* P.S. */}
+          <p className="mt-8 text-xs text-muted-foreground italic max-w-lg mx-auto">{t('finalCtaPS')}</p>
         </div>
       </div>
     </section>

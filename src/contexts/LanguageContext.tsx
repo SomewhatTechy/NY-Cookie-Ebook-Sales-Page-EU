@@ -32,6 +32,7 @@ const translations = {
     secureCheckoutHotmart: "Paiement sécurisé via Hotmart",
 
     // Pain Points
+    painIdentity: "Il y a deux types de femmes qui aiment pâtisser : celles qui gardent ça comme hobby pour toujours... et celles qui en font quelque chose de plus. Vous savez déjà laquelle vous voulez être.",
     painEyebrow: "Ça vous parle?",
     painTitle: "Si vous vous êtes posé cette question, vous n'êtes pas seule...",
     painSubtitle: "Ce sont les doutes et frustrations les plus courants avant d'obtenir des cookies épais, moelleux et vendables.",
@@ -185,7 +186,7 @@ const translations = {
     countryLuxembourg: "Luxembourg",
 
     // Guarantee
-    guaranteeTitle: "Garantie Blindée de 7 Jours",
+    guaranteeTitle: "La Garantie Première Fournée",
     guaranteeSubtitle: "Vous Ne Risquez Rien",
     guaranteeText: "Téléchargez l'ebook. Faites les recettes. Suivez le plan. Si vous ne vous sentez pas capable de lancer votre business de cookies en confiance, demandez votre remboursement directement sur Hotmart - ils le traitent en 24-48 heures. Sans questions, sans complications. Vous ne risquez rien.",
     guaranteeCta: "Je veux ma copie maintenant",
@@ -258,6 +259,13 @@ const translations = {
     finalBenefit5: "Garantie sans risque de 7 jours",
     finalCtaButton: "Je veux ma copie maintenant",
     finalCtaNote: "Paiement sécurisé - Accès instantané - Garantie 7 jours",
+    choiceTitle: "Vous avez deux choix maintenant :",
+    choiceA: "Fermer cette page. Continuer à regarder des vidéos de pâtisserie. Vous dire \"un jour peut-être.\" Dans six mois, rien n'a changé.",
+    choiceB: "Commencer aujourd'hui pour $6.97. Faire votre premier lot ce soir. Les partager demain. Le week-end prochain, les gens vous demandent comment commander.",
+    choiceQuestion: "Lequel vous ressemble le plus ?",
+    finalCtaPS: "P.S. Quand vous téléchargez, allez directement au Chapitre 3 - c'est là que se trouve la recette de cookie la plus vendue. La plupart des femmes font leur premier lot le soir même.",
+    futurePacingTitle: "Imaginez Ceci...",
+    futurePacingText: "C'est samedi matin. Votre cuisine sent incroyablement bon - chocolat chaud et vanille dans l'air. Sur le comptoir, 36 cookies épais et moelleux refroidissent. Votre voisine vous a déjà envoyé un message pour réserver une boîte. Votre fille arrive et demande : \"Maman, on peut faire ceux au beurre de cacahuète ?\" Vous prenez une photo pour Instagram, et avant le déjeuner, trois amies demandent comment commander. Ce n'est pas un rêve. C'est la Semaine 2.",
     offerValidFor: "Offre spéciale valable seulement pour",
 
     // Footer
@@ -291,6 +299,7 @@ const translations = {
     secureCheckoutHotmart: "Sichere Zahlung über Hotmart",
 
     // Pain Points
+    painIdentity: "Es gibt zwei Arten von Frauen, die das Backen lieben: die, die es für immer als Hobby behalten... und die, die etwas daraus machen. Du weißt bereits, welche du sein willst.",
     painEyebrow: "Kommt dir das bekannt vor?",
     painTitle: "Wenn du dir das gefragt hast, bist du nicht allein...",
     painSubtitle: "Das sind die häufigsten Zweifel und Frustrationen, bevor man dicke, saftige, verkaufbare Cookies hinbekommt.",
@@ -444,7 +453,7 @@ const translations = {
     countryLuxembourg: "Luxemburg",
 
     // Guarantee
-    guaranteeTitle: "Eiserne 7-Tage-Garantie",
+    guaranteeTitle: "Die Erste-Charge-Garantie",
     guaranteeSubtitle: "Du Riskierst Nichts",
     guaranteeText: "Lade das Ebook herunter. Backe die Rezepte. Folge dem Plan. Wenn du dich nicht selbstbewusst fühlst, dein Cookie-Business zu starten, fordere deine Rückerstattung direkt bei Hotmart an - sie bearbeiten es in 24-48 Stunden. Keine Fragen, kein Ärger. Du riskierst nichts.",
     guaranteeCta: "Ich will mein Exemplar jetzt",
@@ -517,6 +526,13 @@ const translations = {
     finalBenefit5: "Risikofreie 7-Tage-Garantie",
     finalCtaButton: "Ich will mein Exemplar jetzt",
     finalCtaNote: "Sichere Zahlung - Sofortiger Zugang - 7-Tage-Garantie",
+    choiceTitle: "Du hast jetzt zwei Möglichkeiten:",
+    choiceA: "Diese Seite schließen. Weiter Backvideos schauen. Dir sagen \"irgendwann mal.\" In sechs Monaten hat sich nichts geändert.",
+    choiceB: "Heute für $6.97 starten. Heute Abend deine erste Charge backen. Morgen teilen. Nächstes Wochenende fragen die Leute, wie sie bestellen können.",
+    choiceQuestion: "Was klingt mehr nach dir?",
+    finalCtaPS: "P.S. Wenn du herunterlädst, geh direkt zu Kapitel 3 - dort ist das meistverkaufte Cookie-Rezept. Die meisten Frauen backen ihre erste Charge noch am selben Abend.",
+    futurePacingTitle: "Stell Dir Das Vor...",
+    futurePacingText: "Es ist Samstagmorgen. Deine Küche riecht unglaublich - warme Schokolade und Vanille in der Luft. Auf der Theke kühlen 36 dicke, saftige Cookies ab. Deine Nachbarin hat dir schon eine Nachricht geschickt, um eine Box zu reservieren. Deine Tochter schaut rein und fragt: \"Mama, können wir die mit Erdnussbutter machen?\" Du machst ein Foto für Instagram, und vor dem Mittagessen fragen drei Freundinnen, wie sie bestellen können. Das ist kein Traum. So sieht Woche 2 aus.",
     offerValidFor: "Sonderangebot nur gültig für",
 
     // Footer
@@ -550,6 +566,7 @@ const translations = {
     secureCheckoutHotmart: "Pagamento sicuro via Hotmart",
 
     // Pain Points
+    painIdentity: "Ci sono due tipi di donne che amano fare dolci: quelle che lo tengono come hobby per sempre... e quelle che lo trasformano in qualcosa di più. Sai già quale vuoi essere.",
     painEyebrow: "Ti suona familiare?",
     painTitle: "Se ti sei chiesta questo, non sei sola...",
     painSubtitle: "Questi sono i dubbi e le frustrazioni più comuni prima di ottenere cookies spessi, morbidi e vendibili.",
@@ -703,7 +720,7 @@ const translations = {
     countryLuxembourg: "Lussemburgo",
 
     // Guarantee
-    guaranteeTitle: "Garanzia Blindata di 7 Giorni",
+    guaranteeTitle: "La Garanzia del Primo Lotto",
     guaranteeSubtitle: "Non Rischi Nulla",
     guaranteeText: "Scarica l'ebook. Prepara le ricette. Segui il piano. Se non ti senti sicura di avviare il tuo business di cookies, richiedi il rimborso direttamente su Hotmart - lo elaborano in 24-48 ore. Senza domande, senza complicazioni. Non rischi nulla.",
     guaranteeCta: "Voglio la mia copia adesso",
@@ -776,6 +793,13 @@ const translations = {
     finalBenefit5: "Garanzia senza rischi di 7 giorni",
     finalCtaButton: "Voglio la mia copia adesso",
     finalCtaNote: "Pagamento sicuro - Accesso istantaneo - Garanzia 7 giorni",
+    choiceTitle: "Hai due scelte adesso:",
+    choiceA: "Chiudere questa pagina. Continuare a guardare video di pasticceria. Dirti \"forse un giorno.\" Tra sei mesi, niente è cambiato.",
+    choiceB: "Iniziare oggi per $6.97. Preparare il primo lotto stasera. Condividerli domani. Il prossimo fine settimana, la gente chiede come ordinare.",
+    choiceQuestion: "Quale ti somiglia di più?",
+    finalCtaPS: "P.S. Quando scarichi, vai direttamente al Capitolo 3 - lì trovi la ricetta di cookie più venduta. La maggior parte delle donne prepara il primo lotto quella sera stessa.",
+    futurePacingTitle: "Immagina Questo...",
+    futurePacingText: "È sabato mattina. La tua cucina profuma incredibilmente - cioccolato caldo e vaniglia nell'aria. Sul bancone, 36 cookies spessi e morbidi si stanno raffreddando. La tua vicina ti ha già scritto per prenotare una scatola. Tua figlia si affaccia e chiede: \"Mamma, possiamo fare quelli al burro di arachidi?\" Scatti una foto per Instagram, e prima di pranzo, tre amiche chiedono come ordinare. Non è un sogno. Così appare la Settimana 2.",
     offerValidFor: "Offerta speciale valida solo per",
 
     // Footer
@@ -809,6 +833,7 @@ const translations = {
     secureCheckoutHotmart: "Veilig betalen via Hotmart",
 
     // Pain Points
+    painIdentity: "Er zijn twee soorten vrouwen die van bakken houden: zij die het voor altijd als hobby houden... en zij die er iets meer van maken. Je weet al welke je wilt zijn.",
     painEyebrow: "Herkenbaar?",
     painTitle: "Als je je dit hebt afgevraagd, ben je niet alleen...",
     painSubtitle: "Dit zijn de meest voorkomende twijfels en frustraties voordat je dikke, zachte, verkoopbare cookies krijgt.",
@@ -962,7 +987,7 @@ const translations = {
     countryLuxembourg: "Luxemburg",
 
     // Guarantee
-    guaranteeTitle: "IJzersterke 7-Dagen Garantie",
+    guaranteeTitle: "De Eerste-Batch Garantie",
     guaranteeSubtitle: "Je Riskeert Niets",
     guaranteeText: "Download het ebook. Bak de recepten. Volg het plan. Als je je niet zelfverzekerd voelt om je cookie-business te starten, vraag dan je geld terug direct bij Hotmart - zij verwerken het in 24-48 uur. Geen vragen, geen gedoe. Je riskeert niets.",
     guaranteeCta: "Ik wil mijn exemplaar nu",
@@ -1035,6 +1060,13 @@ const translations = {
     finalBenefit5: "Risicovrije 7-dagen garantie",
     finalCtaButton: "Ik wil mijn exemplaar nu",
     finalCtaNote: "Veilige betaling - Directe toegang - 7-dagen garantie",
+    choiceTitle: "Je hebt nu twee keuzes:",
+    choiceA: "Deze pagina sluiten. Verder bakvideo's kijken. Jezelf vertellen \"misschien ooit.\" Over zes maanden is er niets veranderd.",
+    choiceB: "Vandaag beginnen voor $6.97. Vanavond je eerste batch bakken. Morgen delen. Volgend weekend vragen mensen hoe ze kunnen bestellen.",
+    choiceQuestion: "Welke klinkt meer als jij?",
+    finalCtaPS: "P.S. Als je downloadt, ga dan direct naar Hoofdstuk 3 - daar staat het bestverkochte cookie-recept. De meeste vrouwen bakken hun eerste batch diezelfde avond.",
+    futurePacingTitle: "Stel Je Dit Voor...",
+    futurePacingText: "Het is zaterdagochtend. Je keuken ruikt ongelooflijk - warme chocolade en vanille in de lucht. Op het aanrecht koelen 36 dikke, zachte cookies af. Je buurvrouw heeft al een bericht gestuurd om een doos te reserveren. Je dochter komt binnen en vraagt: \"Mama, kunnen we de pindakaas-koekjes maken?\" Je maakt een foto voor Instagram, en voor de lunch vragen drie vriendinnen hoe ze kunnen bestellen. Dit is geen droom. Zo ziet Week 2 eruit.",
     offerValidFor: "Speciale aanbieding alleen geldig voor",
 
     // Footer
@@ -1068,6 +1100,7 @@ const translations = {
     secureCheckoutHotmart: "Bezpieczna płatność przez Hotmart",
 
     // Pain Points
+    painIdentity: "Są dwa rodzaje kobiet, które kochają piec: te, które zostają przy hobby na zawsze... i te, które zamieniają to w coś więcej. Już wiesz, którą chcesz być.",
     painEyebrow: "Brzmi znajomo?",
     painTitle: "Jeśli zadawałaś sobie to pytanie, nie jesteś sama...",
     painSubtitle: "To są najczęstsze wątpliwości i frustracje przed uzyskaniem grubych, miękkich, sprzedawalnych ciasteczek.",
@@ -1221,7 +1254,7 @@ const translations = {
     countryLuxembourg: "Luksemburg",
 
     // Guarantee
-    guaranteeTitle: "Żelazna 7-Dniowa Gwarancja",
+    guaranteeTitle: "Gwarancja Pierwszej Partii",
     guaranteeSubtitle: "Niczym Nie Ryzykujesz",
     guaranteeText: "Pobierz ebook. Zrób przepisy. Postępuj zgodnie z planem. Jeśli nie czujesz się pewnie, żeby rozpocząć biznes z ciasteczkami, poproś o zwrot pieniędzy bezpośrednio w Hotmart - przetwarzają to w 24-48 godzin. Bez pytań, bez problemów. Niczym nie ryzykujesz.",
     guaranteeCta: "Chcę moją kopię teraz",
@@ -1294,6 +1327,13 @@ const translations = {
     finalBenefit5: "Bezryzykowna 7-dniowa gwarancja",
     finalCtaButton: "Chcę moją kopię teraz",
     finalCtaNote: "Bezpieczna płatność - Natychmiastowy dostęp - 7-dniowa gwarancja",
+    choiceTitle: "Masz teraz dwie opcje:",
+    choiceA: "Zamknij tę stronę. Dalej oglądaj filmy o pieczeniu. Powiedz sobie \"może kiedyś.\" Za sześć miesięcy nic się nie zmieniło.",
+    choiceB: "Zacznij dziś za $6.97. Upiecz pierwszą partię dziś wieczorem. Podziel się jutro. W następny weekend ludzie pytają jak zamówić.",
+    choiceQuestion: "Która opcja brzmi bardziej jak Ty?",
+    finalCtaPS: "P.S. Kiedy pobierzesz, idź prosto do Rozdziału 3 - tam jest najlepiej sprzedający się przepis na ciasteczka. Większość kobiet piecze pierwszą partię tego samego wieczoru.",
+    futurePacingTitle: "Wyobraź Sobie To...",
+    futurePacingText: "Jest sobota rano. Twoja kuchnia pachnie niesamowicie - ciepła czekolada i wanilia unoszą się w powietrzu. Na blacie stygnie 36 grubych, miękkich ciasteczek. Twoja sąsiadka już wysłała wiadomość, żeby zarezerwować pudełko. Twoja córka zagląda i pyta: \"Mamo, możemy zrobić te z masłem orzechowym?\" Robisz zdjęcie na Instagram, a przed obiadem trzy przyjaciółki pytają jak zamówić. To nie jest sen. Tak wygląda Tydzień 2.",
     offerValidFor: "Specjalna oferta ważna tylko przez",
 
     // Footer

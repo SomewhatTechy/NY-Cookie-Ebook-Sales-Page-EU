@@ -23,6 +23,10 @@ export default function PainPointsSection() {
     <section className="relative py-14 md:py-16 bg-gradient-to-b from-background via-secondary/30 to-background">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
+          <p className="text-base md:text-lg italic text-muted-foreground mb-6">
+            {t("painIdentity")}
+          </p>
+
           <p className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-card px-4 py-2 text-sm font-semibold text-chocolate shadow-sm">
             <span className="h-2 w-2 rounded-full bg-pink" />
             {t("painEyebrow")}
