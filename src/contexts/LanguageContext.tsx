@@ -18,8 +18,8 @@ const translations = {
     priceIncreasesTo: "L'offre spéciale se termine dans",
     
     // Hero
-    heroTitle: "Faites des Cookies NY et Lancez Votre Business Maison en 7 Jours",
-    heroSubtitle: "Commencez à vendre des cookies style New York premium depuis chez vous avec 27 recettes testées, un plan de vente et seulement $30 d'ingrédients",
+    heroTitle: "Apprenez à Faire des Cookies Style New York Parfaits — Épais, Hauts et Fondants Dès la Première Fournée",
+    heroSubtitle: "27 recettes pas à pas avec des temps, températures et techniques exactes pour un cœur fondant et une finition de pâtisserie premium — même si vous êtes débutante",
     
     // Effort Minimizers (Hormozi)
     effortMinimizer1: "Seulement $30 pour commencer",
@@ -32,10 +32,10 @@ const translations = {
     secureCheckoutHotmart: "Paiement sécurisé via Hotmart",
 
     // Pain Points
-    painIdentity: "Il y a deux types de femmes qui aiment pâtisser : celles qui gardent ça comme hobby pour toujours... et celles qui en font quelque chose de plus. Vous savez déjà laquelle vous voulez être.",
+    painIdentity: "Il y a deux types de femmes qui aiment pâtisser : celles qui suivent des recettes au hasard en espérant le meilleur... et celles qui apprennent la méthode derrière des résultats de pâtisserie. Vous savez déjà laquelle vous voulez être.",
     painEyebrow: "Ça vous parle?",
-    painTitle: "Si vous vous êtes posé cette question, vous n'êtes pas seule...",
-    painSubtitle: "Ce sont les doutes et frustrations les plus courants avant d'obtenir des cookies épais, moelleux et vendables.",
+    painTitle: "Ça vous arrive quand vous essayez de faire des cookies style New York ?",
+    painSubtitle: "Ce sont les frustrations les plus courantes avant de maîtriser des cookies épais, moelleux et de qualité premium.",
     painQ1: "Vous adorez pâtisser, mais vous ne savez pas comment en faire un vrai business?",
     painQ2: "Vous perdez du temps et des ingrédients avec des recettes internet qui ne marchent jamais?",
     painQ3: "Vendre vous fait peur parce que vous avez l'impression de devoir insister pour que les gens achètent?",
@@ -249,7 +249,7 @@ const translations = {
     objection6Inside: "Inclut: fondamentaux de marque, prix et présentation.",
 
     // Final CTA
-    finalCtaTitle: "Votre Business de Cookies Commence MAINTENANT",
+    finalCtaTitle: "Dans 2 Heures, Votre Premier Lot Refroidira sur le Comptoir",
     finalCtaSubtitle: "Dans 2 heures, votre premier lot de cookies de qualité professionnelle refroidira sur le comptoir",
     finalCtaRecap: "Tout ce dont vous avez besoin pour seulement $6.97 :",
     finalBenefit1: "27 recettes testées et vendables",
@@ -285,8 +285,8 @@ const translations = {
     priceIncreasesTo: "Sonderangebot endet in",
     
     // Hero
-    heroTitle: "Backe NY-Style Cookies und Starte Dein Home Business in 7 Tagen",
-    heroSubtitle: "Fang an, Premium New York-Style Cookies von zu Hause zu verkaufen mit 27 getesteten Rezepten, einem bewährten Verkaufsplan und nur $30 an Zutaten",
+    heroTitle: "Lerne Perfekte NY-Style Cookies zu Backen — Dick, Hoch und Cremig Ab der Ersten Charge",
+    heroSubtitle: "27 Schritt-für-Schritt-Rezepte mit genauen Zeiten, Temperaturen und Techniken für einen cremigen Kern und Konditorei-Qualität — auch wenn du komplette Anfängerin bist",
     
     // Effort Minimizers (Hormozi)
     effortMinimizer1: "Nur $30 zum Starten",
@@ -299,10 +299,10 @@ const translations = {
     secureCheckoutHotmart: "Sichere Zahlung über Hotmart",
 
     // Pain Points
-    painIdentity: "Es gibt zwei Arten von Frauen, die das Backen lieben: die, die es für immer als Hobby behalten... und die, die etwas daraus machen. Du weißt bereits, welche du sein willst.",
+    painIdentity: "Es gibt zwei Arten von Frauen, die das Backen lieben: die, die zufällige Rezepte ausprobieren und auf das Beste hoffen... und die, die die Methode hinter Konditorei-Ergebnissen lernen. Du weißt bereits, welche du sein willst.",
     painEyebrow: "Kommt dir das bekannt vor?",
-    painTitle: "Wenn du dir das gefragt hast, bist du nicht allein...",
-    painSubtitle: "Das sind die häufigsten Zweifel und Frustrationen, bevor man dicke, saftige, verkaufbare Cookies hinbekommt.",
+    painTitle: "Passiert dir das, wenn du NY-Style Cookies backen willst?",
+    painSubtitle: "Das sind die häufigsten Frustrationen, bevor man dicke, saftige Cookies in Premium-Qualität meistert.",
     painQ1: "Du liebst das Backen, weißt aber nicht, wie du daraus ein echtes Business machen kannst?",
     painQ2: "Du verschwendest Zeit und Zutaten mit Internet-Rezepten, die nie funktionieren?",
     painQ3: "Hast du Angst vor dem Verkaufen, weil es sich anfühlt, als müsstest du die Leute zum Kaufen drängen?",
@@ -516,7 +516,7 @@ const translations = {
     objection6Inside: "Enthält: Marken-Grundlagen, Preise und Präsentation.",
 
     // Final CTA
-    finalCtaTitle: "Dein Cookie-Business Startet JETZT",
+    finalCtaTitle: "In 2 Stunden Kühlt Deine Erste Charge Auf der Theke Ab",
     finalCtaSubtitle: "In 2 Stunden kühlt deine erste Ladung Cookies in Profi-Qualität auf der Theke ab",
     finalCtaRecap: "Alles was du brauchst für nur $6.97:",
     finalBenefit1: "27 getestete, verkaufbare Rezepte",
@@ -552,8 +552,8 @@ const translations = {
     priceIncreasesTo: "L'offerta speciale termina tra",
     
     // Hero
-    heroTitle: "Prepara Cookies NY e Avvia un Business da Casa in 7 Giorni",
-    heroSubtitle: "Inizia a vendere cookies premium stile New York da casa con 27 ricette testate, un piano vendite e solo $30 di ingredienti",
+    heroTitle: "Impara a Fare Cookies Stile New York Perfetti — Spessi, Alti e Cremosi Dal Primo Lotto",
+    heroSubtitle: "27 ricette passo passo con tempi, temperature e tecniche esatte per un centro cremoso e una finitura da pasticceria premium — anche se sei una principiante assoluta",
     
     // Effort Minimizers (Hormozi)
     effortMinimizer1: "Solo $30 per iniziare",
@@ -566,10 +566,10 @@ const translations = {
     secureCheckoutHotmart: "Pagamento sicuro via Hotmart",
 
     // Pain Points
-    painIdentity: "Ci sono due tipi di donne che amano fare dolci: quelle che lo tengono come hobby per sempre... e quelle che lo trasformano in qualcosa di più. Sai già quale vuoi essere.",
+    painIdentity: "Ci sono due tipi di donne che amano fare dolci: quelle che seguono ricette a caso sperando nel meglio... e quelle che imparano il metodo dietro risultati da pasticceria. Sai già quale vuoi essere.",
     painEyebrow: "Ti suona familiare?",
-    painTitle: "Se ti sei chiesta questo, non sei sola...",
-    painSubtitle: "Questi sono i dubbi e le frustrazioni più comuni prima di ottenere cookies spessi, morbidi e vendibili.",
+    painTitle: "Ti succede questo quando provi a fare cookies stile New York?",
+    painSubtitle: "Queste sono le frustrazioni più comuni prima di padroneggiare cookies spessi, morbidi e di qualità premium.",
     painQ1: "Ami cucinare dolci ma non sai come trasformarlo in un vero business?",
     painQ2: "Perdi tempo e ingredienti con ricette da internet che non funzionano mai?",
     painQ3: "Vendere ti spaventa perché sembra di dover insistere perché la gente compri?",
@@ -783,7 +783,7 @@ const translations = {
     objection6Inside: "Include: fondamentali di brand, prezzi e presentazione.",
 
     // Final CTA
-    finalCtaTitle: "Il Tuo Business di Cookies Inizia ORA",
+    finalCtaTitle: "In 2 Ore, Il Tuo Primo Lotto Si Raffredderà Sul Bancone",
     finalCtaSubtitle: "Tra 2 ore, il tuo primo lotto di cookies di qualità professionale si raffredderà sul bancone",
     finalCtaRecap: "Tutto ciò di cui hai bisogno per soli $6.97:",
     finalBenefit1: "27 ricette testate e vendibili",
@@ -819,8 +819,8 @@ const translations = {
     priceIncreasesTo: "Speciale aanbieding eindigt over",
     
     // Hero
-    heroTitle: "Bak NY-Style Cookies en Start een Thuisbusiness in 7 Dagen",
-    heroSubtitle: "Begin met het verkopen van premium New York-style cookies vanuit huis met 27 geteste recepten, een bewezen verkoopplan en slechts $30 aan ingrediënten",
+    heroTitle: "Leer Perfecte NY-Style Cookies Maken — Dik, Hoog en Zacht Vanaf Je Eerste Batch",
+    heroSubtitle: "27 stap-voor-stap recepten met exacte tijden, temperaturen en technieken voor een romig centrum en bakkerijkwaliteit — ook als je een complete beginner bent",
     
     // Effort Minimizers (Hormozi)
     effortMinimizer1: "Slechts $30 om te starten",
@@ -833,10 +833,10 @@ const translations = {
     secureCheckoutHotmart: "Veilig betalen via Hotmart",
 
     // Pain Points
-    painIdentity: "Er zijn twee soorten vrouwen die van bakken houden: zij die het voor altijd als hobby houden... en zij die er iets meer van maken. Je weet al welke je wilt zijn.",
+    painIdentity: "Er zijn twee soorten vrouwen die van bakken houden: zij die willekeurige recepten volgen en op het beste hopen... en zij die de methode achter bakkerijkwaliteit leren. Je weet al welke je wilt zijn.",
     painEyebrow: "Herkenbaar?",
-    painTitle: "Als je je dit hebt afgevraagd, ben je niet alleen...",
-    painSubtitle: "Dit zijn de meest voorkomende twijfels en frustraties voordat je dikke, zachte, verkoopbare cookies krijgt.",
+    painTitle: "Overkomt dit je wanneer je NY-style cookies probeert te maken?",
+    painSubtitle: "Dit zijn de meest voorkomende frustraties voordat je dikke, zachte cookies van premium kwaliteit onder de knie krijgt.",
     painQ1: "Hou je van bakken, maar weet je niet hoe je er een echt bedrijf van maakt?",
     painQ2: "Verspil je tijd en ingrediënten aan internetrecepten die nooit werken?",
     painQ3: "Ben je bang om te verkopen omdat het voelt alsof je mensen moet pushen om te kopen?",
@@ -1050,7 +1050,7 @@ const translations = {
     objection6Inside: "Bevat: merkfundamenten, prijzen en presentatie.",
 
     // Final CTA
-    finalCtaTitle: "Je Cookie-Business Start NU",
+    finalCtaTitle: "Over 2 Uur Koelt Je Eerste Batch Af Op Het Aanrecht",
     finalCtaSubtitle: "Over 2 uur koelt je eerste batch professionele cookies af op het aanrecht",
     finalCtaRecap: "Alles wat je nodig hebt voor slechts $6.97:",
     finalBenefit1: "27 geteste, verkoopbare recepten",
@@ -1086,8 +1086,8 @@ const translations = {
     priceIncreasesTo: "Oferta specjalna kończy się za",
     
     // Hero
-    heroTitle: "Piecz Ciasteczka w Stylu NY i Rozpocznij Biznes z Domu w 7 Dni",
-    heroSubtitle: "Zacznij sprzedawać premium ciasteczka w stylu New York z domu z 27 przetestowanymi przepisami, sprawdzonym planem sprzedaży i tylko $30 na składniki",
+    heroTitle: "Naucz Się Piec Perfekcyjne Ciasteczka w Stylu NY — Grube, Wysokie i Kremowe Od Pierwszej Partii",
+    heroSubtitle: "27 przepisów krok po kroku z dokładnymi czasami, temperaturami i technikami na kremowe wnętrze i wykończenie jak z cukierni — nawet jeśli jesteś zupełną początkującą",
     
     // Effort Minimizers (Hormozi)
     effortMinimizer1: "Tylko $30 na start",
@@ -1100,10 +1100,10 @@ const translations = {
     secureCheckoutHotmart: "Bezpieczna płatność przez Hotmart",
 
     // Pain Points
-    painIdentity: "Są dwa rodzaje kobiet, które kochają piec: te, które zostają przy hobby na zawsze... i te, które zamieniają to w coś więcej. Już wiesz, którą chcesz być.",
+    painIdentity: "Są dwa rodzaje kobiet, które kochają piec: te, które próbują losowych przepisów i mają nadzieję na najlepsze... i te, które uczą się metody stojącej za wynikami jak z cukierni. Już wiesz, którą chcesz być.",
     painEyebrow: "Brzmi znajomo?",
-    painTitle: "Jeśli zadawałaś sobie to pytanie, nie jesteś sama...",
-    painSubtitle: "To są najczęstsze wątpliwości i frustracje przed uzyskaniem grubych, miękkich, sprzedawalnych ciasteczek.",
+    painTitle: "Zdarza ci się to, gdy próbujesz piec ciasteczka w stylu New York?",
+    painSubtitle: "To są najczęstsze frustracje przed opanowaniem grubych, miękkich ciasteczek o jakości premium.",
     painQ1: "Kochasz piec, ale nie wiesz jak zamienić to w prawdziwy biznes?",
     painQ2: "Tracisz czas i składniki na internetowe przepisy, które nigdy nie działają?",
     painQ3: "Boisz się sprzedawać, bo wydaje ci się, że musisz naciskać na ludzi, żeby kupili?",
@@ -1317,7 +1317,7 @@ const translations = {
     objection6Inside: "Zawiera: podstawy marki, ceny i prezentacja.",
 
     // Final CTA
-    finalCtaTitle: "Twój Biznes z Ciasteczkami Zaczyna Się TERAZ",
+    finalCtaTitle: "Za 2 Godziny Twoja Pierwsza Partia Będzie Stygnąć na Blacie",
     finalCtaSubtitle: "Za 2 godziny Twoja pierwsza partia profesjonalnych ciasteczek będzie stygnąć na blacie",
     finalCtaRecap: "Wszystko czego potrzebujesz za jedyne $6.97:",
     finalBenefit1: "27 przetestowanych, sprzedawalnych przepisów",
