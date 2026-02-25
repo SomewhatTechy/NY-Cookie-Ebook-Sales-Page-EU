@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const STORAGE_KEY = "offer_end_at_ms";
 // Keep this aligned with the primary offer timer across the page.
-const DEFAULT_DURATION_SEC = 12 * 60 * 60; // 12:00:00
+const DEFAULT_DURATION_SEC = 24 * 60 * 60; // 24:00:00
 
 type Countdown = { 
   hours: number; 
@@ -23,9 +23,8 @@ function getOrInitEndAtMs(durationSec: number): number {
   const raw = window.localStorage.getItem(STORAGE_KEY);
   const parsed = raw ? Number(raw) : NaN;
 
-  // If missing or invalid, initialize a fresh end time.
-  // CHANGED: We no longer reset if expired — we keep the expired timestamp.
-  if (!Number.isFinite(parsed)) {
+  // If missing, invalid, or expired — reinitialize with a fresh window.
+  if (!Number.isFinite(parsed) || parsed < now) {
     const next = now + durationSec * 1000;
     window.localStorage.setItem(STORAGE_KEY, String(next));
     return next;
@@ -57,17 +56,12 @@ export function useOfferCountdown(durationSec = DEFAULT_DURATION_SEC): Countdown
 
     const tick = () => {
       const remaining = nextEndAt - Date.now();
-      
-      // CHANGED: When expired, we do NOT reset the timer.
-      // We just show 0:00:00 and isExpired: true
+
+      // When expired, auto-reset with a fresh 24h window
       if (remaining <= 0) {
-        setCountdown({
-          hours: 0,
-          minutes: 0,
-          seconds: 0,
-          isExpired: true,
-          totalSecondsLeft: 0,
-        });
+        const freshEnd = getOrInitEndAtMs(durationSec);
+        setEndAtMs(freshEnd);
+        setCountdown(msToCountdown(freshEnd - Date.now()));
         return;
       }
 

@@ -23,10 +23,6 @@ export default function PainPointsSection() {
     <section className="relative py-14 md:py-16 bg-gradient-to-b from-background via-secondary/30 to-background">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-base md:text-lg italic text-muted-foreground mb-6">
-            {t("painIdentity")}
-          </p>
-
           <p className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-card px-4 py-2 text-sm font-semibold text-chocolate shadow-sm">
             <span className="h-2 w-2 rounded-full bg-pink" />
             {t("painEyebrow")}
@@ -67,6 +63,9 @@ export default function PainPointsSection() {
         <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-gold/25 bg-card/60 p-5 text-center shadow-sm">
           <p className="text-sm md:text-base text-muted-foreground">
             {t("painBridge")}
+          </p>
+          <p className="mt-2 text-sm md:text-base font-semibold text-chocolate">
+            {t("painBridgeCta")}
           </p>
         </div>
       </div>

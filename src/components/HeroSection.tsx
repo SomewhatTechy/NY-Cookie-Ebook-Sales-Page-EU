@@ -21,11 +21,11 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
   const currentVideoId = videoIds[language] ?? videoIds.fr;
 
   const videoTitleByLang: Record<string, string> = {
-    fr: 'Comment Commencer à Vendre des Cookies Style New York Depuis Chez Soi',
-    de: 'New York Style Cookies von Zuhause Verkaufen – So Startest Du Richtig',
-    it: 'Come Iniziare a Vendere Cookie Stile New York da Casa',
-    nl: 'New York-Style Koekjes Verkopen Vanuit Huis – Zo Begin Je',
-    pl: 'Jak Zacząć Sprzedawać Ciasteczka w Stylu Nowojorskim z Domu',
+    fr: 'Comment Faire des Cookies Parfaits Style New York a la Maison',
+    de: 'Perfekte New York Style Cookies zu Hause Backen',
+    it: 'Come Fare Cookie Perfetti Stile New York a Casa',
+    nl: 'Perfecte New York-Style Koekjes Thuis Bakken',
+    pl: 'Jak Zrobic Idealne Ciasteczka w Stylu Nowojorskim w Domu',
   };
   const videoTitle = videoTitleByLang[language] ?? videoTitleByLang.fr;
 
