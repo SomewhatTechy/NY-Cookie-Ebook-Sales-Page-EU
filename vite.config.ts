@@ -1,17 +1,46 @@
 import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+import fs from "fs";
 
-/** Convert the build CSS <link> to async (print→all) so it's non-render-blocking. */
-function asyncCssPlugin(): Plugin {
+/** Inline the build CSS directly into <style> tags, eliminating the render-blocking request. */
+function inlineCssPlugin(): Plugin {
   return {
-    name: 'async-css',
+    name: 'inline-css',
     enforce: 'post',
-    transformIndexHtml(html) {
-      return html.replace(
-        /<link rel="stylesheet" crossorigin href="(\/assets\/[^"]+\.css)">/,
-        `<link rel="stylesheet" href="$1" media="print" onload="this.media='all'">\n    <noscript><link rel="stylesheet" href="$1"></noscript>`
-      );
+    apply: 'build',
+    generateBundle(_opts, bundle) {
+      const htmlKey = Object.keys(bundle).find(k => k.endsWith('.html'));
+      const cssKeys = Object.keys(bundle).filter(k => k.endsWith('.css'));
+      if (!htmlKey || cssKeys.length === 0) return;
+
+      const htmlAsset = bundle[htmlKey];
+      if (htmlAsset.type !== 'asset') return;
+
+      let html = typeof htmlAsset.source === 'string'
+        ? htmlAsset.source
+        : new TextDecoder().decode(htmlAsset.source);
+
+      for (const cssKey of cssKeys) {
+        const cssAsset = bundle[cssKey];
+        if (cssAsset.type !== 'asset') continue;
+
+        const cssContent = typeof cssAsset.source === 'string'
+          ? cssAsset.source
+          : new TextDecoder().decode(cssAsset.source);
+
+        // Replace the <link> tag with an inline <style>
+        const cssPath = '/' + cssKey;
+        const linkPattern = new RegExp(
+          `<link[^>]*href="${cssPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"[^>]*>`,
+        );
+        html = html.replace(linkPattern, `<style>${cssContent}</style>`);
+
+        // Remove the CSS file from the bundle (no longer needed)
+        delete bundle[cssKey];
+      }
+
+      htmlAsset.source = html;
     },
   };
 }
@@ -22,7 +51,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [react(), asyncCssPlugin()].filter(Boolean),
+  plugins: [react(), inlineCssPlugin()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
