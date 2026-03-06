@@ -137,16 +137,17 @@
 
     <!-- Critical CSS: prevents white flash while full stylesheet loads async -->
     <style>
+      @font-face{font-family:'Poppins Fallback';src:local('Arial');ascent-override:105%;descent-override:35%;line-gap-override:0%;size-adjust:113%}
       :root{--background:22 100% 97%;--foreground:15 38% 17%;--card:0 0% 100%;--border:22 30% 85%;--gold:38 65% 56%;--pink:336 100% 72%;--chocolate:15 38% 17%;--radius:1rem;--gradient-hero:linear-gradient(180deg,hsl(22 100% 97%) 0%,hsl(38 60% 94%) 100%);--shadow-card:0 4px 24px hsl(15 38% 17%/.08)}
       html{scroll-behavior:smooth}
-      body{margin:0;background-image:var(--gradient-hero);background-attachment:fixed;background-color:hsl(var(--background));color:hsl(var(--foreground));font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+      body{margin:0;background-image:var(--gradient-hero);background-attachment:fixed;background-color:hsl(var(--background));color:hsl(var(--foreground));font-family:'Poppins','Poppins Fallback',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
       #root{position:relative;z-index:1}
     </style>
   </head>
 
   <body>
     <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1842006253129669&ev=PageView&noscript=1"
+      src="https://www.facebook.com/tr?id=1936931293575221&ev=PageView&noscript=1"
     /></noscript>
     <div id="root">
       <!-- Static LCP placeholder: paints before React hydrates, removed on mount -->

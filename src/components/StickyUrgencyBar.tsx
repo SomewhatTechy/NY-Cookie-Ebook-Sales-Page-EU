@@ -72,7 +72,15 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
   /* Show once visitor scrolls past the hero */
   useEffect(() => {
     const heroHeight = window.innerHeight * 0.8;
-    const handleScroll = () => setIsVisible(window.scrollY > heroHeight);
+    let ticking = false;
+    const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setIsVisible(window.scrollY > heroHeight);
+        ticking = false;
+      });
+    };
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);

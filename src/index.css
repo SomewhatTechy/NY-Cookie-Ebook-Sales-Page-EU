@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fallback font with Poppins metric overrides to prevent CLS */
+@font-face {
+  font-family: 'Poppins Fallback';
+  src: local('Arial');
+  ascent-override: 105%;
+  descent-override: 35%;
+  line-gap-override: 0%;
+  size-adjust: 113%;
+}
+
 /* Cream/Pink/Chocolate/Gold Theme */
 
 @layer base {
@@ -121,7 +131,7 @@
   html {
     scroll-behavior: smooth;
     /* Default typeface site-wide */
-    font-family: 'Poppins', system-ui, sans-serif;
+    font-family: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
   }
 
   /* Make sure interactive elements inherit the global font (incl. buttons/forms). */
@@ -135,23 +145,23 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Poppins', system-ui, sans-serif;
+    font-family: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', system-ui, sans-serif;
+    font-family: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
     font-weight: 700;
   }
 }
 
 @layer utilities {
   .font-heading {
-    font-family: 'Poppins', system-ui, sans-serif;
+    font-family: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
     font-weight: 700;
   }
 
   .font-body {
-    font-family: 'Poppins', system-ui, sans-serif;
+    font-family: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
   }
 
   .text-gradient {
@@ -224,7 +234,7 @@
 
   .section-title {
     @apply text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6;
-    font-family: 'Poppins', system-ui, sans-serif;
+    font-family: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
     color: hsl(var(--chocolate));
   }
 

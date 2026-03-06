@@ -11,13 +11,18 @@ const FloatingCTA = ({ checkoutUrl }: FloatingCTAProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      // Show after scrolling 500px
-      setIsVisible(window.scrollY > 500);
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setIsVisible(window.scrollY > 500);
+        ticking = false;
+      });
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // set initial state
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
