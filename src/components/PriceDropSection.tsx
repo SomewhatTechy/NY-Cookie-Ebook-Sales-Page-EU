@@ -54,13 +54,13 @@ const PriceDropSection = ({ checkoutUrl }: PriceDropSectionProps) => {
             </div>
           </div>
 
-          {/* Price Display — always $6.97 */}
+          {/* Price Display */}
           <div className="mb-6">
             <span className="text-white/50 line-through text-xl mr-3">
-              {safe('originalPrice', '$27')}
+              {safe('originalPrice', '$47')}
             </span>
             <span className="text-4xl md:text-5xl font-bold text-gold">
-              {safe('currentPrice', '$6.97')}
+              {safe('currentPrice', '$9.97')}
             </span>
           </div>
 

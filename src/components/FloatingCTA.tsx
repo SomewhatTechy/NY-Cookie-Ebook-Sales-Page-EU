@@ -1,6 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Cookie } from 'lucide-react';
-import { useEffect, useState } from 'react';
 
 interface FloatingCTAProps {
   checkoutUrl: string;
@@ -8,23 +7,6 @@ interface FloatingCTAProps {
 
 const FloatingCTA = ({ checkoutUrl }: FloatingCTAProps) => {
   const { t } = useLanguage();
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    let ticking = false;
-    const handleScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        setIsVisible(window.scrollY > 500);
-        ticking = false;
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const goCheckout = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -35,13 +17,11 @@ const FloatingCTA = ({ checkoutUrl }: FloatingCTAProps) => {
     }
   };
 
-  if (!isVisible) return null;
-
   return (
     <a
       href={checkoutUrl}
       onClick={goCheckout}
-      className="fixed bottom-5 right-5 z-50 flex items-center gap-2 px-5 py-3 rounded-full font-semibold premium-pill animate-fade-in hover:scale-105 active:scale-95 transition-transform"
+      className="fixed bottom-5 right-5 z-50 flex items-center gap-2 px-5 py-3 rounded-full font-semibold premium-pill hover:scale-105 active:scale-95 transition-transform"
       style={{
         background: 'var(--gradient-cta)',
         color: 'hsl(var(--chocolate))',
