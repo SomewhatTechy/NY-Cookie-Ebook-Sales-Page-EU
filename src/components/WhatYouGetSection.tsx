@@ -58,12 +58,12 @@ const WhatYouGetSection = () => {
           <p className="section-subtitle">{safe("wygSubtitle", "")}</p>
         </div>
 
-        <div className="max-w-4xl mx-auto mb-12 animate-fade-in">
+        <div className="max-w-sm mx-auto mb-12 animate-fade-in">
           <div className="premium-card overflow-hidden">
             <img
               src={mainMockupSrc}
               srcSet={mainMockupSrcSet}
-              sizes="(max-width: 420px) 384px, (max-width: 640px) 512px, (max-width: 1024px) 768px, 896px"
+              sizes="(max-width: 420px) 256px, 384px"
               alt={String(safe("heroTitle", "Ebook mockup"))}
               width={1024}
               height={1024}
