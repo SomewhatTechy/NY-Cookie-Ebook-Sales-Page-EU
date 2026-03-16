@@ -103,22 +103,13 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
             })}
           </div>
 
-          {/* Price badge */}
-          <div className="flex items-center justify-center gap-3 mb-4 animate-fade-in">
-            <span className="text-muted-foreground line-through text-lg">{t('originalPrice')}</span>
-            <span className="text-3xl md:text-4xl font-bold text-gold">{t('currentPrice')}</span>
-            <span className="px-2 py-1 rounded-full bg-green-100 text-green-700 text-xs font-bold uppercase">
-              {t('priceNote')}
-            </span>
-          </div>
-
           <p className="text-gold font-semibold mb-3 flex items-center justify-center gap-2 animate-fade-in">
             <span aria-hidden>👇</span>
             {t('watchVideoPrompt')}
             <span aria-hidden>👇</span>
           </p>
 
-          <div className="mb-8">
+          <div className="mb-6">
             <div className="relative max-w-2xl mx-auto rounded-2xl overflow-hidden elevated-shadow gold-frame">
               <div className="aspect-video bg-chocolate/5">
                 {videoLoaded ? (
@@ -158,6 +149,15 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
                 )}
               </div>
             </div>
+          </div>
+
+          {/* Price badge */}
+          <div className="flex items-center justify-center gap-3 mb-4 animate-fade-in">
+            <span className="text-muted-foreground line-through text-lg">{t('originalPrice')}</span>
+            <span className="text-3xl md:text-4xl font-bold text-gold">{t('currentPrice')}</span>
+            <span className="px-2 py-1 rounded-full bg-green-100 text-green-700 text-xs font-bold uppercase">
+              {t('priceNote')}
+            </span>
           </div>
 
           <a
