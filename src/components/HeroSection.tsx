@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ArrowRight, Download, Sparkles, ShieldCheck, Cookie, DollarSign, Clock, Zap, Play } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface HeroSectionProps {
   checkoutUrl: string;
@@ -9,6 +9,11 @@ interface HeroSectionProps {
 const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
   const { t, language } = useLanguage();
   const [videoLoaded, setVideoLoaded] = useState(false);
+
+  // Remove the static LCP placeholder once React paints
+  useEffect(() => {
+    document.getElementById('lcp-placeholder')?.remove();
+  }, []);
 
   const videoIds: Record<string, string> = {
     fr: 'WDSINN3-BtM',
@@ -98,6 +103,15 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
             })}
           </div>
 
+          {/* Price badge */}
+          <div className="flex items-center justify-center gap-3 mb-4 animate-fade-in">
+            <span className="text-muted-foreground line-through text-lg">{t('originalPrice')}</span>
+            <span className="text-3xl md:text-4xl font-bold text-gold">{t('currentPrice')}</span>
+            <span className="px-2 py-1 rounded-full bg-green-100 text-green-700 text-xs font-bold uppercase">
+              {t('priceNote')}
+            </span>
+          </div>
+
           <p className="text-gold font-semibold mb-3 flex items-center justify-center gap-2 animate-fade-in">
             <span aria-hidden>👇</span>
             {t('watchVideoPrompt')}
@@ -149,7 +163,7 @@ const HeroSection = ({ checkoutUrl }: HeroSectionProps) => {
           <a
             href={checkoutUrl}
             onClick={goCheckout}
-            className="cta-button text-base md:text-lg animate-pulse-glow hover:scale-105 active:scale-95 transition-transform"
+            className="cta-button text-base md:text-lg animate-pulse-glow hover:scale-105 active:scale-95 transition-transform animate-scale-in"
             aria-label={t('heroCta')}
           >
             {t('heroCta')}

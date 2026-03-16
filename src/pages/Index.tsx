@@ -18,6 +18,7 @@ const GuaranteeSection = lazy(() => import('@/components/GuaranteeSection'));
 const FAQSection = lazy(() => import('@/components/FAQSection'));
 const ObjectionsSection = lazy(() => import('@/components/ObjectionsSection'));
 const FinalCTASection = lazy(() => import('@/components/FinalCTASection'));
+const BrandStorySection = lazy(() => import('@/components/BrandStorySection'));
 const Footer = lazy(() => import('@/components/Footer'));
 
 type LangKey = 'fr' | 'de' | 'it' | 'nl' | 'pl';
@@ -58,12 +59,13 @@ const PageContent = () => {
           <PainPointsSection />
           <TransformationSection />
           <WhatYouGetSection />
+          <TestimonialsSection checkoutUrl={checkoutUrl} />
           <BonusesSection />
           <PriceDropSection checkoutUrl={checkoutUrl} />
           <DeliverySection />
-          <TestimonialsSection />
-          <FuturePacingSection />
           <GuaranteeSection checkoutUrl={checkoutUrl} />
+          <BrandStorySection />
+          <FuturePacingSection />
           <FAQSection />
           <ObjectionsSection />
           <FinalCTASection checkoutUrl={checkoutUrl} />

@@ -23,10 +23,7 @@ const Footer = () => {
         {/* Copyright */}
         <p className="text-white/50">{t('footerCopyright')}</p>
 
-        {/* Facebook disclaimer */}
-        <p className="text-white/40 text-xs mt-4">
-          {t('')}
-        </p>
+        {/* Facebook/Meta disclaimer - already in footerDisclaimer */}
       </div>
     </footer>
   );

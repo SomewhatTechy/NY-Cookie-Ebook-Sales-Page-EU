@@ -16,16 +16,16 @@
 
 @layer base {
   :root {
-    /* Core palette - New feminine premium theme */
-    --vanilla: 22 100% 97%;        /* #FFF6EF */
-    --pink: 336 100% 72%;          /* #FF6FAE */
-    --pink-light: 336 100% 82%;
-    --chocolate: 15 38% 17%;       /* #3B241D */
+    /* Core palette – Feminine rose-gold premium */
+    --vanilla: 15 80% 97%;          /* #FFF5F0 — blush cream */
+    --pink: 350 45% 65%;            /* #C77D8A — dusty rose */
+    --pink-light: 350 50% 78%;      /* softer blush */
+    --chocolate: 15 38% 17%;        /* #3B241D — unchanged anchor */
     --chocolate-medium: 15 30% 25%;
-    --gold: 38 65% 56%;            /* #D9A441 */
-    --gold-light: 38 70% 68%;
-    --gold-dark: 38 65% 38%;         /* #9F7520 – WCAG AA on light bg */
-    --rose: 10 70% 92%;
+    --gold: 22 50% 60%;             /* #C5926E — rose gold */
+    --gold-light: 22 55% 72%;       /* lighter rose gold */
+    --gold-dark: 22 45% 42%;        /* #9A6E4A – WCAG AA on light bg */
+    --rose: 8 65% 93%;              /* #F8EBE6 — soft rose wash */
 
     /* Semantic tokens */
     --background: 22 100% 97%;
@@ -58,19 +58,19 @@
 
     --radius: 1rem;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(180deg, hsl(22 100% 97%) 0%, hsl(38 60% 94%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(38 65% 56%) 0%, hsl(38 70% 62%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(22 60% 96%) 100%);
+    /* Gradients — rose-gold feminine */
+    --gradient-hero: linear-gradient(180deg, hsl(15 80% 97%) 0%, hsl(22 50% 94%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(22 50% 60%) 0%, hsl(22 55% 68%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(15 50% 96%) 100%);
     --gradient-dark: linear-gradient(180deg, hsl(15 38% 17%) 0%, hsl(15 30% 22%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(38 65% 56%) 0%, hsl(38 80% 70%) 50%, hsl(38 65% 56%) 100%);
-    --gradient-pink: linear-gradient(135deg, hsl(336 100% 72%) 0%, hsl(336 100% 80%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(22 50% 60%) 0%, hsl(22 60% 72%) 50%, hsl(22 50% 60%) 100%);
+    --gradient-pink: linear-gradient(135deg, hsl(350 45% 65%) 0%, hsl(350 50% 75%) 100%);
 
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(38 65% 56% / 0.3);
+    --shadow-glow: 0 0 40px hsl(22 50% 60% / 0.3);
     --shadow-card: 0 4px 24px hsl(15 38% 17% / 0.08);
     --shadow-elevated: 0 8px 32px hsl(15 38% 17% / 0.12);
-    --shadow-pink: 0 0 30px hsl(336 100% 72% / 0.3);
+    --shadow-pink: 0 0 30px hsl(350 45% 65% / 0.3);
 
     /* Sidebar tokens */
     --sidebar-background: 0 0% 100%;
@@ -217,21 +217,6 @@
     animation: float 3s ease-in-out infinite;
   }
 
-  .animate-pulse-glow {
-    position: relative;
-  }
-
-  .animate-pulse-glow::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    box-shadow: 0 0 24px 6px hsl(38 65% 56% / 0.4);
-    opacity: 0;
-    animation: pulse-glow 2s ease-in-out infinite;
-    pointer-events: none;
-  }
-
   .section-title {
     @apply text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6;
     font-family: 'Poppins', 'Poppins Fallback', system-ui, sans-serif;
@@ -263,7 +248,7 @@
 
   .cta-button:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 60px hsl(38 65% 56% / 0.5);
+    box-shadow: 0 0 60px hsl(22 50% 60% / 0.5);
   }
 
   .cta-button-pink {
@@ -275,7 +260,7 @@
 
   .cta-button-pink:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 60px hsl(336 100% 72% / 0.5);
+    box-shadow: 0 0 60px hsl(350 45% 65% / 0.5);
   }
 }
 
@@ -291,27 +276,22 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
 }
 
-/* CSS animations replacing framer-motion */
-@keyframes fade-in {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+.animate-pulse-glow {
+  position: relative;
 }
 
-@keyframes scale-in {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.5s ease-out both;
-}
-
-.animate-scale-in {
-  animation: scale-in 0.5s ease-out both;
+.animate-pulse-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  box-shadow: 0 0 40px hsl(22 50% 60%);
+  z-index: -1;
+  animation: pulse-glow 2s ease-in-out infinite;
 }
 
 @keyframes shimmer {

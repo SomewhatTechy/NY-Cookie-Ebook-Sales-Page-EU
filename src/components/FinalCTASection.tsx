@@ -76,6 +76,14 @@ const FinalCTASection = ({ checkoutUrl }: FinalCTASectionProps) => {
             <span>{t('secureCheckoutHotmart')}</span>
           </div>
 
+          <div className="flex items-center justify-center gap-3 mt-3 text-xs text-muted-foreground/60">
+            <span>Visa</span>
+            <span>•</span>
+            <span>Mastercard</span>
+            <span>•</span>
+            <span>PayPal</span>
+          </div>
+
           {/* P.S. */}
           <p className="mt-8 text-xs text-muted-foreground italic max-w-lg mx-auto">{t('finalCtaPS')}</p>
         </div>

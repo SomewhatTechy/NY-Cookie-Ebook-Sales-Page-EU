@@ -78,6 +78,17 @@ const PriceDropSection = ({ checkoutUrl }: PriceDropSectionProps) => {
           <p className="text-white/60 text-sm mt-4">
             {safe('priceNote', 'One-time payment - Instant access')}
           </p>
+
+          {/* Payment methods */}
+          <div className="flex items-center justify-center gap-4 mt-3 text-white/40 text-xs">
+            <span>Visa</span>
+            <span>•</span>
+            <span>Mastercard</span>
+            <span>•</span>
+            <span>PayPal</span>
+            <span>•</span>
+            <span>Pix</span>
+          </div>
         </div>
       </div>
     </section>
