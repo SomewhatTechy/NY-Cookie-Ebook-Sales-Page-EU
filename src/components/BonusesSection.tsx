@@ -1,25 +1,37 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Gift, Check } from 'lucide-react';
-import BonusStackGallery from './BonusStackGallery';
+import { Gift } from 'lucide-react';
+
+const BONUS_IMAGES = [
+  'bonus-kids-healthy.webp',
+  'bonus-no-bake.webp',
+  'bonus-flavor-combos.webp',
+  'bonus-dessert-encyclopedia.webp',
+  'bonus-vegan-desserts.webp',
+  'bonus-low-sugar-chilled.webp',
+  'bonus-science-art-selling.webp',
+  'bonus-allergy-friendly.webp',
+];
 
 const BonusesSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  const langFolder = language === 'pt' ? 'pt' : language;
 
   const bonuses = [
-    { icon: '🍪', title: t('bonus1Title'), desc: t('bonus1Desc'), value: t('bonus1Value') },
-    { icon: '🧁', title: t('bonus2Title'), desc: t('bonus2Desc'), value: t('bonus2Value') },
-    { icon: '🛒', title: t('bonus3Title'), desc: t('bonus3Desc'), value: t('bonus3Value') },
-    { icon: '❄️', title: t('bonus4Title'), desc: t('bonus4Desc'), value: t('bonus4Value') },
-    { icon: '🍫', title: t('bonus5Title'), desc: t('bonus5Desc'), value: t('bonus5Value') },
-    { icon: '📦', title: t('bonus6Title'), desc: t('bonus6Desc'), value: t('bonus6Value') },
-    { icon: '🎨', title: t('bonus7Title'), desc: t('bonus7Desc'), value: t('bonus7Value') },
-    { icon: '✅', title: t('bonus8Title'), desc: t('bonus8Desc'), value: t('bonus8Value') },
+    { title: t('bonus1Title'), desc: t('bonus1Desc'), value: t('bonus1Value') },
+    { title: t('bonus2Title'), desc: t('bonus2Desc'), value: t('bonus2Value') },
+    { title: t('bonus3Title'), desc: t('bonus3Desc'), value: t('bonus3Value') },
+    { title: t('bonus4Title'), desc: t('bonus4Desc'), value: t('bonus4Value') },
+    { title: t('bonus5Title'), desc: t('bonus5Desc'), value: t('bonus5Value') },
+    { title: t('bonus6Title'), desc: t('bonus6Desc'), value: t('bonus6Value') },
+    { title: t('bonus7Title'), desc: t('bonus7Desc'), value: t('bonus7Value') },
+    { title: t('bonus8Title'), desc: t('bonus8Desc'), value: t('bonus8Value') },
   ];
 
   return (
     <section className="py-20 bg-gradient-to-br from-background to-secondary/30 fade-in-section" id="bonuses">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-4 animate-fade-in">
+        <div className="text-center mb-8 animate-fade-in">
           <div className="inline-flex items-center gap-2 mb-4 px-6 py-2 rounded-full bg-gold text-chocolate font-bold">
             <Gift className="w-5 h-5" />
             <span>{t('bonusTag')}</span>
@@ -28,16 +40,36 @@ const BonusesSection = () => {
           <p className="section-subtitle">{t('bonusesSubtitle')}</p>
         </div>
 
-        <BonusStackGallery />
-
-        <div className="mt-6 space-y-4 max-w-3xl mx-auto mb-10">
+        <div className="space-y-4 max-w-3xl mx-auto mb-10">
           {bonuses.map((bonus, index) => (
             <div
               key={index}
-              className="premium-card p-6 flex items-start gap-4 transition-all duration-300 animate-fade-in"
+              className="premium-card p-4 sm:p-5 flex items-center gap-4 transition-all duration-300 animate-fade-in"
             >
-              <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-gold to-pink rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-sm leading-tight text-center">
+              {/* Book cover thumbnail */}
+              <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-muted/20">
+                <img
+                  src={`/bonuses/gallery/${langFolder}/${BONUS_IMAGES[index]}`}
+                  alt={bonus.title}
+                  loading="lazy"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    const fallback = `/bonuses/gallery/en/${BONUS_IMAGES[index]}`;
+                    if (!target.src.endsWith(fallback)) target.src = fallback;
+                  }}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Title + description */}
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base sm:text-lg font-bold text-foreground mb-0.5 leading-tight">{bonus.title}</h3>
+                <p className="text-muted-foreground text-xs sm:text-sm leading-snug">{bonus.desc}</p>
+              </div>
+
+              {/* Price badge */}
+              <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-gold to-pink rounded-xl flex items-center justify-center">
+                <span className="text-white font-bold text-xs sm:text-sm leading-tight text-center">
                   {String(bonus.value)
                     .split(' ')
                     .filter(Boolean)
@@ -47,13 +79,6 @@ const BonusesSection = () => {
                       </span>
                     ))}
                 </span>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-bold text-foreground mb-1">{bonus.title}</h3>
-                <p className="text-muted-foreground text-sm">{bonus.desc}</p>
-              </div>
-              <div className="flex-shrink-0">
-                <Check className="w-6 h-6 text-gold" />
               </div>
             </div>
           ))}
