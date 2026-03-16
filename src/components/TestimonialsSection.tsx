@@ -99,6 +99,9 @@ const TestimonialsSection = ({ checkoutUrl }: TestimonialsSectionProps) => {
                   src={card.image}
                   alt=""
                   loading="lazy"
+                  decoding="async"
+                  width={340}
+                  height={255}
                   className="w-full h-full object-cover"
                 />
                 {/* Subtle gradient overlay at bottom for blending */}

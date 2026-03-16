@@ -54,6 +54,9 @@ const BonusesSection = () => {
                   src={`/bonuses/gallery/${langFolder}/${BONUS_IMAGES[index]}`}
                   alt={bonus.title}
                   loading="lazy"
+                  decoding="async"
+                  width={80}
+                  height={80}
                   onError={(e) => {
                     const target = e.currentTarget;
                     const fallback = `/bonuses/gallery/en/${BONUS_IMAGES[index]}`;

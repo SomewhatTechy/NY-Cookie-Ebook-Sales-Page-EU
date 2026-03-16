@@ -94,8 +94,8 @@ const WhatYouGetSection = () => {
                 <img
                   src={feature.imageSrc}
                   alt={feature.title}
-                  width={128}
-                  height={128}
+                  width={64}
+                  height={64}
                   loading="lazy"
                   decoding="async"
                   className="w-14 h-14 md:w-16 md:h-16 rounded-2xl object-cover border border-white/10 shadow-sm"
