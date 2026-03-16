@@ -1,34 +1,36 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Globe } from 'lucide-react';
 
-const LANGUAGES = [
-  { code: 'fr', label: 'Français' },
-  { code: 'de', label: 'Deutsch' },
-  { code: 'it', label: 'Italiano' },
-  { code: 'nl', label: 'Nederlands' },
-  { code: 'pl', label: 'Polski' },
-] as const;
+const LANG_LABELS: Record<string, string> = {
+  fr: 'Français',
+  de: 'Deutsch',
+  it: 'Italiano',
+  nl: 'Nederlands',
+  pl: 'Polski',
+};
+
+const LANG_ORDER = ['fr', 'de', 'it', 'nl', 'pl'] as const;
 
 const LanguageToggle = () => {
   const { language, setLanguage } = useLanguage();
 
+  const handleToggle = () => {
+    const idx = LANG_ORDER.indexOf(language as (typeof LANG_ORDER)[number]);
+    const next = LANG_ORDER[(idx + 1) % LANG_ORDER.length];
+    setLanguage(next);
+  };
+
   return (
     <div className="fixed top-16 right-4 z-30">
-      <div className="relative flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-semibold tracking-wide shadow-lg border border-white/20 backdrop-blur-md" style={{ background: 'var(--gradient-cta)' }}>
+      <button
+        onClick={handleToggle}
+        className="flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 shadow-lg border border-white/20 backdrop-blur-md hover:scale-105 active:scale-95"
+        style={{ background: 'var(--gradient-cta)' }}
+        aria-label="Switch language"
+      >
         <Globe className="w-4 h-4 text-primary-foreground" />
-        <select
-          value={language}
-          onChange={(e) => setLanguage(e.target.value as any)}
-          className="bg-transparent text-primary-foreground text-sm font-semibold appearance-none cursor-pointer outline-none pr-1"
-          aria-label="Select language"
-        >
-          {LANGUAGES.map((lang) => (
-            <option key={lang.code} value={lang.code} className="text-black bg-white">
-              {lang.label}
-            </option>
-          ))}
-        </select>
-      </div>
+        <span className="text-primary-foreground">{LANG_LABELS[language] || 'Français'}</span>
+      </button>
     </div>
   );
 };

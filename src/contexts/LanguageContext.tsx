@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useMemo, ReactNode } from 'react';
+﻿import React, { createContext, useContext, useState, useMemo, ReactNode } from 'react';
 
 type Language = 'fr' | 'de' | 'it' | 'nl' | 'pl';
 
@@ -166,7 +166,7 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: "Regardez Ce Que D'autres Pâtissiers Maison Disent",
-    testimonialsSubtitle: "Des femmes comme vous qui ont commencé à pâtisser et ne se sont jamais arrêtées",
+    testimonialsSubtitle: "Des femmes comme vous qui ont commence a patisser sans jamais regarder en arriere",
     testimonial1: "Honnêtement j'étais sceptique, encore un ebook de recettes... Mais dès le premier lot, la texture était DINGUE. Mon mari a cru que je les avais achetés en boulangerie.",
     testimonialName1: "Inès T.",
     testimonialCity1: "Lyon",
@@ -475,7 +475,7 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: "Schau, Was Andere Hobbybäcker Sagen",
-    testimonialsSubtitle: "Frauen wie du, die angefangen haben zu backen und nicht mehr aufgehört haben",
+    testimonialsSubtitle: "Frauen wie du, die angefangen haben zu backen und nie zurueckgeschaut haben",
     testimonial1: "Mein Mann hat beim ersten Biss gefragt, ob ich die beim Bäcker gekauft hab. Nein Schatz, die sind aus UNSEREM Ofen. Sein Gesicht war unbezahlbar.",
     testimonialName1: "Katharina W.",
     testimonialCity1: "Berlin",
@@ -784,7 +784,7 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: "Guarda Cosa Dicono Altri Appassionati di Pasticceria",
-    testimonialsSubtitle: "Donne come te che hanno iniziato a cucinare e non si sono più fermate",
+    testimonialsSubtitle: "Donne come te che hanno iniziato a cucinare senza mai guardarsi indietro",
     testimonial1: "Li ho portati a una cena tra amiche e nessuna ci credeva che li avessi fatti io. Il centro morbido, la crosta croccante... sembravano usciti da una pasticceria americana. Sensazione incredibile.",
     testimonialName1: "Federica L.",
     testimonialCity1: "Milano",
@@ -1093,7 +1093,7 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: "Kijk Wat Andere Thuisbakkers Zeggen",
-    testimonialsSubtitle: "Vrouwen zoals jij die begonnen met bakken en nooit meer zijn gestopt",
+    testimonialsSubtitle: "Vrouwen zoals jij die begonnen met bakken zonder ooit achterom te kijken",
     testimonial1: "Mijn vriend at er drie achter elkaar en zei: 'Dit zijn de lekkerste koekjes die ik ooit heb gehad.' Hij wist niet dat ik ze zelf had gemaakt. Dat zegt genoeg toch?",
     testimonialName1: "Danique V.",
     testimonialCity1: "Amsterdam",
@@ -1402,7 +1402,7 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: "Zobacz Co Mówią Inni Domowi Piekarze",
-    testimonialsSubtitle: "Kobiety takie jak Ty, które zaczęły piec i już nie przestały",
+    testimonialsSubtitle: "Kobiety takie jak Ty, ktore zaczely piec i nigdy nie ogladaly sie za siebie",
     testimonial1: "Mój mąż zjadł trzy i zapytał skąd je kupiłam. Jak powiedziałam że sama upiekłam, nie uwierzył. Musiałam mu pokazać zdjęcia z kuchni. Te ciasteczka wyglądają jak z cukierni, naprawdę.",
     testimonialName1: "Patrycja K.",
     testimonialCity1: "Warszawa",
@@ -1633,3 +1633,4 @@ export const useLanguage = () => {
   if (!ctx) throw new Error('useLanguage must be used within a LanguageProvider');
   return ctx;
 };
+
