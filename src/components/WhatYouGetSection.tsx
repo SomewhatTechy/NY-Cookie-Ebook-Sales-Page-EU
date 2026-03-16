@@ -83,9 +83,14 @@ const WhatYouGetSection = () => {
           {recipeFeatures.map((feature, index) => (
             <div
               key={`${feature.title}-${index}`}
-              className="premium-card p-6 transition-all duration-300 hover:border-gold/30 animate-fade-in"
+              className="premium-card p-6 transition-all duration-300 hover:border-gold/30 animate-fade-in relative"
             >
-              <div className="flex justify-center mb-4">
+              {/* Module number badge */}
+              <div className="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold-dark text-xs font-bold">
+                {safe("moduleLabel", "Module")} {index + 1}
+              </div>
+
+              <div className="flex justify-center mb-4 mt-4">
                 <img
                   src={feature.imageSrc}
                   alt={feature.title}

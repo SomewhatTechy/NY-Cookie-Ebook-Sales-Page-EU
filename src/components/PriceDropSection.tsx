@@ -86,8 +86,6 @@ const PriceDropSection = ({ checkoutUrl }: PriceDropSectionProps) => {
             <span>Mastercard</span>
             <span>•</span>
             <span>PayPal</span>
-            <span>•</span>
-            <span>Pix</span>
           </div>
         </div>
       </div>

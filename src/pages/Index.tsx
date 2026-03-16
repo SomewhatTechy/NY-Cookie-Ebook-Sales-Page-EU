@@ -16,7 +16,7 @@ const TestimonialsSection = lazy(() => import('@/components/TestimonialsSection'
 const FuturePacingSection = lazy(() => import('@/components/FuturePacingSection'));
 const GuaranteeSection = lazy(() => import('@/components/GuaranteeSection'));
 const FAQSection = lazy(() => import('@/components/FAQSection'));
-const ObjectionsSection = lazy(() => import('@/components/ObjectionsSection'));
+// ObjectionsSection merged into FAQSection
 const FinalCTASection = lazy(() => import('@/components/FinalCTASection'));
 const BrandStorySection = lazy(() => import('@/components/BrandStorySection'));
 const Footer = lazy(() => import('@/components/Footer'));
@@ -67,7 +67,6 @@ const PageContent = () => {
           <BrandStorySection />
           <FuturePacingSection />
           <FAQSection />
-          <ObjectionsSection />
           <FinalCTASection checkoutUrl={checkoutUrl} />
         </Suspense>
       </main>

@@ -18,7 +18,7 @@ const translations = {
     priceIncreasesTo: "L'offre spéciale se termine dans",
     
     // Hero
-    heroTitle: "Apprenez à Faire des Cookies Style New York Parfaits — Épais, Hauts et Fondants Dès la Première Fournée",
+    heroTitle: "Maitrisez les Cookies Style New York Ce Week-End — Epais, Hauts et Fondants Des la Premiere Fournee",
     heroSubtitle: "27 recettes pas à pas avec des temps, températures et techniques exactes pour un cœur fondant et une finition de pâtisserie premium — même si vous êtes débutante",
     
     // Effort Minimizers (Hormozi)
@@ -91,9 +91,9 @@ const translations = {
     wygBridgeText: "Beaucoup de gens commencent par faire des cookies chez eux. Puis les amis commencent à demander des boîtes. C'est pourquoi, si vous le souhaitez, le guide inclut aussi :",
 
     // Bonuses
-    bonusTag: "+ $135.96 DE BONUS",
+    bonusTag: "+ $153.96 DE BONUS",
     bonusesTitle: "Bonus Exclusifs Inclus",
-    bonusesSubtitle: "Bonus d'une valeur de $135.96+ - à vous aujourd'hui sans frais supplémentaires",
+    bonusesSubtitle: "Bonus d'une valeur de $153.96+ - à vous aujourd'hui sans frais supplémentaires",
     bonus1Title: "Mini Livre de Recettes: Desserts Sains pour Enfants",
     bonus1Desc: "15 recettes nutritives et délicieuses que les mamans refont (et recommandent).",
     bonus1Value: "$27",
@@ -118,7 +118,7 @@ const translations = {
     bonus8Title: "Desserts Adaptés aux Allergies",
     bonus8Desc: "Guide des adaptations courantes. Toujours vérifier les allergies spécifiques.",
     bonus8Value: "BONUS EXTRA",
-    bonusesTotalAmount: "$135.96+",
+    bonusesTotalAmount: "$153.96+",
     value: "Valeur:",
     yoursFree: "GRATUIT pour vous!",
     totalBonusValue: "Valeur totale des bonus",
@@ -296,9 +296,26 @@ const translations = {
 
     // Floating CTA
     floatingCta: "Je veux ma copie",
-    brandStoryEyebrow: "À Propos de Ce Guide",
-    brandStoryTitle: "Créé par des Pâtissiers, Pour des Pâtissiers",
-    brandStoryText: "La Méthode NY Cookie a été créée par une petite équipe de chefs pâtissiers professionnels et de coachs en pâtisserie maison qui ont passé 2 ans à tester et perfectionner ces recettes dans de vraies cuisines domestiques — pas des laboratoires commerciaux. Chaque technique a été validée par des débutantes avant d'être incluse. Le résultat : un système qui fonctionne dès votre toute première fournée.",
+    brandStoryEyebrow: "Qui a Cree Ceci",
+    brandStoryTitle: "Cree par des Patissieres, Soutenu par des Experts",
+    brandStoryText: "La Methode NY Cookie a ete creee par ECommerce Shop Cart — un editeur numerique dedie a l'autonomisation des femmes a travers des guides accessibles soutenus par des experts. Chaque recette de cette serie a ete developpee par des chefs patissiers professionnels et affinee par un panel d'experts en patisserie de 4 continents. Chaque technique a ete testee par de vrais debutants dans des cuisines domestiques avant d'etre incluse. Le resultat : un systeme eprouve qui fonctionne des votre premiere fournee.",
+
+    // FAQ 13-15
+    faq13Question: "Les ingredients sont-ils faciles a trouver?",
+    faq13Answer: "Oui. Tout utilise des ingredients courants de supermarche — farine, beurre, sucre, oeufs, pepites de chocolat. Rien d'exotique ni de couteux. Nous incluons aussi des substitutions si quelque chose est difficile a trouver dans votre region.",
+    faq14Question: "Je peux acheter a 3h du matin?",
+    faq14Answer: "Oui. Le systeme est 100% automatise. Vous pouvez acheter a tout moment — votre acces arrive instantanement par email, peu importe l'heure.",
+    faq15Question: "Pourquoi seulement $9.97?",
+    faq15Answer: "Parce que c'est numerique — pas d'impression, pas d'expedition, pas d'intermediaires. Nous gardons les couts bas pour que plus de femmes puissent acceder a des recettes professionnelles et des outils business. Le prix augmentera a mesure que nous ajouterons du contenu.",
+
+    // Bonus 9
+    bonus9Title: "Certificat de Completion",
+    bonus9Desc: "Certificat numerique personnalise envoye a votre email — partagez-le fierement.",
+    bonus9Value: "$18",
+
+    // Module label
+    moduleLabel: "Module",
+
     paymentMethods: "Visa • Mastercard • PayPal",
   },
   de: {
@@ -310,7 +327,7 @@ const translations = {
     priceIncreasesTo: "Sonderangebot endet in",
     
     // Hero
-    heroTitle: "Lerne Perfekte NY-Style Cookies zu Backen — Dick, Hoch und Cremig Ab der Ersten Charge",
+    heroTitle: "Meistern Sie New York Cookies an Diesem Wochenende — Dick, Hoch und Cremig Ab der Ersten Ladung",
     heroSubtitle: "27 Schritt-für-Schritt-Rezepte mit genauen Zeiten, Temperaturen und Techniken für einen cremigen Kern und Konditorei-Qualität — auch wenn du komplette Anfängerin bist",
     
     // Effort Minimizers (Hormozi)
@@ -383,9 +400,9 @@ const translations = {
     wygBridgeText: "Viele fangen an, zu Hause zu backen. Dann fragen Freunde nach Boxen. Deshalb enthält der Guide auch, wenn du möchtest:",
 
     // Bonuses
-    bonusTag: "+ $135.96 AN BONI",
+    bonusTag: "+ $153.96 AN BONI",
     bonusesTitle: "Exklusive Boni Inklusive",
-    bonusesSubtitle: "Boni im Wert von $135.96+ - heute für dich ohne zusätzliche Kosten",
+    bonusesSubtitle: "Boni im Wert von $153.96+ - heute für dich ohne zusätzliche Kosten",
     bonus1Title: "Mini-Rezeptbuch: Gesunde Desserts für Kinder",
     bonus1Desc: "15 nahrhafte, leckere Rezepte, die Mamas wiederholen (und empfehlen).",
     bonus1Value: "$27",
@@ -410,7 +427,7 @@ const translations = {
     bonus8Title: "Allergikerfreundliche Dessert-Ideen",
     bonus8Desc: "Guide für übliche Anpassungen. Immer spezifische Allergien verifizieren.",
     bonus8Value: "EXTRA BONUS",
-    bonusesTotalAmount: "$135.96+",
+    bonusesTotalAmount: "$153.96+",
     value: "Wert:",
     yoursFree: "GRATIS für dich!",
     totalBonusValue: "Gesamtwert der Boni",
@@ -588,9 +605,26 @@ const translations = {
 
     // Floating CTA
     floatingCta: "Ich will mein Exemplar",
-    brandStoryEyebrow: "Über Diesen Guide",
-    brandStoryTitle: "Von Bäckern Gemacht, Für Bäcker",
-    brandStoryText: "Die NY Cookie Methode wurde von einem kleinen Team aus professionellen Konditoren und Heim-Backcoaches entwickelt, die 2 Jahre lang diese Rezepte in echten Haushaltsküchen getestet und verfeinert haben — nicht in Profi-Laboren. Jede Technik wurde von Anfängerinnen validiert, bevor sie aufgenommen wurde. Das Ergebnis: ein System, das ab deiner allerersten Charge funktioniert.",
+    brandStoryEyebrow: "Wer hat das Erstellt",
+    brandStoryTitle: "Von Baeckerinnen Geschaffen, von Experten Unterstuetzt",
+    brandStoryText: "Die NY Cookie Methode wurde von ECommerce Shop Cart erstellt — einem digitalen Verlag, der sich der Staerkung von Frauen durch erschwingliche, von Experten unterstuetzte Leitfaeden widmet. Jedes Rezept in dieser Serie wurde von professionellen Konditormeistern entwickelt und von einem Expertenpanel aus 4 Kontinenten verfeinert. Jede Technik wurde von echten Anfaengerinnen in Hauskuechen getestet, bevor sie aufgenommen wurde. Das Ergebnis: ein bewaehrtes System, das ab Ihrer allerersten Ladung funktioniert.",
+
+    // FAQ 13-15
+    faq13Question: "Sind die Zutaten leicht zu finden?",
+    faq13Answer: "Ja. Alles verwendet gaengige Supermarkt-Zutaten — Mehl, Butter, Zucker, Eier, Schokoladenstueckchen. Nichts Exotisches oder Teures. Wir bieten auch Ersatzvorschlaege, falls etwas in Ihrer Region schwer zu finden ist.",
+    faq14Question: "Kann ich um 3 Uhr morgens kaufen?",
+    faq14Answer: "Ja. Das System ist 100% automatisiert. Sie koennen jederzeit kaufen — Ihr Zugang wird sofort per E-Mail zugestellt, egal wann Sie bestellen.",
+    faq15Question: "Warum kostet es nur $9.97?",
+    faq15Answer: "Weil es digital ist — kein Druck, kein Versand, keine Zwischenhaendler. Wir halten die Kosten niedrig, damit mehr Frauen Zugang zu professionellen Rezepten und Business-Tools haben. Der Preis wird steigen, wenn wir mehr Inhalte hinzufuegen.",
+
+    // Bonus 9
+    bonus9Title: "Abschlusszertifikat",
+    bonus9Desc: "Personalisiertes digitales Zertifikat per E-Mail zugestellt — teilen Sie es mit Stolz.",
+    bonus9Value: "$18",
+
+    // Module label
+    moduleLabel: "Modul",
+
     paymentMethods: "Visa • Mastercard • PayPal",
   },
   it: {
@@ -602,7 +636,7 @@ const translations = {
     priceIncreasesTo: "L'offerta speciale termina tra",
     
     // Hero
-    heroTitle: "Impara a Fare Cookies Stile New York Perfetti — Spessi, Alti e Cremosi Dal Primo Lotto",
+    heroTitle: "Padroneggia i Cookies Stile New York Questo Fine Settimana — Spessi, Alti e Cremosi Dal Primo Lotto",
     heroSubtitle: "27 ricette passo passo con tempi, temperature e tecniche esatte per un centro cremoso e una finitura da pasticceria premium — anche se sei una principiante assoluta",
     
     // Effort Minimizers (Hormozi)
@@ -675,9 +709,9 @@ const translations = {
     wygBridgeText: "Molti iniziano a farli a casa. Poi gli amici cominciano a chiedere scatole. Per questo, se vuoi, la guida include anche:",
 
     // Bonuses
-    bonusTag: "+ $135.96 DI BONUS",
+    bonusTag: "+ $153.96 DI BONUS",
     bonusesTitle: "Bonus Esclusivi Inclusi",
-    bonusesSubtitle: "Bonus del valore di $135.96+ - tuoi oggi senza costi aggiuntivi",
+    bonusesSubtitle: "Bonus del valore di $153.96+ - tuoi oggi senza costi aggiuntivi",
     bonus1Title: "Mini Ricettario: Dessert Sani per Bambini",
     bonus1Desc: "15 ricette nutrienti e deliziose che le mamme ripetono (e raccomandano).",
     bonus1Value: "$27",
@@ -702,7 +736,7 @@ const translations = {
     bonus8Title: "Dessert per Allergici",
     bonus8Desc: "Guida agli adattamenti comuni. Sempre verificare allergie specifiche.",
     bonus8Value: "BONUS EXTRA",
-    bonusesTotalAmount: "$135.96+",
+    bonusesTotalAmount: "$153.96+",
     value: "Valore:",
     yoursFree: "GRATIS per te!",
     totalBonusValue: "Valore totale bonus",
@@ -880,9 +914,26 @@ const translations = {
 
     // Floating CTA
     floatingCta: "Voglio la mia copia",
-    brandStoryEyebrow: "Informazioni su Questa Guida",
-    brandStoryTitle: "Creato da Pasticceri, Per Pasticceri",
-    brandStoryText: "Il Metodo NY Cookie è stato creato da un piccolo team di pasticceri professionisti e coach di pasticceria casalinga che hanno trascorso 2 anni a testare e perfezionare queste ricette in vere cucine domestiche — non laboratori commerciali. Ogni tecnica è stata validata da principianti prima di essere inclusa. Il risultato: un sistema che funziona dal tuo primissimo lotto.",
+    brandStoryEyebrow: "Chi Ha Creato Questo",
+    brandStoryTitle: "Creato da Pasticcere, Supportato da Esperti",
+    brandStoryText: "Il Metodo NY Cookie e stato creato da ECommerce Shop Cart — un editore digitale dedicato a dare potere alle donne attraverso guide accessibili supportate da esperti. Ogni ricetta di questa serie e stata sviluppata da chef pasticceri professionisti e perfezionata da un panel di esperti di pasticceria di 4 continenti. Ogni tecnica e stata testata da vere principianti in cucine domestiche prima di essere inclusa. Il risultato: un sistema collaudato che funziona fin dal primo lotto.",
+
+    // FAQ 13-15
+    faq13Question: "Gli ingredienti sono facili da trovare?",
+    faq13Answer: "Si. Tutto utilizza ingredienti comuni del supermercato — farina, burro, zucchero, uova, gocce di cioccolato. Niente di esotico o costoso. Includiamo anche sostituzioni se qualcosa e difficile da trovare nella vostra zona.",
+    faq14Question: "Posso comprare alle 3 di notte?",
+    faq14Answer: "Si. Il sistema e 100% automatizzato. Puoi acquistare in qualsiasi momento — il tuo accesso arriva istantaneamente via email, non importa quando compri.",
+    faq15Question: "Perche costa solo $9.97?",
+    faq15Answer: "Perche e digitale — nessuna stampa, nessuna spedizione, nessun intermediario. Manteniamo i costi bassi affinche piu donne possano accedere a ricette professionali e strumenti business. Il prezzo aumentera man mano che aggiungeremo contenuti.",
+
+    // Bonus 9
+    bonus9Title: "Certificato di Completamento",
+    bonus9Desc: "Certificato digitale personalizzato inviato alla tua email — condividilo con orgoglio.",
+    bonus9Value: "$18",
+
+    // Module label
+    moduleLabel: "Modulo",
+
     paymentMethods: "Visa • Mastercard • PayPal",
   },
   nl: {
@@ -894,7 +945,7 @@ const translations = {
     priceIncreasesTo: "Speciale aanbieding eindigt over",
     
     // Hero
-    heroTitle: "Leer Perfecte NY-Style Cookies Maken — Dik, Hoog en Zacht Vanaf Je Eerste Batch",
+    heroTitle: "Beheers NY-Style Cookies Dit Weekend — Dik, Hoog en Zacht Vanaf Je Eerste Batch",
     heroSubtitle: "27 stap-voor-stap recepten met exacte tijden, temperaturen en technieken voor een romig centrum en bakkerijkwaliteit — ook als je een complete beginner bent",
     
     // Effort Minimizers (Hormozi)
@@ -967,9 +1018,9 @@ const translations = {
     wygBridgeText: "Veel mensen beginnen met thuis bakken. Dan beginnen vrienden om dozen te vragen. Daarom bevat de gids ook, als je wilt:",
 
     // Bonuses
-    bonusTag: "+ $135.96 AAN BONUSSEN",
+    bonusTag: "+ $153.96 AAN BONUSSEN",
     bonusesTitle: "Exclusieve Bonussen Inbegrepen",
-    bonusesSubtitle: "Bonussen ter waarde van $135.96+ - vandaag van jou zonder extra kosten",
+    bonusesSubtitle: "Bonussen ter waarde van $153.96+ - vandaag van jou zonder extra kosten",
     bonus1Title: "Mini Receptenboek: Gezonde Desserts voor Kinderen",
     bonus1Desc: "15 voedzame, heerlijke recepten die moeders herhalen (en aanbevelen).",
     bonus1Value: "$27",
@@ -994,7 +1045,7 @@ const translations = {
     bonus8Title: "Allergievriendelijke Dessert Ideeën",
     bonus8Desc: "Gids voor veelvoorkomende aanpassingen. Altijd specifieke allergieën verifiëren.",
     bonus8Value: "EXTRA BONUS",
-    bonusesTotalAmount: "$135.96+",
+    bonusesTotalAmount: "$153.96+",
     value: "Waarde:",
     yoursFree: "GRATIS voor jou!",
     totalBonusValue: "Totale bonuswaarde",
@@ -1172,9 +1223,26 @@ const translations = {
 
     // Floating CTA
     floatingCta: "Ik wil mijn exemplaar",
-    brandStoryEyebrow: "Over Deze Gids",
-    brandStoryTitle: "Gemaakt Door Bakkers, Voor Bakkers",
-    brandStoryText: "De NY Cookie Methode is ontwikkeld door een klein team van professionele patissiers en thuisbak-coaches die 2 jaar lang deze recepten hebben getest en verfijnd in echte huiskeukens — niet in commerciële laboratoria. Elke techniek is gevalideerd door beginners voordat het werd opgenomen. Het resultaat: een systeem dat werkt vanaf je allereerste batch.",
+    brandStoryEyebrow: "Wie Heeft Dit Gemaakt",
+    brandStoryTitle: "Gemaakt door Bakkers, Ondersteund door Experts",
+    brandStoryText: "De NY Cookie Methode is gemaakt door ECommerce Shop Cart — een digitale uitgever die zich inzet voor het empoweren van vrouwen door betaalbare, door experts ondersteunde gidsen. Elk recept in deze serie is ontwikkeld door professionele patissiers en verfijnd door een panel van bakexperts uit 4 continenten. Elke techniek is getest door echte beginners in huiskeukens voordat het werd opgenomen. Het resultaat: een bewezen systeem dat werkt vanaf je allereerste batch.",
+
+    // FAQ 13-15
+    faq13Question: "Zijn de ingredienten makkelijk te vinden?",
+    faq13Answer: "Ja. Alles gebruikt gewone supermarktingredienten — bloem, boter, suiker, eieren, chocoladestukjes. Niets exotisch of duur. We bieden ook vervangers als iets moeilijk te vinden is in jouw regio.",
+    faq14Question: "Kan ik om 3 uur 's nachts kopen?",
+    faq14Answer: "Ja. Het systeem is 100% geautomatiseerd. Je kunt op elk moment kopen — je toegang wordt direct per e-mail geleverd, ongeacht wanneer je bestelt.",
+    faq15Question: "Waarom kost het maar $9.97?",
+    faq15Answer: "Omdat het digitaal is — geen drukkosten, geen verzending, geen tussenpersonen. We houden de kosten laag zodat meer vrouwen toegang hebben tot professionele recepten en business-tools. De prijs zal stijgen naarmate we meer content toevoegen.",
+
+    // Bonus 9
+    bonus9Title: "Voltooiingscertificaat",
+    bonus9Desc: "Gepersonaliseerd digitaal certificaat per e-mail bezorgd — deel het met trots.",
+    bonus9Value: "$18",
+
+    // Module label
+    moduleLabel: "Module",
+
     paymentMethods: "Visa • Mastercard • PayPal",
   },
   pl: {
@@ -1186,7 +1254,7 @@ const translations = {
     priceIncreasesTo: "Oferta specjalna kończy się za",
     
     // Hero
-    heroTitle: "Naucz Się Piec Perfekcyjne Ciasteczka w Stylu NY — Grube, Wysokie i Kremowe Od Pierwszej Partii",
+    heroTitle: "Opanuj Ciasteczka w Stylu New York w Ten Weekend — Grube, Wysokie i Kremowe Od Pierwszej Partii",
     heroSubtitle: "27 przepisów krok po kroku z dokładnymi czasami, temperaturami i technikami na kremowe wnętrze i wykończenie jak z cukierni — nawet jeśli jesteś zupełną początkującą",
     
     // Effort Minimizers (Hormozi)
@@ -1259,9 +1327,9 @@ const translations = {
     wygBridgeText: "Wiele osób zaczyna od pieczenia w domu. Potem znajomi zaczynają prosić o pudełka. Dlatego, jeśli chcesz, przewodnik zawiera też:",
 
     // Bonuses
-    bonusTag: "+ $135.96 W BONUSACH",
+    bonusTag: "+ $153.96 W BONUSACH",
     bonusesTitle: "Ekskluzywne Bonusy W Zestawie",
-    bonusesSubtitle: "Bonusy o wartości $135.96+ - Twoje dzisiaj bez dodatkowych kosztów",
+    bonusesSubtitle: "Bonusy o wartości $153.96+ - Twoje dzisiaj bez dodatkowych kosztów",
     bonus1Title: "Mini Książka z Przepisami: Zdrowe Desery dla Dzieci",
     bonus1Desc: "15 odżywczych, pysznych przepisów, które mamy powtarzają (i polecają).",
     bonus1Value: "$27",
@@ -1286,7 +1354,7 @@ const translations = {
     bonus8Title: "Pomysły na Desery Przyjazne Alergikom",
     bonus8Desc: "Przewodnik po popularnych adaptacjach. Zawsze weryfikuj konkretne alergie.",
     bonus8Value: "EXTRA BONUS",
-    bonusesTotalAmount: "$135.96+",
+    bonusesTotalAmount: "$153.96+",
     value: "Wartość:",
     yoursFree: "GRATIS dla Ciebie!",
     totalBonusValue: "Łączna wartość bonusów",
@@ -1464,9 +1532,26 @@ const translations = {
 
     // Floating CTA
     floatingCta: "Chcę moją kopię",
-    brandStoryEyebrow: "O Tym Przewodniku",
-    brandStoryTitle: "Stworzony Przez Piekarzy, Dla Piekarzy",
-    brandStoryText: "Metoda NY Cookie została stworzona przez mały zespół profesjonalnych cukierników i trenerów domowego pieczenia, którzy spędzili 2 lata na testowaniu i udoskonalaniu tych przepisów w prawdziwych domowych kuchniach — nie w komercyjnych laboratoriach. Każda technika została zweryfikowana przez początkujących zanim została włączona. Rezultat: system, który działa od Twojej pierwszej partii.",
+    brandStoryEyebrow: "Kto To Stworzyl",
+    brandStoryTitle: "Stworzone przez Cukierniczki, Wsparte przez Ekspertow",
+    brandStoryText: "Metoda NY Cookie zostala stworzona przez ECommerce Shop Cart — cyfrowego wydawce poswieconego wzmacnianiu kobiet poprzez przystepne, poparte przez ekspertow przewodniki. Kazdy przepis w tej serii zostal opracowany przez profesjonalnych cukiernikow i udoskonalony przez panel ekspertow cukierniczych z 4 kontynentow. Kazda technika zostala przetestowana przez prawdziwych poczatkujacych w domowych kuchniach przed wlaczeniem. Rezultat: sprawdzony system, ktory dziala od pierwszej partii.",
+
+    // FAQ 13-15
+    faq13Question: "Czy skladniki sa latwe do znalezienia?",
+    faq13Answer: "Tak. Wszystko uzywa popularnych skladnikow z supermarketu — maka, maslo, cukier, jajka, kawalki czekolady. Nic egzotycznego ani drogiego. Dolaczamy tez zamienniki, jesli cos jest trudne do znalezienia w Twoim regionie.",
+    faq14Question: "Moge kupic o 3 w nocy?",
+    faq14Answer: "Tak. System jest w 100% zautomatyzowany. Mozesz kupic o dowolnej porze — dostep zostanie natychmiast wyslany na Twoj email, niezaleznie od godziny.",
+    faq15Question: "Dlaczego kosztuje tylko $9.97?",
+    faq15Answer: "Poniewaz jest cyfrowy — bez druku, bez wysylki, bez posrednikow. Utrzymujemy niskie koszty, aby wiecej kobiet moglo uzyskac dostep do profesjonalnych przepisow i narzedzi biznesowych. Cena wzrosnie w miare dodawania nowych tresci.",
+
+    // Bonus 9
+    bonus9Title: "Certyfikat Ukonczenia",
+    bonus9Desc: "Spersonalizowany certyfikat cyfrowy wyslany na Twoj email — podziel sie nim z duma.",
+    bonus9Value: "$18",
+
+    // Module label
+    moduleLabel: "Modul",
+
     paymentMethods: "Visa • Mastercard • PayPal",
   },
 } as const;

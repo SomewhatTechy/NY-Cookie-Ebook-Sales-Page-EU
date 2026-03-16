@@ -10,6 +10,7 @@ const BONUS_IMAGES = [
   'bonus-low-sugar-chilled.webp',
   'bonus-science-art-selling.webp',
   'bonus-allergy-friendly.webp',
+  'bonus-certificate.webp',
 ];
 
 const BonusesSection = () => {
@@ -26,6 +27,7 @@ const BonusesSection = () => {
     { title: t('bonus6Title'), desc: t('bonus6Desc'), value: t('bonus6Value') },
     { title: t('bonus7Title'), desc: t('bonus7Desc'), value: t('bonus7Value') },
     { title: t('bonus8Title'), desc: t('bonus8Desc'), value: t('bonus8Value') },
+    { title: t('bonus9Title'), desc: t('bonus9Desc'), value: t('bonus9Value') },
   ];
 
   return (
@@ -68,17 +70,19 @@ const BonusesSection = () => {
               </div>
 
               {/* Price badge */}
-              <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-gold to-pink rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xs sm:text-sm leading-tight text-center">
-                  {String(bonus.value)
-                    .split(' ')
-                    .filter(Boolean)
-                    .map((part, i) => (
-                      <span key={i} className="block">
-                        {part}
-                      </span>
+              <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-gold to-pink rounded-xl flex flex-col items-center justify-center">
+                {String(bonus.value).startsWith('$') ? (
+                  <>
+                    <span className="text-white/60 text-[10px] line-through">{bonus.value}</span>
+                    <span className="text-white font-bold text-xs sm:text-sm">FREE</span>
+                  </>
+                ) : (
+                  <span className="text-white font-bold text-xs sm:text-sm leading-tight text-center">
+                    {String(bonus.value).split(' ').filter(Boolean).map((part, i) => (
+                      <span key={i} className="block">{part}</span>
                     ))}
-                </span>
+                  </span>
+                )}
               </div>
             </div>
           ))}
