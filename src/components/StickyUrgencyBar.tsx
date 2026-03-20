@@ -20,7 +20,7 @@ const StickyUrgencyBar = ({ checkoutUrl }: StickyUrgencyBarProps) => {
     };
     return {
       stickyCtaText: get("stickyCtaText", "Get my copy"),
-      currentPrice: get("currentPrice", "$9.97"),
+      currentPrice: get("currentPrice", "$22.97"),
     };
   }, [t]);
 

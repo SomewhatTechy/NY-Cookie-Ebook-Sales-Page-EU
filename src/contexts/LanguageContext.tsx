@@ -56,7 +56,7 @@ const translations = {
     transform2Old: "Deviner ce qui n'a pas marché et continuer à répéter les mêmes erreurs",
     transform2New: "Comprendre le pourquoi de chaque étape — pour corriger n'importe quoi en minutes",
     transform3Old: "Dépenser $500-$2000 en cours en espérant que quelqu'un explique enfin clairement",
-    transform3New: "Passer de débutante à qualité pâtisserie pour moins de $15 — garanti",
+    transform3New: "Passer de débutante à qualité pâtisserie pour moins de $25 — garanti",
     transformCta: "C'est la méthode qui transforme les doutes en certitude.",
     
     // What You Get
@@ -130,7 +130,7 @@ const translations = {
     minutes: "Min",
     seconds: "Sec",
     originalPrice: "$47",
-    currentPrice: "$9.97",
+    currentPrice: "$22.97",
     priceNote: "Paiement unique - Accès instantané",
     priceDropReason: "Prix de lancement — augmentation imminente.",
     priceDropTitle: "Offre Spéciale Limitée",
@@ -272,7 +272,7 @@ const translations = {
     // Final CTA
     finalCtaTitle: "Dans 2 Heures, Votre Premier Lot Refroidira sur le Comptoir",
     finalCtaSubtitle: "Dans 2 heures, votre premier lot de cookies de qualité professionnelle refroidira sur le comptoir",
-    finalCtaRecap: "Tout ce dont vous avez besoin pour seulement $9.97 :",
+    finalCtaRecap: "Tout ce dont vous avez besoin pour seulement $22.97 :",
     finalBenefit1: "27 recettes testées et vendables",
     finalBenefit2: "Méthode complète de cookies pas à pas",
     finalBenefit3: "8 bonus exclusifs",
@@ -282,7 +282,7 @@ const translations = {
     finalCtaNote: "Paiement sécurisé - Accès instantané - Garantie 7 jours",
     choiceTitle: "Vous avez deux choix maintenant :",
     choiceA: "Fermer cette page. Continuer à regarder des vidéos de pâtisserie. Vous dire \"un jour peut-être.\" Dans six mois, rien n'a changé.",
-    choiceB: "Commencer aujourd'hui pour $9.97. Faire votre premier lot ce soir. Les partager demain. Le week-end prochain, tout le monde veut la recette.",
+    choiceB: "Commencer aujourd'hui pour $22.97. Faire votre premier lot ce soir. Les partager demain. Le week-end prochain, tout le monde veut la recette.",
     choiceQuestion: "Lequel vous ressemble le plus ?",
     finalCtaPS: "P.S. Quand vous téléchargez, allez directement au Chapitre 3 — c'est là que se trouve la recette la plus populaire. La plupart font leur premier lot le soir même.",
     futurePacingTitle: "Imaginez Ceci...",
@@ -305,7 +305,7 @@ const translations = {
     faq13Answer: "Oui. Tout utilise des ingredients courants de supermarche — farine, beurre, sucre, oeufs, pepites de chocolat. Rien d'exotique ni de couteux. Nous incluons aussi des substitutions si quelque chose est difficile a trouver dans votre region.",
     faq14Question: "Je peux acheter a 3h du matin?",
     faq14Answer: "Oui. Le systeme est 100% automatise. Vous pouvez acheter a tout moment — votre acces arrive instantanement par email, peu importe l'heure.",
-    faq15Question: "Pourquoi seulement $9.97?",
+    faq15Question: "Pourquoi seulement $22.97?",
     faq15Answer: "Parce que c'est numerique — pas d'impression, pas d'expedition, pas d'intermediaires. Nous gardons les couts bas pour que plus de femmes puissent acceder a des recettes professionnelles et des outils business. Le prix augmentera a mesure que nous ajouterons du contenu.",
 
     // Bonus 9
@@ -365,7 +365,7 @@ const translations = {
     transform2Old: "Raten, was schiefgelaufen ist, und dieselben Fehler wiederholen",
     transform2New: "Das Warum hinter jedem Schritt verstehen — um alles in Minuten zu korrigieren",
     transform3Old: "$500-$2000 in Kurse investieren und hoffen, dass es endlich jemand verständlich erklärt",
-    transform3New: "Von Anfängerin zu Konditorei-Qualität für unter $15 — garantiert",
+    transform3New: "Von Anfängerin zu Konditorei-Qualität für unter $25 — garantiert",
     transformCta: "Das ist die Methode, die Raten in Wissen verwandelt.",
     
     // What You Get
@@ -439,7 +439,7 @@ const translations = {
     minutes: "Min",
     seconds: "Sek",
     originalPrice: "$47",
-    currentPrice: "$9.97",
+    currentPrice: "$22.97",
     priceNote: "Einmalige Zahlung - Sofortiger Zugang",
     priceDropReason: "Einführungspreis — steigt bald.",
     priceDropTitle: "Zeitlich Begrenztes Sonderangebot",
@@ -488,7 +488,7 @@ const translations = {
     testimonial4: "Ich backe seit 20 Jahren und dachte, ich weiß alles. Falsch gedacht. Die Methode hier hat mir Dinge gezeigt, die ich nirgendwo anders gefunden habe. Die Textur ist auf einem ganz anderen Level.",
     testimonialName4: "Birgit K.",
     testimonialCity4: "Köln",
-    testimonial5: "Am Anfang dachte ich: $9.97 für ein Ebook? Dann hab ich ausgerechnet, was ich für Backkurse ausgegeben hatte. Über 400€. Dieses Ebook hat mir mehr beigebracht als alle zusammen.",
+    testimonial5: "Am Anfang dachte ich: $22.97 für ein Ebook? Dann hab ich ausgerechnet, was ich für Backkurse ausgegeben hatte. Über 400€. Dieses Ebook hat mir mehr beigebracht als alle zusammen.",
     testimonialName5: "Melanie S.",
     testimonialCity5: "Frankfurt",
     testimonial6: "Ich mach jetzt jeden Sonntag eine Charge und verkaufe auf dem Wochenmarkt. 120-180€ pro Markttag. Hätte nie gedacht, dass das so einfach geht.",
@@ -581,7 +581,7 @@ const translations = {
     // Final CTA
     finalCtaTitle: "In 2 Stunden Kühlt Deine Erste Charge Auf der Theke Ab",
     finalCtaSubtitle: "In 2 Stunden kühlt deine erste Ladung Cookies in Profi-Qualität auf der Theke ab",
-    finalCtaRecap: "Alles was du brauchst für nur $9.97:",
+    finalCtaRecap: "Alles was du brauchst für nur $22.97:",
     finalBenefit1: "27 getestete, verkaufbare Rezepte",
     finalBenefit2: "Komplette Schritt-für-Schritt Cookie-Methode",
     finalBenefit3: "8 exklusive Bonus-Geschenke",
@@ -591,7 +591,7 @@ const translations = {
     finalCtaNote: "Sichere Zahlung - Sofortiger Zugang - 7-Tage-Garantie",
     choiceTitle: "Du hast jetzt zwei Möglichkeiten:",
     choiceA: "Diese Seite schließen. Weiter Backvideos schauen. Dir sagen \"irgendwann mal.\" In sechs Monaten hat sich nichts geändert.",
-    choiceB: "Heute für $9.97 starten. Heute Abend deine erste Charge backen. Morgen teilen. Nächstes Wochenende will jeder das Rezept.",
+    choiceB: "Heute für $22.97 starten. Heute Abend deine erste Charge backen. Morgen teilen. Nächstes Wochenende will jeder das Rezept.",
     choiceQuestion: "Was klingt mehr nach dir?",
     finalCtaPS: "P.S. Wenn du herunterlädst, geh direkt zu Kapitel 3 — dort ist das beliebteste Rezept. Die meisten backen ihre erste Charge noch am selben Abend.",
     futurePacingTitle: "Stell Dir Das Vor...",
@@ -614,7 +614,7 @@ const translations = {
     faq13Answer: "Ja. Alles verwendet gaengige Supermarkt-Zutaten — Mehl, Butter, Zucker, Eier, Schokoladenstueckchen. Nichts Exotisches oder Teures. Wir bieten auch Ersatzvorschlaege, falls etwas in Ihrer Region schwer zu finden ist.",
     faq14Question: "Kann ich um 3 Uhr morgens kaufen?",
     faq14Answer: "Ja. Das System ist 100% automatisiert. Sie koennen jederzeit kaufen — Ihr Zugang wird sofort per E-Mail zugestellt, egal wann Sie bestellen.",
-    faq15Question: "Warum kostet es nur $9.97?",
+    faq15Question: "Warum kostet es nur $22.97?",
     faq15Answer: "Weil es digital ist — kein Druck, kein Versand, keine Zwischenhaendler. Wir halten die Kosten niedrig, damit mehr Frauen Zugang zu professionellen Rezepten und Business-Tools haben. Der Preis wird steigen, wenn wir mehr Inhalte hinzufuegen.",
 
     // Bonus 9
@@ -674,7 +674,7 @@ const translations = {
     transform2Old: "Indovinare cosa è andato storto e continuare a ripetere gli stessi errori",
     transform2New: "Capire il perché di ogni passaggio — per correggere qualsiasi cosa in minuti",
     transform3Old: "Spendere $500-$2000 in corsi sperando che qualcuno lo spieghi finalmente bene",
-    transform3New: "Passare da principiante a qualità da pasticceria per meno di $15 — garantito",
+    transform3New: "Passare da principiante a qualità da pasticceria per meno di $25 — garantito",
     transformCta: "Questo è il metodo che trasforma i dubbi in sicurezza.",
     
     // What You Get
@@ -748,7 +748,7 @@ const translations = {
     minutes: "Min",
     seconds: "Sec",
     originalPrice: "$47",
-    currentPrice: "$9.97",
+    currentPrice: "$22.97",
     priceNote: "Pagamento unico - Accesso istantaneo",
     priceDropReason: "Prezzo di lancio — aumenta presto.",
     priceDropTitle: "Offerta Speciale a Tempo Limitato",
@@ -890,7 +890,7 @@ const translations = {
     // Final CTA
     finalCtaTitle: "In 2 Ore, Il Tuo Primo Lotto Si Raffredderà Sul Bancone",
     finalCtaSubtitle: "Tra 2 ore, il tuo primo lotto di cookies di qualità professionale si raffredderà sul bancone",
-    finalCtaRecap: "Tutto ciò di cui hai bisogno per soli $9.97:",
+    finalCtaRecap: "Tutto ciò di cui hai bisogno per soli $22.97:",
     finalBenefit1: "27 ricette testate e vendibili",
     finalBenefit2: "Metodo completo di cookies passo dopo passo",
     finalBenefit3: "8 bonus esclusivi",
@@ -900,7 +900,7 @@ const translations = {
     finalCtaNote: "Pagamento sicuro - Accesso istantaneo - Garanzia 7 giorni",
     choiceTitle: "Hai due scelte adesso:",
     choiceA: "Chiudere questa pagina. Continuare a guardare video di pasticceria. Dirti \"forse un giorno.\" Tra sei mesi, niente è cambiato.",
-    choiceB: "Iniziare oggi per $9.97. Preparare il primo lotto stasera. Condividerli domani. Il prossimo fine settimana, tutti vogliono la ricetta.",
+    choiceB: "Iniziare oggi per $22.97. Preparare il primo lotto stasera. Condividerli domani. Il prossimo fine settimana, tutti vogliono la ricetta.",
     choiceQuestion: "Quale ti somiglia di più?",
     finalCtaPS: "P.S. Quando scarichi, vai direttamente al Capitolo 3 — lì trovi la ricetta più popolare. La maggior parte prepara il primo lotto quella sera stessa.",
     futurePacingTitle: "Immagina Questo...",
@@ -923,7 +923,7 @@ const translations = {
     faq13Answer: "Si. Tutto utilizza ingredienti comuni del supermercato — farina, burro, zucchero, uova, gocce di cioccolato. Niente di esotico o costoso. Includiamo anche sostituzioni se qualcosa e difficile da trovare nella vostra zona.",
     faq14Question: "Posso comprare alle 3 di notte?",
     faq14Answer: "Si. Il sistema e 100% automatizzato. Puoi acquistare in qualsiasi momento — il tuo accesso arriva istantaneamente via email, non importa quando compri.",
-    faq15Question: "Perche costa solo $9.97?",
+    faq15Question: "Perche costa solo $22.97?",
     faq15Answer: "Perche e digitale — nessuna stampa, nessuna spedizione, nessun intermediario. Manteniamo i costi bassi affinche piu donne possano accedere a ricette professionali e strumenti business. Il prezzo aumentera man mano che aggiungeremo contenuti.",
 
     // Bonus 9
@@ -983,7 +983,7 @@ const translations = {
     transform2Old: "Raden wat er misging en dezelfde fouten blijven herhalen",
     transform2New: "Het waarom achter elke stap begrijpen — om alles in minuten te corrigeren",
     transform3Old: "$500-$2000 uitgeven aan cursussen en hopen dat iemand het eindelijk duidelijk uitlegt",
-    transform3New: "Van beginner naar bakkerijkwaliteit voor minder dan $15 — gegarandeerd",
+    transform3New: "Van beginner naar bakkerijkwaliteit voor minder dan $25 — gegarandeerd",
     transformCta: "Dit is de methode die gissen verandert in weten.",
     
     // What You Get
@@ -1057,7 +1057,7 @@ const translations = {
     minutes: "Min",
     seconds: "Sec",
     originalPrice: "$47",
-    currentPrice: "$9.97",
+    currentPrice: "$22.97",
     priceNote: "Eenmalige betaling - Directe toegang",
     priceDropReason: "Introductieprijs — stijgt binnenkort.",
     priceDropTitle: "Tijdelijke Speciale Aanbieding",
@@ -1199,7 +1199,7 @@ const translations = {
     // Final CTA
     finalCtaTitle: "Over 2 Uur Koelt Je Eerste Batch Af Op Het Aanrecht",
     finalCtaSubtitle: "Over 2 uur koelt je eerste batch professionele cookies af op het aanrecht",
-    finalCtaRecap: "Alles wat je nodig hebt voor slechts $9.97:",
+    finalCtaRecap: "Alles wat je nodig hebt voor slechts $22.97:",
     finalBenefit1: "27 geteste, verkoopbare recepten",
     finalBenefit2: "Complete stap-voor-stap cookie-methode",
     finalBenefit3: "8 exclusieve bonuscadeaus",
@@ -1209,7 +1209,7 @@ const translations = {
     finalCtaNote: "Veilige betaling - Directe toegang - 7-dagen garantie",
     choiceTitle: "Je hebt nu twee keuzes:",
     choiceA: "Deze pagina sluiten. Verder bakvideo's kijken. Jezelf vertellen \"misschien ooit.\" Over zes maanden is er niets veranderd.",
-    choiceB: "Vandaag beginnen voor $9.97. Vanavond je eerste batch bakken. Morgen delen. Volgend weekend wil iedereen het recept.",
+    choiceB: "Vandaag beginnen voor $22.97. Vanavond je eerste batch bakken. Morgen delen. Volgend weekend wil iedereen het recept.",
     choiceQuestion: "Welke klinkt meer als jij?",
     finalCtaPS: "P.S. Als je downloadt, ga dan direct naar Hoofdstuk 3 — daar staat het populairste recept. De meesten bakken hun eerste batch diezelfde avond.",
     futurePacingTitle: "Stel Je Dit Voor...",
@@ -1232,7 +1232,7 @@ const translations = {
     faq13Answer: "Ja. Alles gebruikt gewone supermarktingredienten — bloem, boter, suiker, eieren, chocoladestukjes. Niets exotisch of duur. We bieden ook vervangers als iets moeilijk te vinden is in jouw regio.",
     faq14Question: "Kan ik om 3 uur 's nachts kopen?",
     faq14Answer: "Ja. Het systeem is 100% geautomatiseerd. Je kunt op elk moment kopen — je toegang wordt direct per e-mail geleverd, ongeacht wanneer je bestelt.",
-    faq15Question: "Waarom kost het maar $9.97?",
+    faq15Question: "Waarom kost het maar $22.97?",
     faq15Answer: "Omdat het digitaal is — geen drukkosten, geen verzending, geen tussenpersonen. We houden de kosten laag zodat meer vrouwen toegang hebben tot professionele recepten en business-tools. De prijs zal stijgen naarmate we meer content toevoegen.",
 
     // Bonus 9
@@ -1292,7 +1292,7 @@ const translations = {
     transform2Old: "Zgadywanie co poszło nie tak i powtarzanie tych samych błędów",
     transform2New: "Zrozumienie dlaczego za każdym krokiem — żeby naprawić cokolwiek w minuty",
     transform3Old: "Wydawanie $500-$2000 na kursy z nadzieją, że ktoś wreszcie wyjaśni to jasno",
-    transform3New: "Przejście od początkującej do jakości cukierniczej za mniej niż $15 — gwarantowane",
+    transform3New: "Przejście od początkującej do jakości cukierniczej za mniej niż $25 — gwarantowane",
     transformCta: "To jest metoda, która zmienia zgadywanie w wiedzę.",
     
     // What You Get
@@ -1366,7 +1366,7 @@ const translations = {
     minutes: "Min",
     seconds: "Sek",
     originalPrice: "$47",
-    currentPrice: "$9.97",
+    currentPrice: "$22.97",
     priceNote: "Jednorazowa płatność - Natychmiastowy dostęp",
     priceDropReason: "Cena premierowa — wkrótce wzrośnie.",
     priceDropTitle: "Specjalna Oferta Czasowa",
@@ -1508,7 +1508,7 @@ const translations = {
     // Final CTA
     finalCtaTitle: "Za 2 Godziny Twoja Pierwsza Partia Będzie Stygnąć na Blacie",
     finalCtaSubtitle: "Za 2 godziny Twoja pierwsza partia profesjonalnych ciasteczek będzie stygnąć na blacie",
-    finalCtaRecap: "Wszystko czego potrzebujesz za jedyne $9.97:",
+    finalCtaRecap: "Wszystko czego potrzebujesz za jedyne $22.97:",
     finalBenefit1: "27 przetestowanych, sprzedawalnych przepisów",
     finalBenefit2: "Kompletna metoda ciasteczek krok po kroku",
     finalBenefit3: "8 ekskluzywnych prezentów bonusowych",
@@ -1518,7 +1518,7 @@ const translations = {
     finalCtaNote: "Bezpieczna płatność - Natychmiastowy dostęp - 7-dniowa gwarancja",
     choiceTitle: "Masz teraz dwie opcje:",
     choiceA: "Zamknij tę stronę. Dalej oglądaj filmy o pieczeniu. Powiedz sobie \"może kiedyś.\" Za sześć miesięcy nic się nie zmieniło.",
-    choiceB: "Zacznij dziś za $9.97. Upiecz pierwszą partię dziś wieczorem. Podziel się jutro. W następny weekend wszyscy chcą przepis.",
+    choiceB: "Zacznij dziś za $22.97. Upiecz pierwszą partię dziś wieczorem. Podziel się jutro. W następny weekend wszyscy chcą przepis.",
     choiceQuestion: "Która opcja brzmi bardziej jak Ty?",
     finalCtaPS: "P.S. Kiedy pobierzesz, idź prosto do Rozdziału 3 — tam jest najpopularniejszy przepis. Większość piecze pierwszą partię tego samego wieczoru.",
     futurePacingTitle: "Wyobraź Sobie To...",
@@ -1541,7 +1541,7 @@ const translations = {
     faq13Answer: "Tak. Wszystko uzywa popularnych skladnikow z supermarketu — maka, maslo, cukier, jajka, kawalki czekolady. Nic egzotycznego ani drogiego. Dolaczamy tez zamienniki, jesli cos jest trudne do znalezienia w Twoim regionie.",
     faq14Question: "Moge kupic o 3 w nocy?",
     faq14Answer: "Tak. System jest w 100% zautomatyzowany. Mozesz kupic o dowolnej porze — dostep zostanie natychmiast wyslany na Twoj email, niezaleznie od godziny.",
-    faq15Question: "Dlaczego kosztuje tylko $9.97?",
+    faq15Question: "Dlaczego kosztuje tylko $22.97?",
     faq15Answer: "Poniewaz jest cyfrowy — bez druku, bez wysylki, bez posrednikow. Utrzymujemy niskie koszty, aby wiecej kobiet moglo uzyskac dostep do profesjonalnych przepisow i narzedzi biznesowych. Cena wzrosnie w miare dodawania nowych tresci.",
 
     // Bonus 9
