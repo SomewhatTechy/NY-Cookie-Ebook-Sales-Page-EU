@@ -10,7 +10,6 @@ const BONUS_IMAGES = [
   'bonus-low-sugar-chilled.webp',
   'bonus-science-art-selling.webp',
   'bonus-allergy-friendly.webp',
-  'bonus-certificate.webp',
 ];
 
 const BonusesSection = () => {
@@ -27,7 +26,6 @@ const BonusesSection = () => {
     { title: t('bonus6Title'), desc: t('bonus6Desc'), value: t('bonus6Value') },
     { title: t('bonus7Title'), desc: t('bonus7Desc'), value: t('bonus7Value') },
     { title: t('bonus8Title'), desc: t('bonus8Desc'), value: t('bonus8Value') },
-    { title: t('bonus9Title'), desc: t('bonus9Desc'), value: t('bonus9Value') },
   ];
 
   return (
