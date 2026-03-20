@@ -91,9 +91,9 @@ const translations = {
     wygBridgeText: "Beaucoup de gens commencent par faire des cookies chez eux. Puis les amis commencent à demander des boîtes. C'est pourquoi, si vous le souhaitez, le guide inclut aussi :",
 
     // Bonuses
-    bonusTag: "+ $153.96 DE BONUS",
+    bonusTag: "+ $135.96 DE BONUS",
     bonusesTitle: "Bonus Exclusifs Inclus",
-    bonusesSubtitle: "Bonus d'une valeur de $153.96+ - à vous aujourd'hui sans frais supplémentaires",
+    bonusesSubtitle: "Bonus d'une valeur de $135.96+ - à vous aujourd'hui sans frais supplémentaires",
     bonus1Title: "Mini Livre de Recettes: Desserts Sains pour Enfants",
     bonus1Desc: "15 recettes nutritives et délicieuses que les mamans refont (et recommandent).",
     bonus1Value: "$27",
@@ -400,9 +400,9 @@ const translations = {
     wygBridgeText: "Viele fangen an, zu Hause zu backen. Dann fragen Freunde nach Boxen. Deshalb enthält der Guide auch, wenn du möchtest:",
 
     // Bonuses
-    bonusTag: "+ $153.96 AN BONI",
+    bonusTag: "+ $135.96 AN BONI",
     bonusesTitle: "Exklusive Boni Inklusive",
-    bonusesSubtitle: "Boni im Wert von $153.96+ - heute für dich ohne zusätzliche Kosten",
+    bonusesSubtitle: "Boni im Wert von $135.96+ - heute für dich ohne zusätzliche Kosten",
     bonus1Title: "Mini-Rezeptbuch: Gesunde Desserts für Kinder",
     bonus1Desc: "15 nahrhafte, leckere Rezepte, die Mamas wiederholen (und empfehlen).",
     bonus1Value: "$27",
@@ -709,9 +709,9 @@ const translations = {
     wygBridgeText: "Molti iniziano a farli a casa. Poi gli amici cominciano a chiedere scatole. Per questo, se vuoi, la guida include anche:",
 
     // Bonuses
-    bonusTag: "+ $153.96 DI BONUS",
+    bonusTag: "+ $135.96 DI BONUS",
     bonusesTitle: "Bonus Esclusivi Inclusi",
-    bonusesSubtitle: "Bonus del valore di $153.96+ - tuoi oggi senza costi aggiuntivi",
+    bonusesSubtitle: "Bonus del valore di $135.96+ - tuoi oggi senza costi aggiuntivi",
     bonus1Title: "Mini Ricettario: Dessert Sani per Bambini",
     bonus1Desc: "15 ricette nutrienti e deliziose che le mamme ripetono (e raccomandano).",
     bonus1Value: "$27",
@@ -1018,9 +1018,9 @@ const translations = {
     wygBridgeText: "Veel mensen beginnen met thuis bakken. Dan beginnen vrienden om dozen te vragen. Daarom bevat de gids ook, als je wilt:",
 
     // Bonuses
-    bonusTag: "+ $153.96 AAN BONUSSEN",
+    bonusTag: "+ $135.96 AAN BONUSSEN",
     bonusesTitle: "Exclusieve Bonussen Inbegrepen",
-    bonusesSubtitle: "Bonussen ter waarde van $153.96+ - vandaag van jou zonder extra kosten",
+    bonusesSubtitle: "Bonussen ter waarde van $135.96+ - vandaag van jou zonder extra kosten",
     bonus1Title: "Mini Receptenboek: Gezonde Desserts voor Kinderen",
     bonus1Desc: "15 voedzame, heerlijke recepten die moeders herhalen (en aanbevelen).",
     bonus1Value: "$27",
@@ -1327,9 +1327,9 @@ const translations = {
     wygBridgeText: "Wiele osób zaczyna od pieczenia w domu. Potem znajomi zaczynają prosić o pudełka. Dlatego, jeśli chcesz, przewodnik zawiera też:",
 
     // Bonuses
-    bonusTag: "+ $153.96 W BONUSACH",
+    bonusTag: "+ $135.96 W BONUSACH",
     bonusesTitle: "Ekskluzywne Bonusy W Zestawie",
-    bonusesSubtitle: "Bonusy o wartości $153.96+ - Twoje dzisiaj bez dodatkowych kosztów",
+    bonusesSubtitle: "Bonusy o wartości $135.96+ - Twoje dzisiaj bez dodatkowych kosztów",
     bonus1Title: "Mini Książka z Przepisami: Zdrowe Desery dla Dzieci",
     bonus1Desc: "15 odżywczych, pysznych przepisów, które mamy powtarzają (i polecają).",
     bonus1Value: "$27",
