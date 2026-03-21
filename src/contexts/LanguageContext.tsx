@@ -292,13 +292,14 @@ const translations = {
     // Footer
     footerDisclaimer: "Ce site ne fait pas partie de Facebook ou Meta. Les résultats individuels peuvent varier. Cet ebook est éducatif et ne garantit pas de revenus spécifiques.",
     footerContact: "Contact",
-    footerCopyright: "2026 ECommerce Shop Cart. Tous droits réservés.",
+    footerCopyright: "2026 The Sweet Hustle. Tous droits réservés.",
 
     // Floating CTA
     floatingCta: "Je veux ma copie",
     brandStoryEyebrow: "Qui a Cree Ceci",
-    brandStoryTitle: "Cree par des Patissieres, Soutenu par des Experts",
-    brandStoryText: "La Methode NY Cookie a ete creee par ECommerce Shop Cart — un editeur numerique dedie a l'autonomisation des femmes a travers des guides accessibles soutenus par des experts. Chaque recette de cette serie a ete developpee par des chefs patissiers professionnels et affinee par un panel d'experts en patisserie de 4 continents. Chaque technique a ete testee par de vrais debutants dans des cuisines domestiques avant d'etre incluse. Le resultat : un systeme eprouve qui fonctionne des votre premiere fournee.",
+    brandStoryTitle: "Sofia Herrera",
+    brandStorySubtitle: "Patissiere maison • New York, USA",
+    brandStoryText: "J'ai grandi au Bresil, mais j'ai demenage a New York il y a quelques annees. C'est ici que j'ai goute pour la premiere fois un vrai cookie style NY — epais, fondant a l'interieur, avec cette texture dont on ne peut plus se passer. Je suis devenue obsedee. J'ai passe des mois a tester des recettes dans ma cuisine jusqu'a comprendre exactement ce qui fait la difference. Quand j'ai commence a partager avec des amies, les commandes n'ont plus arrete. J'ai decide de tout documenter pour que n'importe quelle femme puisse reproduire le meme resultat — sans avoir besoin de venir ici pour le decouvrir.",
 
     // FAQ 13-15
     faq13Question: "Les ingredients sont-ils faciles a trouver?",
@@ -601,13 +602,14 @@ const translations = {
     // Footer
     footerDisclaimer: "Diese Seite ist nicht Teil von Facebook oder Meta. Individuelle Ergebnisse können variieren. Dieses Ebook ist lehrreich und garantiert keine bestimmten Einnahmen.",
     footerContact: "Kontakt",
-    footerCopyright: "2026 ECommerce Shop Cart. Alle Rechte vorbehalten.",
+    footerCopyright: "2026 The Sweet Hustle. Alle Rechte vorbehalten.",
 
     // Floating CTA
     floatingCta: "Ich will mein Exemplar",
     brandStoryEyebrow: "Wer hat das Erstellt",
-    brandStoryTitle: "Von Baeckerinnen Geschaffen, von Experten Unterstuetzt",
-    brandStoryText: "Die NY Cookie Methode wurde von ECommerce Shop Cart erstellt — einem digitalen Verlag, der sich der Staerkung von Frauen durch erschwingliche, von Experten unterstuetzte Leitfaeden widmet. Jedes Rezept in dieser Serie wurde von professionellen Konditormeistern entwickelt und von einem Expertenpanel aus 4 Kontinenten verfeinert. Jede Technik wurde von echten Anfaengerinnen in Hauskuechen getestet, bevor sie aufgenommen wurde. Das Ergebnis: ein bewaehrtes System, das ab Ihrer allerersten Ladung funktioniert.",
+    brandStoryTitle: "Sofia Herrera",
+    brandStorySubtitle: "Hausbaeckerin • New York City, USA",
+    brandStoryText: "Ich bin in Brasilien aufgewachsen, aber vor einigen Jahren nach New York gezogen. Hier habe ich zum ersten Mal einen echten NY-Style Cookie probiert — dick, innen cremig, mit dieser Textur, von der man nicht genug bekommen kann. Ich war besessen. Ich habe monatelang Rezepte in meiner Kueche getestet, bis ich genau verstanden habe, was den Unterschied macht. Als ich anfing, mit Freundinnen zu teilen, hoerten die Bestellungen nicht mehr auf. Ich habe beschlossen, alles zu dokumentieren, damit jede Frau das gleiche Ergebnis nachbilden kann — ohne hierher kommen zu muessen, um es herauszufinden.",
 
     // FAQ 13-15
     faq13Question: "Sind die Zutaten leicht zu finden?",
@@ -910,13 +912,14 @@ const translations = {
     // Footer
     footerDisclaimer: "Questo sito non fa parte di Facebook o Meta. I risultati individuali possono variare. Questo ebook è educativo e non garantisce guadagni specifici.",
     footerContact: "Contatto",
-    footerCopyright: "2026 ECommerce Shop Cart. Tutti i diritti riservati.",
+    footerCopyright: "2026 The Sweet Hustle. Tutti i diritti riservati.",
 
     // Floating CTA
     floatingCta: "Voglio la mia copia",
     brandStoryEyebrow: "Chi Ha Creato Questo",
-    brandStoryTitle: "Creato da Pasticcere, Supportato da Esperti",
-    brandStoryText: "Il Metodo NY Cookie e stato creato da ECommerce Shop Cart — un editore digitale dedicato a dare potere alle donne attraverso guide accessibili supportate da esperti. Ogni ricetta di questa serie e stata sviluppata da chef pasticceri professionisti e perfezionata da un panel di esperti di pasticceria di 4 continenti. Ogni tecnica e stata testata da vere principianti in cucine domestiche prima di essere inclusa. Il risultato: un sistema collaudato che funziona fin dal primo lotto.",
+    brandStoryTitle: "Sofia Herrera",
+    brandStorySubtitle: "Pasticcera casalinga • New York City, USA",
+    brandStoryText: "Sono cresciuta in Brasile, ma mi sono trasferita a New York qualche anno fa. E qui che ho assaggiato per la prima volta un vero cookie stile NY — spesso, cremoso dentro, con quella consistenza di cui non riesci a fare a meno. Ne sono diventata ossessionata. Ho passato mesi a testare ricette nella mia cucina fino a capire esattamente cosa fa la differenza. Quando ho iniziato a condividere con le amiche, gli ordini non si sono piu fermati. Ho deciso di documentare tutto perche qualsiasi donna potesse replicare lo stesso risultato — senza dover venire qui per scoprirlo.",
 
     // FAQ 13-15
     faq13Question: "Gli ingredienti sono facili da trovare?",
@@ -1219,13 +1222,14 @@ const translations = {
     // Footer
     footerDisclaimer: "Deze site maakt geen deel uit van Facebook of Meta. Individuele resultaten kunnen variëren. Dit ebook is educatief en garandeert geen specifiek inkomen.",
     footerContact: "Contact",
-    footerCopyright: "2026 ECommerce Shop Cart. Alle rechten voorbehouden.",
+    footerCopyright: "2026 The Sweet Hustle. Alle rechten voorbehouden.",
 
     // Floating CTA
     floatingCta: "Ik wil mijn exemplaar",
     brandStoryEyebrow: "Wie Heeft Dit Gemaakt",
-    brandStoryTitle: "Gemaakt door Bakkers, Ondersteund door Experts",
-    brandStoryText: "De NY Cookie Methode is gemaakt door ECommerce Shop Cart — een digitale uitgever die zich inzet voor het empoweren van vrouwen door betaalbare, door experts ondersteunde gidsen. Elk recept in deze serie is ontwikkeld door professionele patissiers en verfijnd door een panel van bakexperts uit 4 continenten. Elke techniek is getest door echte beginners in huiskeukens voordat het werd opgenomen. Het resultaat: een bewezen systeem dat werkt vanaf je allereerste batch.",
+    brandStoryTitle: "Sofia Herrera",
+    brandStorySubtitle: "Thuisbakker • New York City, USA",
+    brandStoryText: "Ik groeide op in Brazilie, maar verhuisde een paar jaar geleden naar New York. Hier proefde ik voor het eerst een echte NY-style cookie — dik, smeuig van binnen, met die textuur waar je niet meer mee kunt stoppen. Ik werd geobsedeerd. Ik heb maandenlang recepten getest in mijn keuken tot ik precies begreep wat het verschil maakt. Toen ik begon te delen met vriendinnen, stopten de bestellingen niet meer. Ik besloot alles te documenteren zodat elke vrouw hetzelfde resultaat kan maken — zonder hierheen te hoeven komen om het te ontdekken.",
 
     // FAQ 13-15
     faq13Question: "Zijn de ingredienten makkelijk te vinden?",
@@ -1528,13 +1532,14 @@ const translations = {
     // Footer
     footerDisclaimer: "Ta strona nie jest częścią Facebooka ani Meta. Indywidualne wyniki mogą się różnić. Ten ebook jest edukacyjny i nie gwarantuje konkretnych zarobków.",
     footerContact: "Kontakt",
-    footerCopyright: "2026 ECommerce Shop Cart. Wszelkie prawa zastrzeżone.",
+    footerCopyright: "2026 The Sweet Hustle. Wszelkie prawa zastrzeżone.",
 
     // Floating CTA
     floatingCta: "Chcę moją kopię",
     brandStoryEyebrow: "Kto To Stworzyl",
-    brandStoryTitle: "Stworzone przez Cukierniczki, Wsparte przez Ekspertow",
-    brandStoryText: "Metoda NY Cookie zostala stworzona przez ECommerce Shop Cart — cyfrowego wydawce poswieconego wzmacnianiu kobiet poprzez przystepne, poparte przez ekspertow przewodniki. Kazdy przepis w tej serii zostal opracowany przez profesjonalnych cukiernikow i udoskonalony przez panel ekspertow cukierniczych z 4 kontynentow. Kazda technika zostala przetestowana przez prawdziwych poczatkujacych w domowych kuchniach przed wlaczeniem. Rezultat: sprawdzony system, ktory dziala od pierwszej partii.",
+    brandStoryTitle: "Sofia Herrera",
+    brandStorySubtitle: "Domowa cukierniczka • Nowy Jork, USA",
+    brandStoryText: "Dorastalam w Brazylii, ale kilka lat temu przeprowadzilam sie do Nowego Jorku. To tutaj po raz pierwszy sprobowalam prawdziwego ciastka w stylu NY — grubego, kremowego w srodku, o tej konsystencji, od ktorej nie mozna sie oderwac. Stalam sie obsesyjna. Spedzilam miesiace testujac przepisy w mojej kuchni, az dokladnie zrozumialam, co robi roznice. Kiedy zaczylam dzielic sie z przyjaciolkami, zamowienia nie przestawaly naplywac. Postanowilam udokumentowac wszystko, aby kazda kobieta mogla powtorzyc ten sam rezultat — bez koniecznosci przyjezdzania tutaj, zeby to odkryc.",
 
     // FAQ 13-15
     faq13Question: "Czy skladniki sa latwe do znalezienia?",

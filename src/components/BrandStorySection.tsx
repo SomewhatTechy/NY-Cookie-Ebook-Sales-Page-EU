@@ -19,9 +19,12 @@ const BrandStorySection = () => {
               {safe('brandStoryEyebrow', 'About This Guide')}
             </span>
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold text-chocolate mb-4 font-heading">
-            {safe('brandStoryTitle', 'Built by Bakers, For Bakers')}
+          <h2 className="text-2xl md:text-3xl font-bold text-chocolate mb-1 font-heading">
+            {safe('brandStoryTitle', 'Sofia Herrera')}
           </h2>
+          <p className="text-sm text-gold-dark font-medium mb-4">
+            {safe('brandStorySubtitle', 'Home baker • New York City, USA')}
+          </p>
           <p className="text-muted-foreground leading-relaxed">
             {safe('brandStoryText', 'The NY Cookie Method was created by a small team of professional pastry chefs and home baking coaches who spent 2 years testing and refining these recipes in real home kitchens. Every technique was validated by beginners before being included.')}
           </p>
