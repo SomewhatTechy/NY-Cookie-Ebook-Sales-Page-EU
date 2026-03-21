@@ -20,7 +20,7 @@ const BrandStorySection = () => {
             </span>
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-chocolate mb-1 font-heading">
-            {safe('brandStoryTitle', 'Sofia Herrera')}
+            {safe('brandStoryTitle', 'Sofia Costa')}
           </h2>
           <p className="text-sm text-gold-dark font-medium mb-4">
             {safe('brandStorySubtitle', 'Home baker • New York City, USA')}

@@ -297,7 +297,7 @@ const translations = {
     // Floating CTA
     floatingCta: "Je veux ma copie",
     brandStoryEyebrow: "Qui a Cree Ceci",
-    brandStoryTitle: "Sofia Herrera",
+    brandStoryTitle: "Sofia Costa",
     brandStorySubtitle: "Patissiere maison • New York, USA",
     brandStoryText: "J'ai grandi au Bresil, mais j'ai demenage a New York il y a quelques annees. C'est ici que j'ai goute pour la premiere fois un vrai cookie style NY — epais, fondant a l'interieur, avec cette texture dont on ne peut plus se passer. Je suis devenue obsedee. J'ai passe des mois a tester des recettes dans ma cuisine jusqu'a comprendre exactement ce qui fait la difference. Quand j'ai commence a partager avec des amies, les commandes n'ont plus arrete. J'ai decide de tout documenter pour que n'importe quelle femme puisse reproduire le meme resultat — sans avoir besoin de venir ici pour le decouvrir.",
 
@@ -607,7 +607,7 @@ const translations = {
     // Floating CTA
     floatingCta: "Ich will mein Exemplar",
     brandStoryEyebrow: "Wer hat das Erstellt",
-    brandStoryTitle: "Sofia Herrera",
+    brandStoryTitle: "Sofia Costa",
     brandStorySubtitle: "Hausbaeckerin • New York City, USA",
     brandStoryText: "Ich bin in Brasilien aufgewachsen, aber vor einigen Jahren nach New York gezogen. Hier habe ich zum ersten Mal einen echten NY-Style Cookie probiert — dick, innen cremig, mit dieser Textur, von der man nicht genug bekommen kann. Ich war besessen. Ich habe monatelang Rezepte in meiner Kueche getestet, bis ich genau verstanden habe, was den Unterschied macht. Als ich anfing, mit Freundinnen zu teilen, hoerten die Bestellungen nicht mehr auf. Ich habe beschlossen, alles zu dokumentieren, damit jede Frau das gleiche Ergebnis nachbilden kann — ohne hierher kommen zu muessen, um es herauszufinden.",
 
@@ -917,7 +917,7 @@ const translations = {
     // Floating CTA
     floatingCta: "Voglio la mia copia",
     brandStoryEyebrow: "Chi Ha Creato Questo",
-    brandStoryTitle: "Sofia Herrera",
+    brandStoryTitle: "Sofia Costa",
     brandStorySubtitle: "Pasticcera casalinga • New York City, USA",
     brandStoryText: "Sono cresciuta in Brasile, ma mi sono trasferita a New York qualche anno fa. E qui che ho assaggiato per la prima volta un vero cookie stile NY — spesso, cremoso dentro, con quella consistenza di cui non riesci a fare a meno. Ne sono diventata ossessionata. Ho passato mesi a testare ricette nella mia cucina fino a capire esattamente cosa fa la differenza. Quando ho iniziato a condividere con le amiche, gli ordini non si sono piu fermati. Ho deciso di documentare tutto perche qualsiasi donna potesse replicare lo stesso risultato — senza dover venire qui per scoprirlo.",
 
@@ -1227,7 +1227,7 @@ const translations = {
     // Floating CTA
     floatingCta: "Ik wil mijn exemplaar",
     brandStoryEyebrow: "Wie Heeft Dit Gemaakt",
-    brandStoryTitle: "Sofia Herrera",
+    brandStoryTitle: "Sofia Costa",
     brandStorySubtitle: "Thuisbakker • New York City, USA",
     brandStoryText: "Ik groeide op in Brazilie, maar verhuisde een paar jaar geleden naar New York. Hier proefde ik voor het eerst een echte NY-style cookie — dik, smeuig van binnen, met die textuur waar je niet meer mee kunt stoppen. Ik werd geobsedeerd. Ik heb maandenlang recepten getest in mijn keuken tot ik precies begreep wat het verschil maakt. Toen ik begon te delen met vriendinnen, stopten de bestellingen niet meer. Ik besloot alles te documenteren zodat elke vrouw hetzelfde resultaat kan maken — zonder hierheen te hoeven komen om het te ontdekken.",
 
@@ -1537,7 +1537,7 @@ const translations = {
     // Floating CTA
     floatingCta: "Chcę moją kopię",
     brandStoryEyebrow: "Kto To Stworzyl",
-    brandStoryTitle: "Sofia Herrera",
+    brandStoryTitle: "Sofia Costa",
     brandStorySubtitle: "Domowa cukierniczka • Nowy Jork, USA",
     brandStoryText: "Dorastalam w Brazylii, ale kilka lat temu przeprowadzilam sie do Nowego Jorku. To tutaj po raz pierwszy sprobowalam prawdziwego ciastka w stylu NY — grubego, kremowego w srodku, o tej konsystencji, od ktorej nie mozna sie oderwac. Stalam sie obsesyjna. Spedzilam miesiace testujac przepisy w mojej kuchni, az dokladnie zrozumialam, co robi roznice. Kiedy zaczylam dzielic sie z przyjaciolkami, zamowienia nie przestawaly naplywac. Postanowilam udokumentowac wszystko, aby kazda kobieta mogla powtorzyc ten sam rezultat — bez koniecznosci przyjezdzania tutaj, zeby to odkryc.",
 
